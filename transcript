@@ -1,0 +1,20 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+ls
+# DE1_SoC.qpf  DE1_SoC.srf            db              mux2_1.sv.bak   runlab.do   
+# DE1_SoC.qsf  Launch_ModelSim.bat    incremental_db  mux2_1_wave.do  transcript  
+# DE1_SoC.sdc  ProgramTheDE1_SoC.cdf  mux2_1.sv       output_files                
+do runlab.do
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_testbench
+# 
+# Top level modules:
+# 	mux2_1_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps mux2_1_testbench 
+# Loading sv_std.std
+# Loading work.mux2_1_testbench
+# Loading work.mux2_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: No extended dataflow license exists
