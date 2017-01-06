@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Tue Jan 03 21:46:23 2017
+Thu Jan 05 23:23:29 2017
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -17,6 +17,7 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   9. Post-Synthesis Netlist Statistics for Top Partition
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,14 +44,14 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jan 03 21:46:23 2017      ;
+; Analysis & Synthesis Status     ; Successful - Thu Jan 05 23:23:29 2017      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
-; Top-level Entity Name           ; mux2_1                                     ;
+; Top-level Entity Name           ; DE1_SoC                                    ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
 ; Total registers                 ; 0                                          ;
-; Total pins                      ; 4                                          ;
+; Total pins                      ; 66                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -69,7 +70,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; mux2_1             ; DE1_SoC            ;
+; Top-level entity name                                                           ; DE1_SoC            ; DE1_SoC            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -173,33 +174,34 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path               ; Library ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
-; mux2_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/verl/ee271/lab1/mux2_1.sv ;         ;
+; mux2_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/verl/ee271/lab/mux2_1.sv  ;         ;
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/verl/ee271/lab/DE1_SoC.sv ;         ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 1     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 1     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 1     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 4     ;
-; Total DSP Blocks                            ; 0     ;
-; Maximum fan-out node                        ; out~0 ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 8     ;
-; Average fan-out                             ; 0.89  ;
-+---------------------------------------------+-------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 1              ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 1              ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 0              ;
+;     -- 5 input functions                    ; 0              ;
+;     -- 4 input functions                    ; 0              ;
+;     -- <=3 input functions                  ; 1              ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 66             ;
+; Total DSP Blocks                            ; 0              ;
+; Maximum fan-out node                        ; mux2_1:m|out~0 ;
+; Maximum fan-out                             ; 1              ;
+; Total fan-out                               ; 70             ;
+; Average fan-out                             ; 0.53           ;
++---------------------------------------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,7 +209,8 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |mux2_1                    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 4    ; 0            ; |mux2_1             ; work         ;
+; |DE1_SoC                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 66   ; 0            ; |DE1_SoC            ; work         ;
+;    |mux2_1:m|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|mux2_1:m   ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,13 +235,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
+; arriav_lcell_comb     ; 3                           ;
+;     normal            ; 3                           ;
+;         0 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
-; boundary_port         ; 4                           ;
+; boundary_port         ; 66                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Average LUT depth     ; 0.67                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,24 +261,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Tue Jan 03 21:46:22 2017
+    Info: Processing started: Thu Jan 05 23:23:27 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 2 entities, in source file mux2_1.sv
     Info (12023): Found entity 1: mux2_1
     Info (12023): Found entity 2: mux2_1_testbench
-Info (12127): Elaborating entity "mux2_1" for the top level hierarchy
+Info (12021): Found 2 design units, including 2 entities, in source file mux4_1.sv
+    Info (12023): Found entity 1: mux4_1
+    Info (12023): Found entity 2: mux4_1_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
+    Info (12023): Found entity 1: DE1_SoC
+Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
+Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:m"
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/hpadmin/verl/ee271/lab/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
+Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 52 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 592 megabytes
-    Info: Processing ended: Tue Jan 03 21:46:23 2017
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Jan 05 23:23:29 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/hpadmin/verl/ee271/lab/output_files/DE1_SoC.map.smsg.
 
 

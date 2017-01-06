@@ -5,45 +5,89 @@ cModel Technology
 Z0 dC:\Users\hpadmin\verl\ee271\lab1
 vmux2_1
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-!i10b 1
-!s100 Y]XhHb:gWaT^E<beSjma`0
-I>2z0HSTCzUTg9ROD2:38V2
-VDaJbi4TKY[OoJJIdmR=?E3
-Z2 !s105 mux2_1_sv_unit
+Z2 I>2z0HSTCzUTg9ROD2:38V2
+Z3 VDaJbi4TKY[OoJJIdmR=?E3
+Z4 !s105 mux2_1_sv_unit
 S1
-Z3 dC:\Users\hpadmin\verl\ee271\lab1
-Z4 w1483508736
-Z5 8./mux2_1.sv
-Z6 F./mux2_1.sv
+Z5 dC:\Users\hpadmin\verl\ee271\lab1
+Z6 w1483508736
+Z7 8./mux2_1.sv
+Z8 F./mux2_1.sv
 L0 1
-Z7 OV;L;10.1e;51
+Z9 OV;L;10.1e;51
 r1
-!s85 0
 31
-Z8 !s108 1483512177.834000
-Z9 !s107 ./mux2_1.sv|
-Z10 !s90 -reportprogress|300|./mux2_1.sv|
-!s101 -O0
+Z10 !s108 1483512177.834000
+Z11 !s107 ./mux2_1.sv|
+Z12 !s90 -reportprogress|300|./mux2_1.sv|
 o-O0
+Z13 !s100 Y]XhHb:gWaT^E<beSjma`0
+!i10b 1
+!s85 0
+!s101 -O0
 vmux2_1_testbench
 R1
-!i10b 1
-!s100 eP2Z[=enHd`Coh9WiYjzZ0
-ICT8]SzC0lk=oaK<88g0@j2
-Veb]=`Kc4=P>olk?Tl<c;03
-R2
-S1
-R3
+Z14 ICT8]SzC0lk=oaK<88g0@j2
+Z15 Veb]=`Kc4=P>olk?Tl<c;03
 R4
+S1
 R5
 R6
-L0 8
 R7
+R8
+L0 8
+R9
+r1
+31
+R10
+R11
+R12
+o-O0
+Z16 !s100 eP2Z[=enHd`Coh9WiYjzZ0
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4_1
+R1
+!i10b 1
+Z17 !s100 ZQW2B?43X89UjD`k33RDQ0
+Z18 IDWOj3Ggzf]Z0XEJ;C9]7o2
+Z19 VJEUo1i2RzJ5S2QjbAZkQJ2
+Z20 !s105 mux4_1_sv_unit
+S1
+Z21 dC:\Users\hpadmin\verl\ee271\lab
+Z22 w1483686891
+Z23 8./mux4_1.sv
+Z24 F./mux4_1.sv
+L0 1
+R9
 r1
 !s85 0
 31
-R8
+Z25 !s108 1483687069.303000
+Z26 !s107 ./mux4_1.sv|
+Z27 !s90 -reportprogress|300|./mux4_1.sv|
+!s101 -O0
+o-O0
+vmux4_1_testbench
+R1
+!i10b 1
+Z28 !s100 :QQFen^6z8z?V?gUNcY:h3
+Z29 IR?ejUM`AQZ3AfZInRz:5@2
+Z30 VF1`Z8diZTzG1W]GXVUalU1
+R20
+S1
+R21
+R22
+R23
+R24
+L0 12
 R9
-R10
+r1
+!s85 0
+31
+R25
+R26
+R27
 !s101 -O0
 o-O0
