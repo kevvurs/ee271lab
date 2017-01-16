@@ -1,0 +1,30 @@
+// BIAS: 29
+module digit_scan(OUT, SW1, SW2);
+	output logic OUT;
+	input logic [3:0] SW1;
+	input logic [3:0] SW2;
+	logic NINE, TWO;
+	
+	// Numbers should be twenty and nine.
+	assign NINE = (~(B | C)) & ( A & D);
+	assign TWO = (~(A | C | D)) & A;
+	
+	assign OUT = TWO & NINE;
+endmodule
+
+module digit_scan_testbench();
+	logic out
+	logic [9:0] sw;
+
+	digit_scan dut (.out, .SW[3:0], .SW[7:4]);
+	
+	// Try all combinations of inputs.
+	integer i;
+	initial begin
+		SW[9] = 1'b0;
+		SW[8] = 1'b0;
+		for(i = 0; i <256; i++) begin
+			SW[7:0] = i; #10;
+		end
+	end
+endmodule

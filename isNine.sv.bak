@@ -1,0 +1,7 @@
+module isNine(F, A, B, C, D);
+	output logic F;
+	input logic A, B, C, D;
+	
+	assign F = (~(B | C)) & ( A & D);
+endmodule
+
