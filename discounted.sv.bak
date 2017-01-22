@@ -1,0 +1,8 @@
+// Detect if this UPC code indicates a discounted item.
+module discounted(OUT, U, P, C);
+	output logic OUT;
+	input logic U, P, C;
+	
+	// Numbers should be twenty and nine.
+	assign OUT = (P + (U*C));
+endmodule

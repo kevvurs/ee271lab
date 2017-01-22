@@ -12,23 +12,23 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 	assign HEX4 = 7'b1111111;
 	assign HEX5 = 7'b1111111;
 	
-	digit_scan ds (.OUT(LEDR[0]), .SW1(SW[3:0]), .SW2(SW[7:4]));
+	discounted ds (.OUT(LEDR[8]), .U(SW[9]), .P(SW[8]), .C(SW[7]));
+	stolen sl (.OUT(LEDR[0]), .M(SW[0]), .U(SW[9]), .P(SW[8]), .C(SW[7]));
 endmodule
 
 // Boilerplate. Use digit_scan_testbench instead.
 module DE1_SoC_testbench();
-	logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
-	logic [9:0] LEDR;
-	logic [3:0] KEY;
-	logic [9:0] SW;
+	logic isStolen, isDiscounted;
+	logic [3:0] MUPC;
 
-	DE1_SoC dut (.HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
+	discounted dut1 (.OUT(isDiscounted), .U(MUPC[2]), .P(MUPC[1]), .C(MUPC[0]));
+	stolen dut2 (.OUT(isStolen), .M(MUPC[3]), .U(MUPC[2]), .P(MUPC[1]), .C(MUPC[0]));
+	
+	// Try all combinations of inputs.
 	integer i;
 	initial begin
-		SW[9] = 1'b0;
-		SW[8] = 1'b0;
-		for(i = 0; i <256; i++) begin
-			SW[7:0] = i; #10;
+		for(i = 0; i < 16; i++) begin
+			MUPC[3:0] = i; #10;
 		end
 	end
 endmodule
