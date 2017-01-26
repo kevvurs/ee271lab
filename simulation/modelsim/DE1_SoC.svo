@@ -17,7 +17,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 14.0.0 Build 200 06/17/2014 SJ Web Edition"
 
-// DATE "01/21/2017 21:22:09"
+// DATE "01/25/2017 23:07:35"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -144,8 +144,8 @@ wire \SW[9]~input_o ;
 wire \SW[7]~input_o ;
 wire \SW[8]~input_o ;
 wire \SW[0]~input_o ;
-wire \sl|OUT~0_combout ;
-wire \ds|OUT~combout ;
+wire \r|STL~0_combout ;
+wire \r|DISC~combout ;
 
 
 // Location: IOOBUF_X89_Y8_N39
@@ -822,7 +822,7 @@ defparam \HEX5[6]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X52_Y0_N2
 cyclonev_io_obuf \LEDR[0]~output (
-	.i(!\sl|OUT~0_combout ),
+	.i(!\r|STL~0_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -950,7 +950,7 @@ defparam \LEDR[7]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y8_N5
 cyclonev_io_obuf \LEDR[8]~output (
-	.i(\ds|OUT~combout ),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -966,7 +966,7 @@ defparam \LEDR[8]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y6_N22
 cyclonev_io_obuf \LEDR[9]~output (
-	.i(gnd),
+	.i(\r|DISC~combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1024,10 +1024,10 @@ defparam \SW[0]~input .bus_hold = "false";
 defparam \SW[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X7_Y1_N30
-cyclonev_lcell_comb \sl|OUT~0 (
+// Location: LABCELL_X7_Y1_N0
+cyclonev_lcell_comb \r|STL~0 (
 // Equation(s):
-// \sl|OUT~0_combout  = ( \SW[0]~input_o  ) # ( !\SW[0]~input_o  & ( (!\SW[9]~input_o  & (\SW[7]~input_o )) # (\SW[9]~input_o  & ((\SW[8]~input_o ))) ) )
+// \r|STL~0_combout  = ( \SW[0]~input_o  ) # ( !\SW[0]~input_o  & ( (!\SW[9]~input_o  & (\SW[7]~input_o )) # (\SW[9]~input_o  & ((\SW[8]~input_o ))) ) )
 
 	.dataa(!\SW[9]~input_o ),
 	.datab(!\SW[7]~input_o ),
@@ -1038,20 +1038,20 @@ cyclonev_lcell_comb \sl|OUT~0 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\sl|OUT~0_combout ),
+	.combout(\r|STL~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \sl|OUT~0 .extended_lut = "off";
-defparam \sl|OUT~0 .lut_mask = 64'h27272727FFFFFFFF;
-defparam \sl|OUT~0 .shared_arith = "off";
+defparam \r|STL~0 .extended_lut = "off";
+defparam \r|STL~0 .lut_mask = 64'h27272727FFFFFFFF;
+defparam \r|STL~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X7_Y1_N33
-cyclonev_lcell_comb \ds|OUT (
+// Location: LABCELL_X7_Y1_N3
+cyclonev_lcell_comb \r|DISC (
 // Equation(s):
-// \ds|OUT~combout  = ( \SW[8]~input_o  ) # ( !\SW[8]~input_o  & ( (\SW[9]~input_o  & \SW[7]~input_o ) ) )
+// \r|DISC~combout  = ( \SW[8]~input_o  ) # ( !\SW[8]~input_o  & ( (\SW[9]~input_o  & \SW[7]~input_o ) ) )
 
 	.dataa(!\SW[9]~input_o ),
 	.datab(!\SW[7]~input_o ),
@@ -1062,14 +1062,14 @@ cyclonev_lcell_comb \ds|OUT (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\ds|OUT~combout ),
+	.combout(\r|DISC~combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \ds|OUT .extended_lut = "off";
-defparam \ds|OUT .lut_mask = 64'h11111111FFFFFFFF;
-defparam \ds|OUT .shared_arith = "off";
+defparam \r|DISC .extended_lut = "off";
+defparam \r|DISC .lut_mask = 64'h11111111FFFFFFFF;
+defparam \r|DISC .shared_arith = "off";
 // synopsys translate_on
 
 // Location: IOIBUF_X36_Y0_N1
@@ -1182,7 +1182,7 @@ defparam \SW[6]~input .bus_hold = "false";
 defparam \SW[6]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X29_Y2_N0
+// Location: LABCELL_X50_Y68_N0
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 

@@ -18,7 +18,7 @@ L0 2
 Z10 OV;L;10.1e;51
 r1
 31
-Z11 !s108 1485062172.320000
+Z11 !s108 1485063090.289000
 Z12 !s107 ./DE1_SoC.sv|
 Z13 !s90 -reportprogress|300|./DE1_SoC.sv|
 o-O0
@@ -95,7 +95,6 @@ o-O0
 !s101 -O0
 vdiscounted
 R1
-!i10b 1
 Z32 !s100 fHzc;nzZKg>`IMeFoER?o0
 Z33 IEGZaUMoi77OAHGZV7E5TP0
 Z34 V?I2jbn:Ml2I0Vnej>8jjk3
@@ -108,16 +107,16 @@ Z38 F./discounted.sv
 L0 2
 R10
 r1
-!s85 0
 31
-Z39 !s108 1485062172.490000
+Z39 !s108 1485063090.576000
 Z40 !s107 ./discounted.sv|
 Z41 !s90 -reportprogress|300|./discounted.sv|
-!s101 -O0
 o-O0
+!i10b 1
+!s85 0
+!s101 -O0
 vdiscounted_testbench
 R1
-!i10b 1
 Z42 !s100 kB?lXdRoRn61HFZ5S7AN?2
 Z43 I[[=_KaTzoEeRC6i9C@Pl20
 Z44 VWOZJZNZ:>jO@MOf2k413_3
@@ -130,13 +129,14 @@ R38
 L0 10
 R10
 r1
-!s85 0
 31
 R39
 R40
 R41
-!s101 -O0
 o-O0
+!i10b 1
+!s85 0
+!s101 -O0
 vmux2_1
 R1
 Z45 I>2z0HSTCzUTg9ROD2:38V2
@@ -225,33 +225,34 @@ o-O0
 !i10b 1
 !s85 0
 !s101 -O0
-vstolen
+vregister
 R1
-Z73 !s100 gCVRWePGUE<k<CWAXH`EH3
-Z74 I=D[i8anX5m5b61m0LbLig0
-Z75 V26U[WVhP:K5bUcY3:`zR=3
-Z76 !s105 stolen_sv_unit
+!i10b 1
+Z73 !s100 D6lVCjVJ6M:gN]?RGYmN30
+Z74 Id8MZL5WDTT8BPfZ0oS_J^0
+Z75 VlY15[2;c5]Q4_9jR3AdQP3
+Z76 !s105 register_sv_unit
 S1
 R6
-Z77 w1485061604
-Z78 8./stolen.sv
-Z79 F./stolen.sv
-L0 2
+Z77 w1485413269
+Z78 8./register.sv
+Z79 F./register.sv
+L0 1
 R10
 r1
-31
-Z80 !s108 1485062172.411000
-Z81 !s107 ./stolen.sv|
-Z82 !s90 -reportprogress|300|./stolen.sv|
-o-O0
-!i10b 1
 !s85 0
+31
+Z80 !s108 1485413553.841000
+Z81 !s107 ./register.sv|
+Z82 !s90 -reportprogress|300|./register.sv|
 !s101 -O0
-vstolen_testbench
+o-O0
+vregister_testbench
 R1
-Z83 !s100 ioLR4?5MnMW[e]@DAA:KE0
-Z84 I?5jj;3iOWlSg7[ULmcQ_k1
-Z85 Vo18eVKPKX`Y]GZlOF[Bf^1
+!i10b 1
+Z83 !s100 oBO<c:IQI7iJBXo39N5QY0
+Z84 IMm3Y>]ljIi?@T9OVcVc972
+Z85 Vbf0[NzNW<MG@M;fa;4:K80
 R76
 S1
 R6
@@ -261,10 +262,53 @@ R79
 L0 9
 R10
 r1
+!s85 0
 31
 R80
 R81
 R82
+!s101 -O0
+o-O0
+vstolen
+R1
+Z86 !s100 gCVRWePGUE<k<CWAXH`EH3
+Z87 I=D[i8anX5m5b61m0LbLig0
+Z88 V26U[WVhP:K5bUcY3:`zR=3
+Z89 !s105 stolen_sv_unit
+S1
+R6
+Z90 w1485061604
+Z91 8./stolen.sv
+Z92 F./stolen.sv
+L0 2
+R10
+r1
+31
+Z93 !s108 1485063090.491000
+Z94 !s107 ./stolen.sv|
+Z95 !s90 -reportprogress|300|./stolen.sv|
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vstolen_testbench
+R1
+Z96 !s100 ioLR4?5MnMW[e]@DAA:KE0
+Z97 I?5jj;3iOWlSg7[ULmcQ_k1
+Z98 Vo18eVKPKX`Y]GZlOF[Bf^1
+R89
+S1
+R6
+R90
+R91
+R92
+L0 9
+R10
+r1
+31
+R93
+R94
+R95
 o-O0
 !i10b 1
 !s85 0

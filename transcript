@@ -3,29 +3,15 @@ do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module register
+# -- Compiling module register_testbench
 # 
 # Top level modules:
-# 	DE1_SoC
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stolen
-# -- Compiling module stolen_testbench
-# 
-# Top level modules:
-# 	stolen_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module discounted
-# -- Compiling module discounted_testbench
-# 
-# Top level modules:
-# 	discounted_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	register_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps register_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.discounted
-# Loading work.stolen
+# Loading work.register_testbench
+# Loading work.register
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree

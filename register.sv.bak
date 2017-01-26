@@ -1,0 +1,7 @@
+module register(STL, DISC, M, U, P, C);
+	output logic STL, DISC;
+	input logic M, U, P, C;
+	
+	assign DISC = (P | (U & C));
+	assign STL = ((U & ~(P | M)) | ~(M | U | C));
+endmodule
