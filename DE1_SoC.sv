@@ -4,13 +4,12 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 	output logic [9:0] LEDR;
 	input logic [3:0] KEY;
 	input logic [9:0] SW;
-	// Default values, turns off the HEX displays
-	assign HEX0 = 7'b1111111;
-	assign HEX1 = 7'b1111111;
+	
+	// Turns off unused the HEX displays
 	assign HEX2 = 7'b1111111;
 	assign HEX3 = 7'b1111111;
 	assign HEX4 = 7'b1111111;
 	assign HEX5 = 7'b1111111;
 	
-	register r (.STL(LEDR[0]), .DISC(LEDR[9]), .M(SW[0]), .U(SW[9]), .P(SW[8]), .C(SW[7]));
+	digitDisplay r (.DISP0(HEX0), .CTRL0(SW[3:0]), .DISP1(HEX1), .CTRL1(SW[7:4]));
 endmodule
