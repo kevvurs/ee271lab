@@ -1,8 +1,9 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /digitDisplay_testbench/vals
-add wave -noupdate /digitDisplay_testbench/display0
-add wave -noupdate /digitDisplay_testbench/display1
+add wave -noupdate -color {Green Yellow} -itemcolor {Green Yellow} -label Switch_Set0 /digitDisplay_testbench/dut/unit0/bcd
+add wave -noupdate -color {Sky Blue} -itemcolor {Sky Blue} -label LED_Display0 /digitDisplay_testbench/dut/unit0/leds
+add wave -noupdate -color {Green Yellow} -itemcolor {Green Yellow} -label Switch_Set1 /digitDisplay_testbench/dut/unit1/bcd
+add wave -noupdate -color {Sky Blue} -itemcolor {Sky Blue} -label LED_Display1 /digitDisplay_testbench/dut/unit1/leds
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
@@ -20,4 +21,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {429 ps} {1031 ps}
+WaveRestoreZoom {0 ps} {526 ps}

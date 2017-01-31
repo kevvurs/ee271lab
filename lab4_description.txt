@@ -1,0 +1,14 @@
+item	upc	disc.	exp.
+============================
+coffee	000	N	Y
+hubcap	001	N	N
+candle	011	Y	N
+pop cd	100	N	Y
+phone	101	Y	Y
+bedpan	110	Y	N
+
+Inexpensive: hubcap, candle, bedpan.
+These items are junk, so Fred is willing to give a good deal for them. The candle is unscented, and the other two items are used.
+
+Expensive: coffee, pop cd, phone.
+These items cost more at Fred's store. The coffee is an organic, fair-trade, limited edition microblend. The CD and the phone are comparably more valuable than the other junk at this local business.

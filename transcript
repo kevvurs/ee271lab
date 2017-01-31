@@ -13,11 +13,179 @@ do runlab.do
 # 
 # Top level modules:
 # 	seg7
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module storeDisplay
+# -- Compiling module storeDisplay_testbench
+# 
+# Top level modules:
+# 	storeDisplay_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_dual_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_dual_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_dual_testbench 
+# Loading sv_std.std
+# Loading work.DE1_SoC_dual_testbench
+# Loading work.storeDisplay
+# Loading work.register
+# Loading work.digitDisplay
+# Loading work.seg7
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: hpadmin  Hostname: WIN-51CNPK09GNO  ProcessID: 38112
+# 
+#           Attempting to use alternate WLF file "./wlftceat6s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftceat6s
+# 
+# ** Error: (vish-4014) No objects found matching '/digitDisplay_testbench/dut/unit0/bcd'.
+# Executing ONERROR command at macro ./lab4_wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/digitDisplay_testbench/dut/unit0/leds'.
+# Executing ONERROR command at macro ./lab4_wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/digitDisplay_testbench/dut/unit1/bcd'.
+# Executing ONERROR command at macro ./lab4_wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/digitDisplay_testbench/dut/unit1/leds'.
+# Executing ONERROR command at macro ./lab4_wave.do line 6
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end  sim:/DE1_SoC_dual_testbench/hex0
+add wave -position end  sim:/DE1_SoC_dual_testbench/hex1
+add wave -position end  sim:/DE1_SoC_dual_testbench/hex2
+add wave -position end  sim:/DE1_SoC_dual_testbench/hex3
+add wave -position end  sim:/DE1_SoC_dual_testbench/hex4
+add wave -position end  sim:/DE1_SoC_dual_testbench/hex5
+add wave -position end  sim:/DE1_SoC_dual_testbench/mupc
+add wave -position end  sim:/DE1_SoC_dual_testbench/stolen
+add wave -position end  sim:/DE1_SoC_dual_testbench/discounted
+add wave -position end  sim:/DE1_SoC_dual_testbench/mark
+add wave -position end  sim:/DE1_SoC_dual_testbench/display0
+add wave -position end  sim:/DE1_SoC_dual_testbench/display1
+add wave -position end  sim:/DE1_SoC_dual_testbench/vals
+add wave -position end  sim:/DE1_SoC_dual_testbench/i
+add wave -position end  sim:/DE1_SoC_dual_testbench/j
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lab4_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module digitDisplay
+# -- Compiling module digitDisplay_testbench
+# 
+# Top level modules:
+# 	digitDisplay_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module storeDisplay
+# -- Compiling module storeDisplay_testbench
+# 
+# Top level modules:
+# 	storeDisplay_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_dual_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_dual_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps storeDisplay_testbench 
+# Loading sv_std.std
+# Loading work.storeDisplay_testbench
+# Loading work.storeDisplay
 # vsim -lib work -voptargs=\"+acc\" -t 1ps digitDisplay_testbench 
 # Loading sv_std.std
 # Loading work.digitDisplay_testbench
 # Loading work.digitDisplay
 # Loading work.seg7
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: hpadmin  Hostname: WIN-51CNPK09GNO  ProcessID: 38112
+# 
+#           Attempting to use alternate WLF file "./wlfta6c6fh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfta6c6fh
+# 
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/hex0'.
+# Executing ONERROR command at macro ./lab4_wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/hex1'.
+# Executing ONERROR command at macro ./lab4_wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/hex2'.
+# Executing ONERROR command at macro ./lab4_wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/hex3'.
+# Executing ONERROR command at macro ./lab4_wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/hex4'.
+# Executing ONERROR command at macro ./lab4_wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/hex5'.
+# Executing ONERROR command at macro ./lab4_wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/mupc'.
+# Executing ONERROR command at macro ./lab4_wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/stolen'.
+# Executing ONERROR command at macro ./lab4_wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/discounted'.
+# Executing ONERROR command at macro ./lab4_wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/mark'.
+# Executing ONERROR command at macro ./lab4_wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/display0'.
+# Executing ONERROR command at macro ./lab4_wave.do line 13
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/display1'.
+# Executing ONERROR command at macro ./lab4_wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_dual_testbench/vals'.
+# Executing ONERROR command at macro ./lab4_wave.do line 15
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module digitDisplay
+# -- Compiling module digitDisplay_testbench
+# 
+# Top level modules:
+# 	digitDisplay_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module storeDisplay
+# -- Compiling module storeDisplay_testbench
+# 
+# Top level modules:
+# 	storeDisplay_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_dual_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_dual_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_dual_testbench 
+# Loading sv_std.std
+# Loading work.DE1_SoC_dual_testbench
+# Loading work.storeDisplay
+# Loading work.register
+# Loading work.digitDisplay
+# Loading work.seg7
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: hpadmin  Hostname: WIN-51CNPK09GNO  ProcessID: 38112
+# 
+#           Attempting to use alternate WLF file "./wlftz8wcam".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftz8wcam
+# 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree

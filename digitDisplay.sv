@@ -14,13 +14,10 @@ module digitDisplay_testbench();
 	digitDisplay dut (.DISP0(display0), .DISP1(display1), .CTRL0(vals[3:0]), .CTRL1(vals[7:4]));
 	
 	// Try all combinations of inputs.
-	integer i, j;
+	integer i;
 	initial begin
-		for(i = 0; i < 10; i++) begin
-			vals[7:4] = i;
-			for (j = 0; j < 10; j++) begin
-				vals[3:0] = j; #10;
-			end
+		for(i = 0; i < 256; i++) begin
+			vals = i; #10;
 		end
 	end
 endmodule
