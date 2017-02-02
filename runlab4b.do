@@ -5,6 +5,7 @@ vlib work
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
 vlog "./seg7.sv"
+vlog "./register.sv"
 vlog "./storeDisplay.sv"
 vlog "./DE1_SoC.sv"
 
