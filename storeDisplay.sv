@@ -58,7 +58,7 @@ module storeDisplay(DU0, DU1, DU2, DU3, DU4, DU5, UPC);
 					DU4 = 7'b0001000;
 					DU5 = 7'b1001000;
 				end
-			default: 
+			default: // Handle unused UPC codes
 				begin
 					DU0 = 7'bX;
 					DU1 = 7'bX;
@@ -72,16 +72,18 @@ endmodule
 
 module storeDisplay_testbench();
 	logic [6:0] hex0, hex1, hex2, hex3, hex4, hex5;
-	logic [2:0] upc;
-	logic stolen, discounted, mark;
+	logic [3:0] Mupc;
+	logic isStolen, isDiscounted;
 
-	storeDisplay dut (.DU5(hex0), .DU4(hex1), .DU3(hex2), .DU2(hex3), .DU1(hex4), .DU0(hex5), .UPC(upc));
+	// Correlate the register with the stolen and discounted triggers.
+	storeDisplay dutDisplay (.DU5(hex0), .DU4(hex1), .DU3(hex2), .DU2(hex3), .DU1(hex4), .DU0(hex5), .UPC(Mupc[2:0]));
+	register dutRegister (.STL(isStolen), .DISC(isDiscounted), .M(Mupc[3]), .U(Mupc[2]), .P(Mupc[1]), .C(Mupc[0]));
 	
-	// Try all UPC code items.
+	// Try all 3-bit UPC combos.
 	integer i;
 	initial begin
-		for(i = 0; i < 8; i++) begin
-			upc = i; #10;
+		for(i = 0; i < 16; i++) begin
+			Mupc = i; #10;
 		end
 	end
 endmodule

@@ -6,13 +6,13 @@ Z0 dC:\Users\hpadmin\verl\ee271\lab1
 vDE1_SoC
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
 !i10b 1
-Z2 !s100 iUI:JT[;ND0TWkj0lRGHG3
-Z3 IJ7cAZJ0[6QJ1zHnP=dg^E0
+Z2 !s100 :<n2TP]>@d_z<6hzh?b@a1
+Z3 IjcfH9BVmKEHaYmO>Te[d52
 Z4 VhOmPm;FlUXk3D7UUAKiLD1
 Z5 !s105 DE1_SoC_sv_unit
 S1
 Z6 dC:\Users\hpadmin\workspace\ee271lab
-Z7 w1485839688
+Z7 w1486065309
 Z8 8./DE1_SoC.sv
 Z9 F./DE1_SoC.sv
 L0 2
@@ -20,53 +20,53 @@ Z10 OV;L;10.1e;51
 r1
 !s85 0
 31
-Z11 !s108 1485840026.035000
-Z12 !s107 ./DE1_SoC.sv|
-Z13 !s90 -reportprogress|300|./DE1_SoC.sv|
+!s108 1486066222.134000
+!s107 ./DE1_SoC.sv|
+Z11 !s90 -reportprogress|300|./DE1_SoC.sv|
 !s101 -O0
 o-O0
-Z14 n@d@e1_@so@c
+Z12 n@d@e1_@so@c
 vDE1_SoC_dual_testbench
 R1
-!i10b 1
-Z15 !s100 GcalzDHKilaSJ[8>050HQ3
-Z16 IZ`eIZ^8NCCJX@_1hK>Y`h2
-Z17 VbcJW>NE12PczU6fU:`YI01
+Z13 !s100 GcalzDHKilaSJ[8>050HQ3
+Z14 IZ`eIZ^8NCCJX@_1hK>Y`h2
+Z15 VbcJW>NE12PczU6fU:`YI01
 R5
 S1
 R6
-R7
+Z16 w1485839688
 R8
 R9
 L0 25
 R10
 r1
-!s85 0
 31
+Z17 !s108 1485840026.035000
+Z18 !s107 ./DE1_SoC.sv|
 R11
-R12
-R13
-!s101 -O0
 o-O0
-Z18 n@d@e1_@so@c_dual_testbench
+Z19 n@d@e1_@so@c_dual_testbench
+!i10b 1
+!s85 0
+!s101 -O0
 vDE1_SoC_testbench
 R1
-Z19 !s100 z`Z=`UR^AO?>5HG1WVKeh1
-Z20 I6G4X]gYfzm?7kf_Fe06DK0
-Z21 V0JQR1@XTkC<M<>j8_4C8B1
+Z20 !s100 z`Z=`UR^AO?>5HG1WVKeh1
+Z21 I6G4X]gYfzm?7kf_Fe06DK0
+Z22 V0JQR1@XTkC<M<>j8_4C8B1
 R5
 S1
 R6
-Z22 w1485061627
+Z23 w1485061627
 R8
 R9
 L0 20
 R10
 r1
 31
-Z23 !s108 1485063090.289000
-Z24 !s107 ./DE1_SoC.sv|
-R13
+Z24 !s108 1485063090.289000
+R18
+R11
 o-O0
 Z25 n@d@e1_@so@c_testbench
 !i10b 1
@@ -118,20 +118,20 @@ o-O0
 !s101 -O0
 vdigitDisplay
 R1
-Z39 !s100 FN?EF^Pol:Q2GWbbDghAl2
-Z40 IQh4ai41@6]M4Fi1URN:A63
+Z39 !s100 CLOfnQkY=mzakR;JR_WbG0
+Z40 IC6D>LS;L>@0Ll>NU_oCC<3
 Z41 Vo@o8a19Lc1;lG6T0eZeM13
 Z42 !s105 digitDisplay_sv_unit
 S1
 R6
-Z43 w1485839207
+Z43 w1486066048
 Z44 8./digitDisplay.sv
 Z45 F./digitDisplay.sv
 L0 2
 R10
 r1
 31
-Z46 !s108 1485840025.800000
+Z46 !s108 1486066222.001000
 Z47 !s107 ./digitDisplay.sv|
 Z48 !s90 -reportprogress|300|./digitDisplay.sv|
 o-O0
@@ -141,16 +141,15 @@ Z49 ndigit@display
 !s101 -O0
 vdigitDisplay_testbench
 R1
-Z50 !s100 64eeX=6=^oGQ8e]n>5E;>1
-Z51 IG0a_e7:VWd=`SF^7VfE1L1
-Z52 Vl;f=34;Z8K2Zz?0PSTbEk0
+Z50 IL1?ASiKQ6Hn9QHG>n>JT]3
+Z51 Vl;f=34;Z8K2Zz?0PSTbEk0
 R42
 S1
 R6
 R43
 R44
 R45
-L0 10
+L0 11
 R10
 r1
 31
@@ -158,7 +157,8 @@ R46
 R47
 R48
 o-O0
-Z53 ndigit@display_testbench
+Z52 ndigit@display_testbench
+Z53 !s100 E6bJaoVbZfK1;TR<gVBe_0
 !i10b 1
 !s85 0
 !s101 -O0
@@ -355,10 +355,10 @@ r1
 31
 Z115 !s90 -reportprogress|300|./seg7.sv|
 o-O0
-Z116 !s108 1485840025.878000
-Z117 !s107 ./seg7.sv|
 !i10b 1
 !s85 0
+Z116 !s108 1486066222.071000
+Z117 !s107 ./seg7.sv|
 !s101 -O0
 vstolen
 R1
@@ -412,14 +412,14 @@ Z133 VaP2i0n=XLmCMUkgkF^g:23
 Z134 !s105 storeDisplay_sv_unit
 S1
 R6
-Z135 w1485839205
+Z135 w1486065287
 Z136 8./storeDisplay.sv
 Z137 F./storeDisplay.sv
 L0 1
 R10
 r1
 31
-Z138 !s108 1485840025.941000
+Z138 !s108 1486065420.984000
 Z139 !s107 ./storeDisplay.sv|
 Z140 !s90 -reportprogress|300|./storeDisplay.sv|
 o-O0
