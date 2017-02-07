@@ -1,148 +1,55 @@
 # Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-do runlab4b.do
+do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
+# -- Compiling module simple
+# -- Compiling module simple_testbench
 # 
 # Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module register
-# -- Compiling module register_testbench
-# 
-# Top level modules:
-# 	register_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module storeDisplay
-# -- Compiling module storeDisplay_testbench
-# 
-# Top level modules:
-# 	storeDisplay_testbench
+# 	simple_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module DE1_SoC
 # 
 # Top level modules:
 # 	DE1_SoC
-# vsim -lib work -voptargs=\"+acc\" -t 1ps storeDisplay_testbench 
+# vsim -lib work -voptargs=\"+acc\" -t 1ps simple_testbench 
 # Loading sv_std.std
-# Loading work.storeDisplay_testbench
-# Loading work.storeDisplay
-# Loading work.register
-# ** Error: Cannot open macro file: lab4b_wave.do
-# Error in macro ./runlab4b.do line 20
-# Cannot open macro file: lab4b_wave.do
+# Loading work.simple_testbench
+# Loading work.simple
+# ** Error: Cannot open macro file: simple_wave.do
+# Error in macro ./runlab.do line 18
+# Cannot open macro file: simple_wave.do
 #     while executing
-# "do lab4b_wave.do"
-add wave -position end  sim:/storeDisplay_testbench/dutDisplay/UPC
-add wave -position end  sim:/storeDisplay_testbench/dutDisplay/DU0
-add wave -position end  sim:/storeDisplay_testbench/dutDisplay/DU1
-add wave -position end  sim:/storeDisplay_testbench/dutDisplay/DU2
-add wave -position end  sim:/storeDisplay_testbench/dutDisplay/DU3
-add wave -position end  sim:/storeDisplay_testbench/dutDisplay/DU4
-add wave -position end  sim:/storeDisplay_testbench/dutDisplay/DU5
-add wave -position end  sim:/storeDisplay_testbench/dutRegister/STL
-add wave -position end  sim:/storeDisplay_testbench/dutRegister/DISC
-add wave -position end  sim:/storeDisplay_testbench/dutRegister/M
-add wave -position end  sim:/storeDisplay_testbench/dutRegister/U
-add wave -position end  sim:/storeDisplay_testbench/dutRegister/P
-add wave -position end  sim:/storeDisplay_testbench/dutRegister/C
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lab4b_wave.do
-do runlab4b.do
+# "do simple_wave.do"
+add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/clk
+add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/reset
+add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/w
+add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/out
+add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/ps
+add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/simple_wave.do
+do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
+# -- Compiling module simple
+# -- Compiling module simple_testbench
 # 
 # Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module register
-# -- Compiling module register_testbench
-# 
-# Top level modules:
-# 	register_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module storeDisplay
-# -- Compiling module storeDisplay_testbench
-# 
-# Top level modules:
-# 	storeDisplay_testbench
+# 	simple_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module DE1_SoC
 # 
 # Top level modules:
 # 	DE1_SoC
-# vsim -lib work -voptargs=\"+acc\" -t 1ps storeDisplay_testbench 
+# vsim -lib work -voptargs=\"+acc\" -t 1ps simple_testbench 
 # Loading sv_std.std
-# Loading work.storeDisplay_testbench
-# Loading work.storeDisplay
-# Loading work.register
+# Loading work.simple_testbench
+# Loading work.simple
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-add wave -position 2  -autoscale 1 -format Literal -height 20
-# Missing signal name or pattern.
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lab4b_wave.do
-do runlab4a.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module digitDisplay
-# -- Compiling module digitDisplay_testbench
-# 
-# Top level modules:
-# 	digitDisplay_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# vsim -lib work -voptargs=\"+acc\" -t 1ps digitDisplay_testbench 
-# Loading sv_std.std
-# Loading work.digitDisplay_testbench
-# Loading work.digitDisplay
-# Loading work.seg7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do runlab4b.doun
-# Cannot open macro file: runlab4b.doun
-do runlab4b.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module register
-# -- Compiling module register_testbench
-# 
-# Top level modules:
-# 	register_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module storeDisplay
-# -- Compiling module storeDisplay_testbench
-# 
-# Top level modules:
-# 	storeDisplay_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# vsim -lib work -voptargs=\"+acc\" -t 1ps storeDisplay_testbench 
-# Loading sv_std.std
-# Loading work.storeDisplay_testbench
-# Loading work.storeDisplay
-# Loading work.register
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
+# Break in Module simple_testbench at ./simple.sv line 59
+# Simulation Breakpoint: Break in Module simple_testbench at ./simple.sv line 59
+# MACRO ./runlab.do PAUSED at line 26

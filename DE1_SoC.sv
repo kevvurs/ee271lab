@@ -1,25 +1,36 @@
-// Top-level module that defines the I/Os for the DE-1 SoC board
-module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
-	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
-	output logic [9:0] LEDR;
-	input logic [3:0] KEY;
-	input logic [9:0] SW;
+module DE1_SoC (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR,
+SW);
+ input logic CLOCK_50; // 50MHz clock.
+ output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+ output logic [9:0] LEDR;
+ input logic [3:0] KEY; // True when not pressed, False when pressed
+ input logic [9:0] SW;
 
-	/* Assignment 1 */
-	// Turn off unused the HEX displays
-	assign HEX2 = 7'b1111111;
-	assign HEX3 = 7'b1111111;
-	assign HEX4 = 7'b1111111;
-	assign HEX5 = 7'b1111111;
-	
-	// Display the decimal interpretations of the switch values.
-	digitDisplay r (.DISP0(HEX0), .CTRL0(SW[3:0]), .DISP1(HEX1), .CTRL1(SW[7:4]));
+ // Generate clk off of CLOCK_50, whichClock picks rate.
+ logic [31:0] clk;
+ parameter whichClock = 25;
+ clock_divider cdiv (CLOCK_50, clk);
 
-	/* Assignment 2: Implements the register logic for Fred. */
-	
-	// Print item names on the LED display.
-	// storeDisplay disp (.DU5(HEX0), .DU4(HEX1), .DU3(HEX2), .DU2(HEX3), .DU1(HEX4), .DU0(HEX5), .UPC(SW[9:7]));
-	
-	// Init the stole or discounted LEDR triggers.
-	// register regs (.STL(LEDR[0]), .DISC(LEDR[9]), .M(SW[0]), .U(SW[9]), .P(SW[8]), .C(SW[7]));
+ // Hook up FSM inputs and outputs.
+ logic reset, w, out;
+ assign reset = ~KEY[0]; // Reset when KEY[0] is pressed.
+ assign w = ~KEY[1];
+
+ simple s (.clk(clk[whichClock]), .reset, .w, .out);
+
+ // Show signals on LEDRs so we can see what is happening.
+ assign LEDR = { clk[whichClock], 1'b0, reset, 2'b0, out};
+
+endmodule
+
+// divided_clocks[0] = 25MHz, [1] = 12.5Mhz, ... [23] = 3Hz, [24] = 1.5Hz,[25] = 0.75Hz
+module clock_divider (clock, divided_clocks);
+ input logic clock;
+ output logic [31:0] divided_clocks;
+
+ initial
+ divided_clocks <= 0;
+
+ always_ff @(posedge clock)
+ divided_clocks <= divided_clocks + 1;
 endmodule

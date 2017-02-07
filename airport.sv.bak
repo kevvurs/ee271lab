@@ -1,0 +1,7 @@
+module airport (clk, reset, w, out);
+
+endmodule
+
+module airport_testbench();
+
+endmodule
