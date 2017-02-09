@@ -2,37 +2,154 @@ module airport (clk, reset, w, out);
 	input logic clk, reset;
 	input logic [1:0] w;
 	output logic [2:0] out;
-	// State variables.
-	enum { CALM0, CALM1, RtL0, RtL1, RtL2, LtR0, LtR1, LtR2 } ps, ns;
+	enum { ALPHA, BETA, CHI, DELTA } ps, ns;
+	logic [1:0] w1, w2;
+	logic [2:0] pattern;
+	parameter alphaPattern = 3'b101, betaPattern = 3'b010, chiPattern = 3'b001, deltaPattern = 3'b100, unkownPattern = 3'bX;
+	parameter calm = 2'b00, rtl = 2'b01, ltr = 2'b10;
+	
+	// M.S. Filter
+	always_ff @(posedge clk)
+		w1 <= w;
+	always_ff @(posedge clk)
+		w2 <= w1;
 	
 	// Next State logic
 	 always_comb
-		case (w)
-			2'b00: if (ps != CALM0) ns = CALM0;
-			2'b01: if (ps != RtL0) ns = RtL0;
-			2'b10: if (ps != LtR0) ns = LtR0;
-		endcase
-
 		case (ps)
-			CALM0: ns = CALM1;
-				assign out = 3'b101;
-			CALM1: ns = CALM0;
-				assign out = 3'b010;
+			ALPHA:
+				if (w2 == calm)
+					begin
+						ns = BETA;
+						pattern = betaPattern;
+					end
+				else if (w2 == rtl)
+					begin
+						ns = CHI;
+						pattern = chiPattern;
+					end
+				else if (w2 == ltr)
+					begin
+						ns = DELTA;
+						pattern = deltaPattern;
+					end
+				else 
+					begin
+						ns = ps;
+						pattern = unkownPattern;
+					end
+			BETA:
+				if (w2 == calm)
+					begin
+						ns = ALPHA;
+						pattern = alphaPattern;
+					end
+				else if (w2 == rtl)
+					begin
+						ns = DELTA;
+						pattern = deltaPattern;
+					end
+				else if (w2 == ltr)
+					begin
+						ns = CHI;
+						pattern = chiPattern;
+					end
+				else 
+					begin
+						ns = ps;
+						pattern = unkownPattern;
+					end
+			CHI:
+				if (w2 == calm)
+					begin
+						ns = ALPHA;
+						pattern = alphaPattern;
+					end
+				else if (w2 == rtl)
+					begin
+						ns = BETA;
+						pattern = betaPattern;
+					end
+				else if (w2 == ltr)
+					begin
+						ns = DELTA;
+						pattern = deltaPattern;
+					end
+				else 
+					begin
+						ns = ps;
+						pattern = unkownPattern;
+					end
+			DELTA: 
+				if (w2 == calm)
+					begin
+						ns = ALPHA;
+						pattern = alphaPattern;
+					end
+				else if (w2 == rtl)
+					begin
+						ns = CHI;
+						pattern = chiPattern;
+					end
+				else if (w2 == ltr)
+					begin
+						ns = BETA;
+						pattern = betaPattern;
+					end
+				else 
+					begin
+						ns = ps;
+						pattern = unkownPattern;
+					end
 		endcase
-		
-		// Output logic - could also be another always, or part of above block.
-		assign out = (ps == C);
+				
+		assign out = pattern;
 
 	 // DFFs
 	 always_ff @(posedge clk)
 		if (reset)
-			ps <= A;
+			ps <= ALPHA;
 		else
 			ps <= ns;
-
-	
 endmodule
 
 module airport_testbench();
+	logic clk, reset;
+	logic [1:0] w;
+	logic out;
 
+	airport dut (clk, reset, w, out);
+
+	parameter CLOCK_PERIOD=100;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+
+	initial begin
+										@(posedge clk);
+		reset <= 1; 				@(posedge clk);
+		reset <= 0; w <= 2'b00;	@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+						w <= 2'b01; @(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+						w <= 2'b10;	@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+		reset <= 1;					@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+		$stop; // End the simulation.
+	end
 endmodule

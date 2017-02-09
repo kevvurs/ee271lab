@@ -12,14 +12,16 @@ SW);
  clock_divider cdiv (CLOCK_50, clk);
 
  // Hook up FSM inputs and outputs.
- logic reset, w, out;
+ logic [2:0] out;
+ logic [1:0] w;
+ logic reset;
  assign reset = ~KEY[0]; // Reset when KEY[0] is pressed.
- assign w = ~KEY[1];
+ assign w = SW[1:0];
 
- simple s (.clk(clk[whichClock]), .reset, .w, .out);
+ airport s (.clk(clk[whichClock]), .reset(reset), .w(w), .out(out));
 
  // Show signals on LEDRs so we can see what is happening.
- assign LEDR = { clk[whichClock], 1'b0, reset, 2'b0, out};
+ assign LEDR[2:0] = out;
 
 endmodule
 

@@ -42,23 +42,22 @@ HEX5[3] << <GND>
 HEX5[4] << <GND>
 HEX5[5] << <GND>
 HEX5[6] << <GND>
-KEY[0] => simple:s.reset
-KEY[0] => LEDR[3].DATAIN
-KEY[1] => simple:s.w
+KEY[0] => reset.IN1
+KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-LEDR[0] << simple:s.out
-LEDR[1] << <GND>
-LEDR[2] << <GND>
-LEDR[3] << KEY[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] << airport:s.out
+LEDR[1] << airport:s.out
+LEDR[2] << airport:s.out
+LEDR[3] << <GND>
 LEDR[4] << <GND>
-LEDR[5] << clock_divider:cdiv.port1
+LEDR[5] << <GND>
 LEDR[6] << <GND>
 LEDR[7] << <GND>
 LEDR[8] << <GND>
 LEDR[9] << <GND>
-SW[0] => ~NO_FANOUT~
-SW[1] => ~NO_FANOUT~
+SW[0] => w[0].IN1
+SW[1] => w[1].IN1
 SW[2] => ~NO_FANOUT~
 SW[3] => ~NO_FANOUT~
 SW[4] => ~NO_FANOUT~
@@ -136,7 +135,7 @@ divided_clocks[30] <= divided_clocks[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 divided_clocks[31] <= divided_clocks[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SoC|simple:s
+|DE1_SoC|airport:s
 clk => ps[0].CLK
 clk => ps[1].CLK
 clk => ps[2].CLK
@@ -169,10 +168,16 @@ clk => ps[28].CLK
 clk => ps[29].CLK
 clk => ps[30].CLK
 clk => ps[31].CLK
+clk => w2[0].CLK
+clk => w2[1].CLK
+clk => w1[0].CLK
+clk => w1[1].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-w => ns[0].DATAB
-w => Selector0.IN3
-out <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+w[0] => w1[0].DATAIN
+w[1] => w1[1].DATAIN
+out[0] <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,7 +1,11 @@
 library verilog;
 use verilog.vl_types.all;
 entity DE1_SoC is
+    generic(
+        whichClock      : integer := 25
+    );
     port(
+        CLOCK_50        : in     vl_logic;
         HEX0            : out    vl_logic_vector(6 downto 0);
         HEX1            : out    vl_logic_vector(6 downto 0);
         HEX2            : out    vl_logic_vector(6 downto 0);
@@ -12,4 +16,6 @@ entity DE1_SoC is
         LEDR            : out    vl_logic_vector(9 downto 0);
         SW              : in     vl_logic_vector(9 downto 0)
     );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of whichClock : constant is 1;
 end DE1_SoC;

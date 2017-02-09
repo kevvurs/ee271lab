@@ -3,53 +3,382 @@ do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module simple
-# -- Compiling module simple_testbench
+# -- Compiling module airport
+# ** Error: (vlog-7033) ./airport.sv(72): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ./airport.sv(22).
 # 
-# Top level modules:
-# 	simple_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
+# ** Error: (vlog-7033) ./airport.sv(73): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ./airport.sv(22).
 # 
-# Top level modules:
-# 	DE1_SoC
-# vsim -lib work -voptargs=\"+acc\" -t 1ps simple_testbench 
-# Loading sv_std.std
-# Loading work.simple_testbench
-# Loading work.simple
-# ** Error: Cannot open macro file: simple_wave.do
-# Error in macro ./runlab.do line 18
-# Cannot open macro file: simple_wave.do
+# ** Error: (vlog-7033) ./airport.sv(74): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ./airport.sv(22).
+# 
+# -- Compiling module airport_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "do simple_wave.do"
-add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/clk
-add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/reset
-add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/w
-add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/out
-add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/ps
-add wave -position end  sim:/simple_testbench/dut/#ALWAYS#8/ns
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/simple_wave.do
+# "vlog "./airport.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module simple
-# -- Compiling module simple_testbench
+# -- Compiling module airport
+# ** Error: (vlog-7033) ./airport.sv(72): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ./airport.sv(22).
+# 
+# ** Error: (vlog-7033) ./airport.sv(73): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ./airport.sv(22).
+# 
+# ** Error: (vlog-7033) ./airport.sv(74): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ./airport.sv(22).
+# 
+# -- Compiling module airport_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./airport.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
 # 
 # Top level modules:
-# 	simple_testbench
+# 	airport_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
 # 
 # Top level modules:
 # 	DE1_SoC
-# vsim -lib work -voptargs=\"+acc\" -t 1ps simple_testbench 
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
 # Loading sv_std.std
-# Loading work.simple_testbench
-# Loading work.simple
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(106): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'w'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Warning: (vsim-3015) ./airport.sv(106): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Error: Cannot open macro file: airport_wave.do
+# Error in macro ./runlab.do line 18
+# Cannot open macro file: airport_wave.do
+#     while executing
+# "do airport_wave.do"
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/clk
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/reset
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/w
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/out
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/ps
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/ns
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/w1
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/w2
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/pattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/alphaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/betaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/chiPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/deltaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/unkownPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/calm
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/rtl
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/ltr
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/airport_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
+# 
+# Top level modules:
+# 	airport_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	DE1_SoC
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# Loading sv_std.std
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(106): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'w'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Warning: (vsim-3015) ./airport.sv(106): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module simple_testbench at ./simple.sv line 59
-# Simulation Breakpoint: Break in Module simple_testbench at ./simple.sv line 59
+# Break in Module airport_testbench at ./airport.sv line 129
+# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 129
 # MACRO ./runlab.do PAUSED at line 26
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/airport_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
+# 
+# Top level modules:
+# 	airport_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	DE1_SoC
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# Loading sv_std.std
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(106): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'w'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Warning: (vsim-3015) ./airport.sv(106): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module airport_testbench at ./airport.sv line 129
+# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 129
+# MACRO ./runlab.do PAUSED at line 26
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
+# 
+# Top level modules:
+# 	airport_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	DE1_SoC
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# Loading sv_std.std
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'w'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module airport_testbench at ./airport.sv line 154
+# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 154
+# MACRO ./runlab.do PAUSED at line 26
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/clk
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/reset
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/w
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/out
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/ps
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/ns
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/w1
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/w2
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/pattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/alphaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/betaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/chiPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/deltaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/unkownPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/calm
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/rtl
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#12/ltr
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/clk
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/reset
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/w
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/out
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/ps
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/ns
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/w1
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/w2
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/pattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/alphaPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/betaPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/chiPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/deltaPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/unkownPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/calm
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/rtl
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/ltr
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
+# 
+# Top level modules:
+# 	airport_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	DE1_SoC
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# Loading sv_std.std
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'w'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module airport_testbench at ./airport.sv line 154
+# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 154
+# MACRO ./runlab.do PAUSED at line 26
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
+# 
+# Top level modules:
+# 	airport_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	DE1_SoC
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# Loading sv_std.std
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'w'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module airport_testbench at ./airport.sv line 154
+# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 154
+# MACRO ./runlab.do PAUSED at line 26
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
+# 
+# Top level modules:
+# 	airport_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	DE1_SoC
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# Loading sv_std.std
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'w'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# ** Warning: (vsim-3015) ./airport.sv(122): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module airport_testbench at ./airport.sv line 154
+# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 154
+# MACRO ./runlab.do PAUSED at line 26
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module airport
+# -- Compiling module airport_testbench
+# 
+# Top level modules:
+# 	airport_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	DE1_SoC
+# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# Loading sv_std.std
+# Loading work.airport_testbench
+# Loading work.airport
+# ** Warning: (vsim-3015) ./airport.sv(123): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# 
+#         Region: /airport_testbench/dut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module airport_testbench at ./airport.sv line 155
+# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 155
+# MACRO ./runlab.do PAUSED at line 26
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/clk
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/reset
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/w
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/out
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/ps
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/ns
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/w1
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/w2
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/pattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/alphaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/betaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/chiPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/deltaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/unkownPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/calm
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/rtl
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#14/ltr
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/clk
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/reset
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/w
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/out
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/ps
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/ns
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/w1
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/w2
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/pattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/alphaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/betaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/chiPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/deltaPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/unkownPattern
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/calm
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/rtl
+add wave -position end  sim:/airport_testbench/dut/#ALWAYS#18/ltr
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/clk
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/reset
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/w
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/out
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/ps
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/ns
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/w1
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/w2
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/pattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/alphaPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/betaPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/chiPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/deltaPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/unkownPattern
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/calm
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/rtl
+add wave -position end  sim:/airport_testbench/dut/#ASSIGN#106/ltr
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/airport_wave.do
