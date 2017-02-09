@@ -1,5 +1,5 @@
-module airport (clk, reset, w, out);
-	input logic clk, reset;
+module airport (clk, w, out);
+	input logic clk;
 	input logic [1:0] w;
 	output logic [2:0] out;
 	enum { ALPHA, BETA, CHI, DELTA } ps, ns;
@@ -107,18 +107,15 @@ module airport (clk, reset, w, out);
 
 	 // DFFs
 	 always_ff @(posedge clk)
-		if (reset)
-			ps <= ALPHA;
-		else
 			ps <= ns;
 endmodule
 
 module airport_testbench();
-	logic clk, reset;
+	logic clk;
 	logic [1:0] w;
 	logic out;
 
-	airport dut (clk, reset, w, out);
+	airport dut (clk, w, out);
 
 	parameter CLOCK_PERIOD=100;
 	initial begin
@@ -128,8 +125,8 @@ module airport_testbench();
 
 	initial begin
 										@(posedge clk);
-		reset <= 1; 				@(posedge clk);
-		reset <= 0; w <= 2'b00;	@(posedge clk);
+										@(posedge clk);
+						w <= 2'b00;	@(posedge clk);
 										@(posedge clk);
 										@(posedge clk);
 										@(posedge clk);
@@ -146,7 +143,7 @@ module airport_testbench();
 										@(posedge clk);
 										@(posedge clk);
 										@(posedge clk);
-		reset <= 1;					@(posedge clk);
+										@(posedge clk);
 										@(posedge clk);
 										@(posedge clk);
 										@(posedge clk);

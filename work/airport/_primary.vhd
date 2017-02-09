@@ -13,7 +13,6 @@ entity airport is
     );
     port(
         clk             : in     vl_logic;
-        reset           : in     vl_logic;
         w               : in     vl_logic_vector(1 downto 0);
         \out\           : out    vl_logic_vector(2 downto 0)
     );

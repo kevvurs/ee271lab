@@ -14,11 +14,9 @@ SW);
  // Hook up FSM inputs and outputs.
  logic [2:0] out;
  logic [1:0] w;
- logic reset;
- assign reset = ~KEY[0]; // Reset when KEY[0] is pressed.
  assign w = SW[1:0];
 
- airport s (.clk(clk[whichClock]), .reset(reset), .w(w), .out(out));
+ airport s (.clk(clk[whichClock]), .w(w), .out(out));
 
  // Show signals on LEDRs so we can see what is happening.
  assign LEDR[2:0] = out;
