@@ -1,0 +1,35 @@
+// Tug of War: Handle user input.
+module tow_input (clk, reset, in, out);
+	input logic clk, reset, in;
+	output logic out;
+	enum { activated, deactivated } ns, ps;
+	logic in_transient, in_validated, signal;
+	
+	// Metastability filter
+	always_ff @(posedge clk)
+		in_transient <= in;
+	always_ff @(posedge clk)
+		in_validated <= in_transient;
+
+	always_comb
+		case(ps)
+			deactivated: begin
+					signal = 1'b0;
+					if (in_validated) ns = activated;
+					else ns = ps;
+				end
+			activated: begin
+					signal = in_validated;
+					if (in_validated) ns = ps;
+					else ns = deactivated;
+				end
+		endcase
+	
+	assign out = signal;
+		
+	always_ff @(posedge clk)
+		if (reset)
+			ps <= activated;
+		else
+			ps <= ns;
+endmodule

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Wed Feb 08 19:10:03 2017
+Thu Feb 16 12:49:38 2017
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -14,15 +14,14 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |DE1_SoC
- 12. Parameter Settings for User Entity Instance: airport:s
- 13. Port Connectivity Checks: "clock_divider:cdiv"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "tow_input:ui_reset"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -49,13 +48,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Feb 08 19:10:03 2017      ;
+; Analysis & Synthesis Status     ; Successful - Thu Feb 16 12:49:38 2017      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 32                                         ;
+; Total registers                 ; 17                                         ;
 ; Total pins                      ; 67                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
@@ -174,14 +173,16 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                       ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                   ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/DE1_SoC.sv ;         ;
-; airport.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/airport.sv ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/DE1_SoC.sv       ;         ;
+; tow_delegator.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/tow_delegator.sv ;         ;
+; tow_input.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/tow_input.sv     ;         ;
+; tow_score.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/tow_score.sv     ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -189,23 +190,23 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 17             ;
+; Estimate of Logic utilization (ALMs needed) ; 21             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 31             ;
+; Combinational ALUT usage for logic          ; 34             ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 0              ;
-;     -- 5 input functions                    ; 0              ;
-;     -- 4 input functions                    ; 5              ;
-;     -- <=3 input functions                  ; 26             ;
+;     -- 6 input functions                    ; 7              ;
+;     -- 5 input functions                    ; 14             ;
+;     -- 4 input functions                    ; 0              ;
+;     -- <=3 input functions                  ; 13             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 32             ;
+; Dedicated logic registers                   ; 17             ;
 ;                                             ;                ;
 ; I/O pins                                    ; 67             ;
 ; Total DSP Blocks                            ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 26             ;
-; Total fan-out                               ; 205            ;
-; Average fan-out                             ; 1.04           ;
+; Maximum fan-out                             ; 17             ;
+; Total fan-out                               ; 257            ;
+; Average fan-out                             ; 1.39           ;
 +---------------------------------------------+----------------+
 
 
@@ -214,22 +215,44 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
-; |DE1_SoC                   ; 31 (0)            ; 32 (0)       ; 0                 ; 0          ; 67   ; 0            ; |DE1_SoC                    ; work         ;
-;    |airport:s|             ; 5 (5)             ; 6 (6)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|airport:s          ; work         ;
-;    |clock_divider:cdiv|    ; 26 (26)           ; 26 (26)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:cdiv ; work         ;
+; |DE1_SoC                   ; 34 (3)            ; 17 (0)       ; 0                 ; 0          ; 67   ; 0            ; |DE1_SoC                    ; work         ;
+;    |tow_delegator:del|     ; 4 (4)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_delegator:del  ; work         ;
+;    |tow_input:ui1|         ; 2 (2)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_input:ui1      ; work         ;
+;    |tow_input:ui2|         ; 2 (2)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_input:ui2      ; work         ;
+;    |tow_input:ui_reset|    ; 3 (3)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_input:ui_reset ; work         ;
+;    |tow_score:p1|          ; 11 (11)           ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_score:p1       ; work         ;
+;    |tow_score:p2|          ; 9 (9)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_score:p2       ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                 ;
-+-------------------------------------------+----------------------------------------+
-; Register name                             ; Reason for Removal                     ;
-+-------------------------------------------+----------------------------------------+
-; airport:s|ps[2..31]                       ; Stuck at GND due to stuck port data_in ;
-; clock_divider:cdiv|divided_clocks[26..31] ; Lost fanout                            ;
-; Total Number of Removed Registers = 36    ;                                        ;
-+-------------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; tow_delegator:del|ps[2..31]             ; Stuck at GND due to stuck port data_in ;
+; tow_input:ui2|ps[1..31]                 ; Stuck at GND due to stuck port data_in ;
+; tow_input:ui1|ps[1..31]                 ; Stuck at GND due to stuck port data_in ;
+; tow_input:ui_reset|ps[1..31]            ; Stuck at GND due to stuck port data_in ;
+; tow_score:p2|ps[3..19,21..31]           ; Merged with tow_score:p2|ps[20]        ;
+; tow_score:p1|ps[3..19,21..31]           ; Merged with tow_score:p1|ps[20]        ;
+; tow_score:p2|ps[20]                     ; Stuck at GND due to stuck port data_in ;
+; tow_score:p1|ps[20]                     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 181 ;                                        ;
++-----------------------------------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                  ;
++-------------------------+---------------------------+----------------------------------------+
+; Register name           ; Reason for Removal        ; Registers Removed due to This Register ;
++-------------------------+---------------------------+----------------------------------------+
+; tow_delegator:del|ps[2] ; Stuck at GND              ; tow_score:p1|ps[20]                    ;
+;                         ; due to stuck port data_in ;                                        ;
+; tow_input:ui2|ps[1]     ; Stuck at GND              ; tow_score:p2|ps[20]                    ;
+;                         ; due to stuck port data_in ;                                        ;
++-------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -237,61 +260,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 17    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|airport:s|ns        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|airport:s|Selector4 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |DE1_SoC|tow_score:p2|ps[2]       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |DE1_SoC|tow_score:p1|ps[2]       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|tow_delegator:del|signal ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |DE1_SoC ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; whichClock     ; 25    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: airport:s ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; alphaPattern   ; 101   ; Unsigned Binary               ;
-; betaPattern    ; 010   ; Unsigned Binary               ;
-; chiPattern     ; 001   ; Unsigned Binary               ;
-; deltaPattern   ; 100   ; Unsigned Binary               ;
-; unkownPattern  ; XXX   ; Unsigned Binary               ;
-; calm           ; 00    ; Unsigned Binary               ;
-; rtl            ; 01    ; Unsigned Binary               ;
-; ltr            ; 10    ; Unsigned Binary               ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clock_divider:cdiv"                                                                                   ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; divided_clocks[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; divided_clocks[24..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------+
+; Port Connectivity Checks: "tow_input:ui_reset" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; reset ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
 
 
 +-----------------------------------------------------+
@@ -299,20 +295,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 32                          ;
-;     plain             ; 32                          ;
-; arriav_lcell_comb     ; 32                          ;
-;     arith             ; 25                          ;
-;         1 data inputs ; 24                          ;
-;         2 data inputs ; 1                           ;
-;     normal            ; 7                           ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         4 data inputs ; 5                           ;
+; arriav_ff             ; 17                          ;
+;     ENA               ; 4                           ;
+;     plain             ; 13                          ;
+; arriav_lcell_comb     ; 38                          ;
+;     normal            ; 38                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 2                           ;
+;         5 data inputs ; 14                          ;
+;         6 data inputs ; 7                           ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.40                        ;
-; Average LUT depth     ; 2.25                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -331,7 +328,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Wed Feb 08 19:10:01 2017
+    Info: Processing started: Thu Feb 16 12:49:36 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 2 entities, in source file mux2_1.sv
@@ -342,7 +339,7 @@ Info (12021): Found 2 design units, including 2 entities, in source file mux4_1.
     Info (12023): Found entity 2: mux4_1_testbench
 Info (12021): Found 2 design units, including 2 entities, in source file de1_soc.sv
     Info (12023): Found entity 1: DE1_SoC
-    Info (12023): Found entity 2: clock_divider
+    Info (12023): Found entity 2: DE1_SoC_testbench
 Info (12021): Found 2 design units, including 2 entities, in source file digit_scan.sv
     Info (12023): Found entity 1: digit_scan
     Info (12023): Found entity 2: digit_scan_testbench
@@ -369,21 +366,30 @@ Info (12021): Found 2 design units, including 2 entities, in source file simple.
 Info (12021): Found 2 design units, including 2 entities, in source file airport.sv
     Info (12023): Found entity 1: airport
     Info (12023): Found entity 2: airport_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file tow_delegator.sv
+    Info (12023): Found entity 1: tow_delegator
+    Info (12023): Found entity 2: tow_delegator_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file tow_input.sv
+    Info (12023): Found entity 1: tow_input
+    Info (12023): Found entity 2: tow_input_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file tow_score.sv
+    Info (12023): Found entity 1: tow_score
+    Info (12023): Found entity 2: tow_score_testbench
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:cdiv"
-Info (12128): Elaborating entity "airport" for hierarchy "airport:s"
+Info (12128): Elaborating entity "tow_input" for hierarchy "tow_input:ui_reset"
+Info (12128): Elaborating entity "tow_delegator" for hierarchy "tow_delegator:del"
+Info (12128): Elaborating entity "tow_score" for hierarchy "tow_score:p1"
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/hpadmin/workspace/ee271lab/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 106 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 35 logic cells
+    Info (21061): Implemented 39 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 620 megabytes
-    Info: Processing ended: Wed Feb 08 19:10:03 2017
+    Info: Processing ended: Thu Feb 16 12:49:38 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

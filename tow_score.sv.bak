@@ -1,0 +1,73 @@
+// Tug of War: Keep score.
+module tow_score #(parameter RESULT=7'b1111000) (clk, reset, increment, vulnerable, pattern, win);
+	input logic clk, reset, increment;
+	output logic vulnerable, win;
+	output logic [3:0] pattern;
+	enum { N, A, B, C, D, F } ps, ns;
+	logic v;
+	logic [3:0] signal;
+
+	always_comb
+		case ()
+			N: if (increment) begin
+					signal = 4'b1000;
+					ns = A;
+					v = 1;
+				end
+			A: if (increment) begin
+					signal = 4'b1100;
+					ns = B;
+					v = 0;
+				end
+				else begin
+					signal = 4'b0000;
+					ns = N;
+					v = 0;
+				end
+			B: if (increment) begin
+					signal = 4'b1110;
+					ns = C;
+					v = 0;
+				end
+				else begin
+					signal = 4'b1000;
+					ns = A;
+					v = 0;
+				end
+			C: if (increment) begin
+					signal = 4'b1111;
+					ns = D;
+					v = 0;
+				end
+				else begin
+					signal = 4'b1100;
+					ns = B;
+					v = 0;
+				end
+			D: if (increment) begin
+					signal = 4'b1111;
+					ns = F;
+					v = 0;
+					win = 1;
+				end
+				else begin
+					signal = 4'b1110;
+					ns = C;
+					v = 0;
+				end
+			F: begin
+					signal = 4'b1111;
+					ns = ps;
+					v = 0;
+				end
+		endcase
+	
+	assign vulnerable = v;
+	assign pattern = signal;
+	
+	always_ff @(posedge clk)
+		if (reset)
+			ps <= center;
+		else
+			ps <= ns;
+endmodule

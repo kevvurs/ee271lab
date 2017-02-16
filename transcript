@@ -1,31 +1,107 @@
 # Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-do runlab.do
+do runlab_score.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module airport
-# -- Compiling module airport_testbench
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
 # 
 # Top level modules:
-# 	airport_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# 
-# Top level modules:
-# 	DE1_SoC
-# vsim -lib work -voptargs=\"+acc\" -t 1ps airport_testbench 
+# 	tow_score_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps tow_score_testbench 
 # Loading sv_std.std
-# Loading work.airport_testbench
-# Loading work.airport
-# ** Warning: (vsim-3015) ./airport.sv(118): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'out'. The port definition is at: ./airport.sv(1).
+# Loading work.tow_score_testbench
+# Loading work.tow_score
+# ** Warning: (vsim-3015) ./tow_score.sv(110): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'idle'. The port definition is at: ./tow_score.sv(2).
 # 
-#         Region: /airport_testbench/dut
-# ** Error: (vish-4014) No objects found matching '/airport_testbench/dut/reset'.
-# Executing ONERROR command at macro ./airport_wave.do line 4
+#         Region: /tow_score_testbench/dut
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module airport_testbench at ./airport.sv line 150
-# Simulation Breakpoint: Break in Module airport_testbench at ./airport.sv line 150
-# MACRO ./runlab.do PAUSED at line 26
+# Break in Module tow_score_testbench at ./tow_score.sv line 137
+# Simulation Breakpoint: Break in Module tow_score_testbench at ./tow_score.sv line 137
+# MACRO ./runlab_score.do PAUSED at line 25
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/tow_score_wave.do
+do runlab_input.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps tow_input_testbench 
+# Loading sv_std.std
+# Loading work.tow_input_testbench
+# Loading work.tow_input
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module tow_input_testbench at ./tow_input.sv line 80
+# Simulation Breakpoint: Break in Module tow_input_testbench at ./tow_input.sv line 80
+# MACRO ./runlab_input.do PAUSED at line 25
+do runlab_delegator.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps tow_delegator_testbench 
+# Loading sv_std.std
+# Loading work.tow_delegator_testbench
+# Loading work.tow_delegator
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module tow_delegator_testbench at ./tow_delegator.sv line 101
+# Simulation Breakpoint: Break in Module tow_delegator_testbench at ./tow_delegator.sv line 101
+# MACRO ./runlab_delegator.do PAUSED at line 25
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/tow_delegator_wave.do
+do runlab_top.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# ** Error: Missing or invalid env path
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 2
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ropeString'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 9
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 96
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 96
+# MACRO ./runlab_top.do PAUSED at line 28

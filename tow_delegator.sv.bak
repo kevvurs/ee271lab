@@ -1,0 +1,22 @@
+// Tug of War: Handle user input and delgate procedures back to controller.
+module tow_delagator (clk, in, out);
+	input logic clk;
+	input logic [1:0] in;
+	output logic [1:0] out;
+	enum { balanced, player1, player2 } ns, ps;
+	logic [1:0] in_transient, in_validated;
+	
+	// Metastability filter
+	always_ff @(posedge clk)
+		in_transient <= in;
+	always_ff @(posedge clk)
+		in_validated <= in_transient;
+
+	
+		
+	always_ff @(posedge clk)
+		if (reset)
+			ps <= balanced;
+		else
+			ps <= ns;
+endmodule
