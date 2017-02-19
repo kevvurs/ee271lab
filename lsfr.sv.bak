@@ -1,0 +1,28 @@
+module lsfr (clk, in, out);
+	input logic clk, in;
+	output logic out;
+	logic v0, v1, v2, v3, v4, v5, v6, v7, v8, v9;
+	
+	always_ff @(posedge clk)
+		v0 <= in;
+	always_ff @(posedge clk)
+		v1 <= v0;
+	always_ff @(posedge clk)
+		v2 <= v1;
+	always_ff @(posedge clk)
+		v3 <= v2;
+	always_ff @(posedge clk)
+		v4 <= v3;
+	always_ff @(posedge clk)
+		v5 <= v4;
+	always_ff @(posedge clk)
+		v6 <= v5;
+	always_ff @(posedge clk)
+		v7 <= v6;
+	always_ff @(posedge clk)
+		v8 <= v7;
+	always_ff @(posedge clk)
+		v9 <= v8;
+
+	assign out = v9 ^~^ v6;
+endmodule

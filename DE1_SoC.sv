@@ -12,37 +12,28 @@ SW);
  assign HEX4 = 7'b1111111;
  assign HEX5 = 7'b1111111;
  
- // 
- logic reset, dev1, dev2;
- logic play1, play2, vic1, vic2;
- logic [2:0] action;
- logic [3:0] leds1, leds2;
- logic [6:0] victor;
+ // Generate clk off of CLOCK_50, whichClock picks rate.
+ logic [31:0] clk;
+ parameter whichClock = 15;
+ clock_divider cdiv (CLOCK_50, clk);
  
- // Input
- tow_input ui_reset (.clk(CLOCK_50), .reset(1'b0), .in(~SW[9]), .out(reset));
- tow_input ui1 (.clk(CLOCK_50), .reset(reset), .in(KEY[0]), .out(play1));
- tow_input ui2 (.clk(CLOCK_50), .reset(reset), .in(KEY[3]), .out(play2));
+ logic in, out;
  
- // Game logic
- tow_delegator del (.clk(CLOCK_50), .reset(reset), .deviate1(dev1), .deviate2(dev2), .player1(play1), .player2(play2), .out(action));
- tow_score p1 (.clk(CLOCK_50), .reset(reset), .idle(action[2:1]), .increment(action[0]), .vulnerable(dev1), .pattern(leds1), .win(vic1));
- tow_score p2 (.clk(CLOCK_50), .reset(reset), .idle(~action[2:1]), .increment(action[0]), .vulnerable(dev2), .pattern(leds2), .win(vic2));
+ lsfr cyber_input (.clk(clk[whichClock]), .in(in), .out(out));
+ assign in = out;
  
- assign LEDR[5] = 1;
- assign LEDR[4:1] = leds1;
- assign LEDR[6] = leds2[3];
- assign LEDR[7] = leds2[2];
- assign LEDR[8] = leds2[1];
- assign LEDR[9] = leds2[0];
- 
- always_comb
-	if (vic1) victor = 7'b1111001;
-	else if (vic2) victor = 7'b0100100;
-	else victor = 7'b1111111;
+endmodule
 
-	assign HEX0 = victor;
+// divided_clocks[0] = 25MHz, [1] = 12.5Mhz, ... [23] = 3Hz, [24] = 1.5Hz,[25] = 0.75Hz
+module clock_divider (clock, divided_clocks);
+ input logic clock;
+ output logic [31:0] divided_clocks;
 
+ initial
+ divided_clocks <= 0;
+
+ always_ff @(posedge clock)
+ divided_clocks <= divided_clocks + 1;
 endmodule
 
 module DE1_SoC_testbench();
