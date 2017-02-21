@@ -10,18 +10,40 @@ SW);
  assign HEX2 = 7'b1111111;
  assign HEX3 = 7'b1111111;
  assign HEX4 = 7'b1111111;
- assign HEX5 = 7'b1111111;
  
  // Generate clk off of CLOCK_50, whichClock picks rate.
  logic [31:0] clk;
  parameter whichClock = 15;
  clock_divider cdiv (CLOCK_50, clk);
  
- logic in, out;
+ //Reset
+ logic pre_reset, reset;
  
- lsfr cyber_input (.clk(clk[whichClock]), .in(in), .out(out));
+ always_ff @(posedge clk[whichClock])
+			pre_reset <= SW[9];
+ always_ff @(posedge clk[whichClock])
+			reset <= pre_reset;
+ 
+ // LSFR
+ logic in, out;
+ logic [9:0] q;
+ lsfr #(.WIDTH(10)) cyber_input (.clk(clk[whichClock]), .in(in), .out(out), .q(q));
  assign in = out;
  
+ // Comparator
+ logic push;
+ bitcompare #(.WIDTH(10)) comp (.a({1'b0,SW[8:0]}), .b(q), .out(push));
+ 
+ // Game
+ logic playerAction, toggle1, toggle2, w1, w2;
+ logic [2:0] game;
+ logic [3:0] leds1, leds2;
+ tow_input p1 (.clk(clk[whichClock]), .reset(reset), .in(KEY[0]), .out(playerAction));
+ tow_delegator del (.clk(clk[whichClock]), .reset(reset), .deviate1(toggle1), .deviate2(toggle2), .player1(playerAction), .player2(push), .out(game));
+ tow_score sc1 (.clk(clk[whichClock]), .reset(reset), .idle(game[2:1]), .increment(game[0]), .vulnerable(toggle1), .pattern(leds1), .win(w1));
+ tow_score sc2 (.clk(clk[whichClock]), .reset(reset), .idle(~game[2:1]), .increment(game[0]), .vulnerable(toggle2), .pattern(leds2), .win(w2));
+ 
+ //
 endmodule
 
 // divided_clocks[0] = 25MHz, [1] = 12.5Mhz, ... [23] = 3Hz, [24] = 1.5Hz,[25] = 0.75Hz

@@ -1,13 +1,14 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /bitcompare_testbench/dut/a
-add wave -noupdate /bitcompare_testbench/dut/b
-add wave -noupdate /bitcompare_testbench/dut/out
+add wave -noupdate -color {Cornflower Blue} -itemcolor {Cornflower Blue} -label A -radix unsigned /bitcompare_testbench/dut/a
+add wave -noupdate -color {Cornflower Blue} -itemcolor {Cornflower Blue} -label B -radix unsigned /bitcompare_testbench/dut/b
+add wave -noupdate -color {Medium Slate Blue} -itemcolor {Medium Slate Blue} -label C -radix unsigned /bitcompare_testbench/dut/c
+add wave -noupdate -color Coral -itemcolor Coral -label A>B /bitcompare_testbench/dut/out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {7 ps} 0}
+WaveRestoreCursors {{Cursor 1} {38 ps} 0}
 quietly wave cursor active 1
-configure wave -namecolwidth 150
-configure wave -valuecolwidth 100
+configure wave -namecolwidth 251
+configure wave -valuecolwidth 101
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -20,4 +21,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1 ns}
+WaveRestoreZoom {0 ps} {84 ps}

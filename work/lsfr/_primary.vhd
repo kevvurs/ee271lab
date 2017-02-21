@@ -9,7 +9,8 @@ entity lsfr is
     port(
         clk             : in     vl_logic;
         \in\            : in     vl_logic;
-        \out\           : out    vl_logic
+        \out\           : out    vl_logic;
+        q               : out    vl_logic_vector
     );
     attribute mti_svvh_generic_type : integer;
     attribute mti_svvh_generic_type of WIDTH : constant is 1;

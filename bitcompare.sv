@@ -2,17 +2,19 @@ module bitcompare #(parameter WIDTH=10) (a, b, out);
 	input logic [WIDTH-1:0] a, b;
 	output logic out;
 	logic [WIDTH-1:0] c;
-	logic borrow = 0;
-	integer i;
+	logic greaterThan;
 	
-	always_comb
-		for (i = 1; i < WIDTH; i++) begin
-			c[i] = (a[i] ^~^ b[i]) ^~^ borrow;
-			borrow = ((~a[i] & (borrow | b[i])) | (borrow & b[i]));
-		end
-
-	assign c = (a - b);
-	assign out = c > 0;
+	always_comb begin
+		c = (a - b);
+		if (c == 0)
+			greaterThan = 0;
+		else if (c > a)
+			greaterThan = 0;
+		else
+			greaterThan = 1;
+	end
+	
+	assign out = greaterThan;
 endmodule
 
 module bitcompare_testbench();
@@ -26,5 +28,9 @@ module bitcompare_testbench();
 		a=10'b0000000010; b=10'b0000000101; #10;
 		a=10'b0100000000; b=10'b0000101011; #10;
 		a=10'b1000000000; b=10'b0010000001; #10;
+		a=10'b0010000011; b=10'b0010000011; #10;
+		a=10'b1111111111; b=10'b1111111111; #10;
+		a=10'b0000000000; b=10'b0000000000; #10;
+		a=10'b1010101010; b=10'b0101010101; #10;
 		end
 endmodule

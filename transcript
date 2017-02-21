@@ -1,26 +1,82 @@
 # Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-do runlab.do
+do runlab_comp.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# ** Error: (vlog-3838) ./lsfr.sv(42): Variable 'f' written by continuous and procedural assignments. See ./lsfr.sv(32). 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
 # 
+# Top level modules:
+# 	bitcompare_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
+# Loading sv_std.std
+# Loading work.bitcompare_testbench
+# Loading work.bitcompare
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end  sim:/bitcompare_testbench/dut/a
+add wave -position end  sim:/bitcompare_testbench/dut/b
+add wave -position end  sim:/bitcompare_testbench/dut/out
+add wave -position end  sim:/bitcompare_testbench/dut/c
+add wave -position end  sim:/bitcompare_testbench/dut/borrow
+add wave -position end  sim:/bitcompare_testbench/dut/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
+do runlab_comp.don
+# Cannot open macro file: runlab_comp.don
+do runlab_comp.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
+# Loading sv_std.std
+# Loading work.bitcompare_testbench
+# Loading work.bitcompare
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab_comp.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module bitcompare
+# ** Error: ./bitcompare.sv(10): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: ./bitcompare.sv(12): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: ./bitcompare.sv(14): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# -- Compiling module bitcompare_testbench
 # ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 7
+# Error in macro ./runlab_comp.do line 7
 # C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog "./lsfr.sv""
-do runlab.do
+# "vlog "./bitcompare.sv""
+do runlab_comp.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
 # 
 # Top level modules:
-# 	lsfr_testbench
+# 	bitcompare_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module DE1_SoC
 # -- Compiling module clock_divider
@@ -28,88 +84,33 @@ do runlab.do
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
+# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
 # Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: (vsim-3839) ./lsfr.sv(33): Variable '/lsfr_testbench/f', driven via a port connection, is multiply driven. See ./lsfr.sv(42).
-# 
-#         Region: /lsfr_testbench/dut
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./runlab.do PAUSED at line 13
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
+# Loading work.bitcompare_testbench
+# Loading work.bitcompare
+# ** Error: (vish-4014) No objects found matching '/bitcompare_testbench/dut/borrow'.
+# Executing ONERROR command at macro ./bitcompare_wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/bitcompare_testbench/dut/i'.
+# Executing ONERROR command at macro ./bitcompare_wave.do line 8
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 56
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 56
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
+add wave -position end  sim:/bitcompare_testbench/dut/a
+add wave -position end  sim:/bitcompare_testbench/dut/b
+add wave -position end  sim:/bitcompare_testbench/dut/out
+add wave -position end  sim:/bitcompare_testbench/dut/c
+add wave -position end  sim:/bitcompare_testbench/dut/greaterThan
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
+do runlab_comp.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# ** Error: ./lsfr.sv(32): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./lsfr.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# ** Error: ./lsfr.sv(32): near "<=": syntax error, unexpected <=
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./lsfr.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# ** Error: ./lsfr.sv(32): near "<=": syntax error, unexpected <=
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./lsfr.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
 # 
 # Top level modules:
-# 	lsfr_testbench
+# 	bitcompare_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module DE1_SoC
 # -- Compiling module clock_divider
@@ -117,590 +118,14 @@ do runlab.do
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
+# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
 # Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: (vsim-3839) ./lsfr.sv(33): Variable '/lsfr_testbench/f', driven via a port connection, is multiply driven. See ./lsfr.sv(32).
-# 
-#         Region: /lsfr_testbench/dut
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./runlab.do PAUSED at line 13
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: Missing or invalid env path
-# Executing ONERROR command at macro ./lsfr_wave.do line 2
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/dffs'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 7
+# Loading work.bitcompare_testbench
+# Loading work.bitcompare
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 73
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 73
-# MACRO ./runlab.do PAUSED at line 26
-add wave -position end  sim:/lsfr_testbench/dut/clk
-add wave -position end  sim:/lsfr_testbench/dut/in
-add wave -position end  sim:/lsfr_testbench/dut/out
-add wave -position end  sim:/lsfr_testbench/dut/w
-add wave -position end  sim:/lsfr_testbench/dut/ps
-add wave -position end  sim:/lsfr_testbench/dut/ns
-add wave -position end  sim:/lsfr_testbench/dut/v0
-add wave -position end  sim:/lsfr_testbench/dut/v1
-add wave -position end  sim:/lsfr_testbench/dut/v2
-add wave -position end  sim:/lsfr_testbench/dut/v3
-add wave -position end  sim:/lsfr_testbench/dut/v4
-add wave -position end  sim:/lsfr_testbench/dut/v5
-add wave -position end  sim:/lsfr_testbench/dut/v6
-add wave -position end  sim:/lsfr_testbench/dut/v7
-add wave -position end  sim:/lsfr_testbench/dut/v8
-add wave -position end  sim:/lsfr_testbench/dut/v9
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 73
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 73
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/ps'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/ns'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 57
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 57
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/ps'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/ns'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 57
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 57
-# MACRO ./runlab.do PAUSED at line 26
-add wave -position end  sim:/lsfr_testbench/dut/clk
-add wave -position end  sim:/lsfr_testbench/dut/in
-add wave -position end  sim:/lsfr_testbench/dut/out
-add wave -position end  sim:/lsfr_testbench/dut/w
-add wave -position end  sim:/lsfr_testbench/dut/v0
-add wave -position end  sim:/lsfr_testbench/dut/v1
-add wave -position end  sim:/lsfr_testbench/dut/v2
-add wave -position end  sim:/lsfr_testbench/dut/v3
-add wave -position end  sim:/lsfr_testbench/dut/v4
-add wave -position end  sim:/lsfr_testbench/dut/v5
-add wave -position end  sim:/lsfr_testbench/dut/v6
-add wave -position end  sim:/lsfr_testbench/dut/v7
-add wave -position end  sim:/lsfr_testbench/dut/v8
-add wave -position end  sim:/lsfr_testbench/dut/v9
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 56
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 56
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 56
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 56
-# MACRO ./runlab.do PAUSED at line 26
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 73
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 73
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 73
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 73
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 73
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 73
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# ** Error: (vlog-3838) ./DE1_SoC.sv(20): Variable 'in' written by continuous and procedural assignments. See ./DE1_SoC.sv(23). 
-# 
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./DE1_SoC.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 73
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 73
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.don
-# Cannot open macro file: runlab.don
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: Missing or invalid env path
-# Executing ONERROR command at macro ./lsfr_wave.do line 2
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/rNum'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 81
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 81
-# MACRO ./runlab.do PAUSED at line 26
-add wave -position end  sim:/lsfr_testbench/dut/clk
-add wave -position end  sim:/lsfr_testbench/dut/in
-add wave -position end  sim:/lsfr_testbench/dut/out
-add wave -position end  sim:/lsfr_testbench/dut/v0
-add wave -position end  sim:/lsfr_testbench/dut/v1
-add wave -position end  sim:/lsfr_testbench/dut/v2
-add wave -position end  sim:/lsfr_testbench/dut/v3
-add wave -position end  sim:/lsfr_testbench/dut/v4
-add wave -position end  sim:/lsfr_testbench/dut/v5
-add wave -position end  sim:/lsfr_testbench/dut/v6
-add wave -position end  sim:/lsfr_testbench/dut/v7
-add wave -position end  sim:/lsfr_testbench/dut/v8
-add wave -position end  sim:/lsfr_testbench/dut/v9
-add wave -position end  sim:/lsfr_testbench/dut/v
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 81
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 81
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 82
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 82
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 82
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 82
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 82
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 82
-# MACRO ./runlab.do PAUSED at line 26
-add wave -position end  sim:/lsfr_testbench/dut/clk
-add wave -position end  sim:/lsfr_testbench/dut/in
-add wave -position end  sim:/lsfr_testbench/dut/out
-add wave -position end  sim:/lsfr_testbench/dut/v0
-add wave -position end  sim:/lsfr_testbench/dut/v1
-add wave -position end  sim:/lsfr_testbench/dut/v2
-add wave -position end  sim:/lsfr_testbench/dut/v3
-add wave -position end  sim:/lsfr_testbench/dut/v4
-add wave -position end  sim:/lsfr_testbench/dut/v5
-add wave -position end  sim:/lsfr_testbench/dut/v6
-add wave -position end  sim:/lsfr_testbench/dut/v7
-add wave -position end  sim:/lsfr_testbench/dut/v8
-add wave -position end  sim:/lsfr_testbench/dut/v9
-add wave -position end  sim:/lsfr_testbench/dut/v
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 47
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 47
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 48
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 48
-# MACRO ./runlab.do PAUSED at line 26
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: Missing or invalid env path
-# Executing ONERROR command at macro ./lsfr_wave.do line 2
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/rNum'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 43
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 43
-# MACRO ./runlab.do PAUSED at line 26
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
 do runlab.don
 # Cannot open macro file: runlab.don
 do runlab.do
@@ -726,39 +151,8 @@ do runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 48
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 48
-# MACRO ./runlab.do PAUSED at line 26
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# ** Error: Missing or invalid env path
-# Executing ONERROR command at macro ./lsfr_wave.do line 2
-# ** Error: (vish-4014) No objects found matching '/lsfr_testbench/dut/rNum'.
-# Executing ONERROR command at macro ./lsfr_wave.do line 7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 43
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 43
+# Break in Module lsfr_testbench at ./lsfr.sv line 45
+# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 45
 # MACRO ./runlab.do PAUSED at line 26
 add wave -position end  sim:/lsfr_testbench/dut/clk
 add wave -position end  sim:/lsfr_testbench/dut/in
@@ -790,154 +184,8 @@ do runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 43
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 43
-# MACRO ./runlab.do PAUSED at line 26
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 43
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 43
+# Break in Module lsfr_testbench at ./lsfr.sv line 45
+# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 45
 # MACRO ./runlab.do PAUSED at line 26
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# ** Error: Cannot open macro file: bitcompare_wave.do
-# Error in macro ./runlab_comp.do line 18
-# Cannot open macro file: bitcompare_wave.do
-#     while executing
-# "do bitcompare_wave.do"
-add wave -position end  sim:/bitcompare_testbench/dut/a
-add wave -position end  sim:/bitcompare_testbench/dut/b
-add wave -position end  sim:/bitcompare_testbench/dut/out
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-add wave -position end  sim:/bitcompare_testbench/dut/a
-add wave -position end  sim:/bitcompare_testbench/dut/b
-add wave -position end  sim:/bitcompare_testbench/dut/out
-add wave -position end  sim:/bitcompare_testbench/dut/c
-do runlab_comp.doun
-# Cannot open macro file: runlab_comp.doun
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# ** Warning: ./bitcompare.sv(10): (vlog-2182) 'borrow' might be read before written in always_comb block.
-# 
-# ** Error: (vlog-3838) ./bitcompare.sv(14): Variable 'c' written by continuous and procedural assignments. See ./bitcompare.sv(10). 
-# 
-# -- Compiling module bitcompare_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_comp.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./bitcompare.sv""

@@ -1,7 +1,7 @@
-module lsfr #(parameter WIDTH=10, x1=6, x2=9) (clk, in, out);
+module lsfr #(parameter WIDTH=10, x1=6, x2=9) (clk, in, out, q);
 	input logic clk, in;
 	output logic out;
-	logic [WIDTH-1:0] q = 0;
+	output logic [WIDTH-1:0] q = 0;
 	logic v;
 	integer i;
 	
@@ -23,9 +23,11 @@ module lsfr #(parameter WIDTH=10, x1=6, x2=9) (clk, in, out);
 endmodule
 
 module lsfr_testbench();
+	parameter w=10;
 	logic clk, in, out;
+	logic [w-1:0] q;
 	
-	lsfr dut (.clk, .in, .out);
+	lsfr #(.WIDTH(w)) dut (.clk, .in, .out, .q);
 	assign in = out;
 	
 	parameter CLOCK_PERIOD=100;
@@ -35,10 +37,10 @@ module lsfr_testbench();
 	end
 	
 	integer i;
-	parameter k = 64;
+	parameter k = 1024;
 	initial begin
 		for (i = 0; i < k; i++) begin
-			@(posedge clk);
+			@(posedge clk); assert (q != 10'b1111111111);
 		end
 		$stop;
 	end

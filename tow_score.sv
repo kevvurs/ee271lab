@@ -21,19 +21,19 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						v = 1;
 					end
 				B: begin
-						signal = 4'b1100;
+						signal = 4'b0100;
 						v = 0;
 					end
 				C: begin
-						signal = 4'b1110;
+						signal = 4'b0010;
 						v = 0;
 					end
 				D: begin
-						signal = 4'b1111;
+						signal = 4'b0001;
 						v = 0;
 					end
 				F: begin
-						signal = 4'b1111;
+						signal = 4'b0001;
 						v = 0;
 						w = 1;
 					end
@@ -52,7 +52,7 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						v = 1;
 					end
 				A: if (increment) begin
-						signal = 4'b1100;
+						signal = 4'b0100;
 						ns = B;
 					end
 					else begin
@@ -61,7 +61,7 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						v = 1;
 					end
 				B: if (increment) begin
-						signal = 4'b1110;
+						signal = 4'b0010;
 						ns = C;
 					end
 					else begin
@@ -69,24 +69,24 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						ns = A;
 					end
 				C: if (increment) begin
-						signal = 4'b1111;
+						signal = 4'b0001;
 						ns = D;
 					end
 					else begin
-						signal = 4'b1100;
+						signal = 4'b0100;
 						ns = B;
 					end
 				D: if (increment) begin
-						signal = 4'b1111;
+						signal = 4'b0001;
 						ns = F;
 						w = 1;
 					end
 					else begin
-						signal = 4'b1110;
+						signal = 4'b0010;
 						ns = C;
 					end
 				F: begin
-						signal = 4'b1111;
+						signal = 4'b0001;
 						ns = ps;
 						w = 1;
 					end
