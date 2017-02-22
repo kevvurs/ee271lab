@@ -1,0 +1,1 @@
+module tow_count #(parameter TOTAL=7) (clk, reset);

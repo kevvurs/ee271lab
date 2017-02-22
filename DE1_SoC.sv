@@ -1,4 +1,4 @@
-module DE1_SoC (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR,
+module DE1_SoC #(parameter whichClock=15) (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR,
 SW);
  input logic CLOCK_50; // 50MHz clock.
  output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
@@ -13,7 +13,6 @@ SW);
  
  // Generate clk off of CLOCK_50, whichClock picks rate.
  logic [31:0] clk;
- parameter whichClock = 15;
  clock_divider cdiv (CLOCK_50, clk);
  
  //Reset
@@ -35,14 +34,25 @@ SW);
  bitcompare #(.WIDTH(10)) comp (.a({1'b0,SW[8:0]}), .b(q), .out(push));
  
  // Game
- logic playerAction, toggle1, toggle2, w1, w2;
+ logic cyberAction, playerAction, toggle1, toggle2, w1, w2;
  logic [2:0] game;
- logic [3:0] leds1, leds2;
- tow_input p1 (.clk(clk[whichClock]), .reset(reset), .in(KEY[0]), .out(playerAction));
- tow_delegator del (.clk(clk[whichClock]), .reset(reset), .deviate1(toggle1), .deviate2(toggle2), .player1(playerAction), .player2(push), .out(game));
- tow_score sc1 (.clk(clk[whichClock]), .reset(reset), .idle(game[2:1]), .increment(game[0]), .vulnerable(toggle1), .pattern(leds1), .win(w1));
- tow_score sc2 (.clk(clk[whichClock]), .reset(reset), .idle(~game[2:1]), .increment(game[0]), .vulnerable(toggle2), .pattern(leds2), .win(w2));
+ logic [3:0] leds1, leds2, games1, games2;
  
+ tow_input p1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(KEY[0]), .out(playerAction));
+ tow_input p2 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(~push), .out(cyberAction));
+ tow_delegator del (.clk(clk[whichClock]), .reset(reset | w1 | w2), .deviate1(toggle1), .deviate2(toggle2), .player1(playerAction), .player2(cyberAction), .out(game));
+ tow_score sc1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .idle(game[2:1]), .increment(game[0]), .vulnerable(toggle1), .pattern(leds1), .win(w1));
+ tow_score sc2 (.clk(clk[whichClock]), .reset(reset  | w1 | w2), .idle(~game[2:1]), .increment(game[0]), .vulnerable(toggle2), .pattern(leds2), .win(w2));
+ tow_count c1 (.clk(clk[whichClock]), .reset(reset), .in(w1), .display(games1));
+ tow_count c2 (.clk(clk[whichClock]), .reset(reset), .in(w2), .display(games2));
+ seg7 hexPlayer (.bcd(games1), .leds(HEX0));
+ seg7 hexCyber (.bcd(games2), .leds(HEX5));
+ assign LEDR[5] = (leds1 == leds2);
+ assign LEDR[4:1] = leds1;
+ assign LEDR[6] = leds2[3];
+ assign LEDR[7] = leds2[2];
+ assign LEDR[8] = leds2[1];
+ assign LEDR[9] = leds2[0];
  //
 endmodule
 
@@ -52,9 +62,9 @@ module clock_divider (clock, divided_clocks);
  output logic [31:0] divided_clocks;
 
  initial
- divided_clocks <= 0;
+ divided_clocks <= 1;
 
- always_ff @(posedge clock)
+ always_ff @(posedge clock or negedge clock)
  divided_clocks <= divided_clocks + 1;
 endmodule
 
@@ -65,47 +75,51 @@ module DE1_SoC_testbench();
  logic [3:0] KEY;
  logic [9:0] SW;
  
- DE1_SoC dut (.CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
+ DE1_SoC #(.whichClock(0)) dut (.CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
  
  parameter CLOCK_PERIOD=100;
 	initial begin
 		CLOCK_50 <= 0;
 		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
 	end
+	
+	/* Generate clk off of CLOCK_50, whichClock picks rate.
+	 * logic [31:0] clk;
+	 * parameter whichClock = 15;
+	 * clock_divider cdiv (CLOCK_50, clk);
+	 */
+	 
  initial begin
- SW[9] <= 0; KEY[3] <= 0; 	KEY[0] <= 0;	@(posedge CLOCK_50);
-				 KEY[3] <= 1;						@(posedge CLOCK_50);
-									KEY[0] <= 1;	@(posedge CLOCK_50);
-									KEY[0] <= 0;	@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
-									KEY[0] <= 1;	@(posedge CLOCK_50);
-									KEY[0] <= 0;	@(posedge CLOCK_50);
-									KEY[0] <= 1;	@(posedge CLOCK_50);
-									KEY[0] <= 0;	@(posedge CLOCK_50);
-									KEY[0] <= 1;	@(posedge CLOCK_50);
-									KEY[0] <= 0;	@(posedge CLOCK_50);
-									KEY[0] <= 1;	@(posedge CLOCK_50);
-									KEY[0] <= 0;	@(posedge CLOCK_50);
-									KEY[0] <= 1;	@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
- SW[9] <= 1;										@(posedge CLOCK_50);	
- SW[9] <= 0;KEY[3] <= 0;						@(posedge CLOCK_50);
-				KEY[3] <= 1;						@(posedge CLOCK_50);
-				KEY[3] <= 0;						@(posedge CLOCK_50);
-				KEY[3] <= 1;						@(posedge CLOCK_50);
-				KEY[3] <= 0;						@(posedge CLOCK_50);
-				KEY[3] <= 1;						@(posedge CLOCK_50);
-				KEY[3] <= 0;						@(posedge CLOCK_50);
-				KEY[3] <= 1;						@(posedge CLOCK_50);
-				KEY[3] <= 0;						@(posedge CLOCK_50);
-				KEY[3] <= 1;						@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
-														@(posedge CLOCK_50);
+ SW[8:0] <= 9'b001001001; KEY[3:1] = 3'b000;
+ SW[9] <= 0; KEY[0] <= 1;	@(posedge CLOCK_50);
+				 KEY[0] <= 1;	@(posedge CLOCK_50);
+				 KEY[0] <= 0;	@(posedge CLOCK_50);
+				 KEY[0] <= 1;	@(posedge CLOCK_50);
+				 KEY[0] <= 0;	@(posedge CLOCK_50);
+				 KEY[0] <= 1;	@(posedge CLOCK_50);
+				 KEY[0] <= 0;	@(posedge CLOCK_50);
+				 KEY[0] <= 1;	@(posedge CLOCK_50);
+			  	 KEY[0] <= 0;	@(posedge CLOCK_50);
+				 KEY[0] <= 1;	@(posedge CLOCK_50);
+				 KEY[0] <= 0;	@(posedge CLOCK_50);
+				 KEY[0] <= 1;	@(posedge CLOCK_50);
+				 KEY[0] <= 0; 	@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+ SW[9] <= 1;					@(posedge CLOCK_50);	
+ SW[9] <= 0;					@(posedge CLOCK_50);
+				KEY[0] <= 0;	@(posedge CLOCK_50);
+				KEY[0] <= 1;	@(posedge CLOCK_50);
+				KEY[0] <= 0;	@(posedge CLOCK_50);
+				KEY[0] <= 1;	@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+				KEY[0] <= 0;	@(posedge CLOCK_50);
+				KEY[0] <= 1;	@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
 		$stop; // End the simulation.
 	end
 endmodule

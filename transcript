@@ -1,191 +1,3141 @@
-# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-do runlab_comp.do
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:04:44 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module clock_divider
 # -- Compiling module DE1_SoC_testbench
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-add wave -position end  sim:/bitcompare_testbench/dut/a
-add wave -position end  sim:/bitcompare_testbench/dut/b
-add wave -position end  sim:/bitcompare_testbench/dut/out
-add wave -position end  sim:/bitcompare_testbench/dut/c
-add wave -position end  sim:/bitcompare_testbench/dut/borrow
-add wave -position end  sim:/bitcompare_testbench/dut/i
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
-do runlab_comp.don
-# Cannot open macro file: runlab_comp.don
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
+# End time: 17:04:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:04:44 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
 # 
 # Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# 	lsfr_testbench
+# End time: 17:04:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:04:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
+# 	tow_count_testbench
+# End time: 17:04:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:04:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# ** Error: ./bitcompare.sv(10): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: ./bitcompare.sv(12): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: ./bitcompare.sv(14): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
-# -- Compiling module bitcompare_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_comp.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:04:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:04:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:04:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:04:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:04:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:04:44 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:04:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 23
+# Cannot open macro file: tow_main_wave.do
 #     while executing
-# "vlog "./bitcompare.sv""
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# ** Error: (vish-4014) No objects found matching '/bitcompare_testbench/dut/borrow'.
-# Executing ONERROR command at macro ./bitcompare_wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/bitcompare_testbench/dut/i'.
-# Executing ONERROR command at macro ./bitcompare_wave.do line 8
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-add wave -position end  sim:/bitcompare_testbench/dut/a
-add wave -position end  sim:/bitcompare_testbench/dut/b
-add wave -position end  sim:/bitcompare_testbench/dut/out
-add wave -position end  sim:/bitcompare_testbench/dut/c
-add wave -position end  sim:/bitcompare_testbench/dut/greaterThan
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
-do runlab_comp.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps bitcompare_testbench 
-# Loading sv_std.std
-# Loading work.bitcompare_testbench
-# Loading work.bitcompare
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/bitcompare_wave.do
-do runlab.don
-# Cannot open macro file: runlab.don
+# "do tow_main_wave.do"
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:05:09 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
 # -- Compiling module lsfr
 # -- Compiling module lsfr_testbench
 # 
 # Top level modules:
 # 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# End time: 17:05:10 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:05:10 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:05:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:05:10 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:05:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:05:10 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:05:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:05:10 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:05:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:05:10 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:05:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:05:10 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module clock_divider
 # -- Compiling module DE1_SoC_testbench
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
+# End time: 17:05:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 23
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:06:34 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:35 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:06:36 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:36 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:06:39 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:06:40 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:40 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:06:41 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:41 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:06:41 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:41 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:06:42 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:42 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_score.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:08:32 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:08:32 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_input.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:08:35 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:08:36 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_delegator.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:08:41 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:08:41 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_count.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:08:43 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:08:43 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/seg7.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:08:51 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:08:51 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/DE1_SoC.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:08:57 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:08:57 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/bitcompare.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:09:09 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:09:09 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/lsfr.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:09:14 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:09:14 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:09:31 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:09:31 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:09:35 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:09:36 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/DE1_SoC.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:09:41 on Feb 21,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:09:41 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:10:10 on Feb 21,2017
+# vlog -reportprogress 300 DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:10:11 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:11:48 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:11:48 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# ** Error: Cannot open macro file: tow_main_wave.do
+# Error in macro ./runlab.do line 24
+# Cannot open macro file: tow_main_wave.do
+#     while executing
+# "do tow_main_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:13:44 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:13:44 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui 
+# Start time: 17:13:44 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Error: Missing or invalid env path
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 2
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ropeString'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/dev1'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/dev2'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/play1'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 13
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/play2'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/vic1'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/vic2'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 16
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/action'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/victor'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/clk'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/reset'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/in'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/out'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/ns'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/ps'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 26
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/in_transient'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/in_validated'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui_reset/signal'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/clk'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 30
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/reset'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/in'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/out'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 33
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/ns'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 34
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/ps'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 35
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/in_transient'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 36
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/in_validated'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 37
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui1/signal'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/clk'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/reset'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 40
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/in'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 41
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/out'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 42
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/ns'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 43
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/ps'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 44
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/in_transient'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 45
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/in_validated'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 46
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/ui2/signal'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 47
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p1/increment'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 59
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p1/idle'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 60
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p1/vulnerable'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 61
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p1/win'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 62
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p1/pattern'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 63
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p1/v'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 66
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p1/w'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 67
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/clk'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 69
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/reset'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 70
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/increment'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 71
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/idle'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 72
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/vulnerable'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 73
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/win'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 74
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/pattern'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 75
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/ps'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 76
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/ns'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 77
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/v'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 78
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/w'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 79
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/p2/signal'.
+# Executing ONERROR command at macro ./DE1_SoC_wave.do line 80
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(108)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 108
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 108
+# MACRO ./runlab.do PAUSED at line 32
+add wave -position end sim:/DE1_SoC_testbench/dut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:14:38 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:14:38 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:14:39 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(108)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 108
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 108
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:08 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:16:08 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:08 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:16:08 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:08 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:16:08 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:08 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:16:08 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:08 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:16:08 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:08 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:16:09 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:09 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:16:09 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:16:09 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:16:09 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:16:09 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(109)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 109
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 109
+# MACRO ./runlab.do PAUSED at line 32
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+do runlab_lsfr.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:18:55 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:18:55 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:18:55 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:18:55 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:18:56 on Feb 21,2017
 # Loading sv_std.std
 # Loading work.lsfr_testbench
 # Loading work.lsfr
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./lsfr.sv(45)
+#    Time: 102350 ps  Iteration: 1  Instance: /lsfr_testbench
 # Break in Module lsfr_testbench at ./lsfr.sv line 45
 # Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 45
-# MACRO ./runlab.do PAUSED at line 26
-add wave -position end  sim:/lsfr_testbench/dut/clk
-add wave -position end  sim:/lsfr_testbench/dut/in
-add wave -position end  sim:/lsfr_testbench/dut/out
-add wave -position end  sim:/lsfr_testbench/dut/q
-add wave -position end  sim:/lsfr_testbench/dut/v
-add wave -position end  sim:/lsfr_testbench/dut/i
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
+# MACRO ./runlab_lsfr.do PAUSED at line 26
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module clock_divider
 # -- Compiling module DE1_SoC_testbench
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:19:19 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:19:19 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:19:20 on Feb 21,2017
 # Loading sv_std.std
-# Loading work.lsfr_testbench
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
 # Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 45
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 45
-# MACRO ./runlab.do PAUSED at line 26
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/lsfr_wave.do
+# ** Note: $stop    : ./DE1_SoC.sv(109)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 109
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 109
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:24:00 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:24:00 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:24:01 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.clock_divider
+# Loading work.DE1_SoC
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(114)
+#    Time: 186777550 ps  Iteration: 2  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 114
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 114
+# MACRO ./runlab.do PAUSED at line 32
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:14 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:33:14 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:14 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:33:14 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:14 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:33:14 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:14 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:33:14 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:14 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:33:14 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:14 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:33:15 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:15 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:33:15 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:33:15 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:33:15 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:33:15 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.clock_divider
+# Loading work.DE1_SoC
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(122)
+#    Time: 1434451584 ps  Iteration: 2  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 122
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 122
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:12 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:35:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:12 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:35:13 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:13 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:35:13 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:13 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:35:13 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:13 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:35:13 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:13 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:35:13 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:13 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:35:13 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:35:13 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:35:13 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:35:13 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.clock_divider
+# Loading work.DE1_SoC
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(89): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(82).
+# 
+#         Region: /DE1_SoC_testbench
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(88): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(82).
+# 
+#         Region: /DE1_SoC_testbench
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(122)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 122
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 122
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:16 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:37:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:37:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:16 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:37:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:16 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:37:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:16 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:37:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:37:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:37:17 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:37:17 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:37:17 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:37:17 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.clock_divider
+# Loading work.DE1_SoC
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(93): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(82).
+# 
+#         Region: /DE1_SoC_testbench
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(92): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(82).
+# 
+#         Region: /DE1_SoC_testbench
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(126)
+#    Time: 2800 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 126
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 126
+# MACRO ./runlab.do PAUSED at line 32
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do runlab_input.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:40:39 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:40:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:40:39 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.tow_input_testbench
+# Loading work.tow_input
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./tow_input.sv(80)
+#    Time: 2450 ps  Iteration: 1  Instance: /tow_input_testbench
+# Break in Module tow_input_testbench at ./tow_input.sv line 80
+# Simulation Breakpoint: Break in Module tow_input_testbench at ./tow_input.sv line 80
+# MACRO ./runlab_input.do PAUSED at line 25
+do runlab_score.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:41:04 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:41:04 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:41:04 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.tow_score_testbench
+# Loading work.tow_score
+# ** Warning: (vsim-3015) ./tow_score.sv(112): [PCDPC] - Port size (2) does not match connection size (1) for port 'idle'. The port definition is at: ./tow_score.sv(2).
+# 
+#         Region: /tow_score_testbench/dut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./tow_score.sv(139)
+#    Time: 1750 ps  Iteration: 1  Instance: /tow_score_testbench
+# Break in Module tow_score_testbench at ./tow_score.sv line 139
+# Simulation Breakpoint: Break in Module tow_score_testbench at ./tow_score.sv line 139
+# MACRO ./runlab_score.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:20 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:43:20 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:20 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:43:20 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:20 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:43:20 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:20 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:43:20 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:20 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:43:20 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:20 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:43:20 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:20 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:43:21 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:43:21 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:43:21 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:43:21 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.clock_divider
+# Loading work.DE1_SoC
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(93): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(82).
+# 
+#         Region: /DE1_SoC_testbench
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(92): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(82).
+# 
+#         Region: /DE1_SoC_testbench
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(126)
+#    Time: 2800 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 126
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 126
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:54:37 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:54:37 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:54:38 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(94): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(90).
+# 
+#         Region: /DE1_SoC_testbench
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(93): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(90).
+# 
+#         Region: /DE1_SoC_testbench
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(127)
+#    Time: 2800 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 127
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 127
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:17 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:58:17 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:17 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 17:58:17 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:17 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 17:58:17 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:17 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 17:58:17 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:17 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 17:58:18 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:18 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 17:58:18 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:18 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 17:58:18 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 17:58:18 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 17:58:18 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:58:18 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(94): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(90).
+# 
+#         Region: /DE1_SoC_testbench
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(93): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(90).
+# 
+#         Region: /DE1_SoC_testbench
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(127)
+#    Time: 2800 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 127
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 127
+# MACRO ./runlab.do PAUSED at line 32
+add wave -position end sim:/DE1_SoC_testbench/dut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+# WARNING: No extended dataflow license exists
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:09 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:00:09 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:09 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:00:09 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:09 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:00:09 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:09 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:00:10 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:10 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:00:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:10 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:00:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:10 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:00:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:00:10 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:00:10 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:00:10 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(94): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(90).
+# 
+#         Region: /DE1_SoC_testbench
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(93): Variable '/DE1_SoC_testbench/clk[15]', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(90).
+# 
+#         Region: /DE1_SoC_testbench
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(127)
+#    Time: 2800 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 127
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 127
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:21 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:22 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:22 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:22 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:22 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:22 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:22 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:07:22 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:07:22 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:07:23 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(124)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
+# MACRO ./runlab.do PAUSED at line 32
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+add wave -position end sim:/DE1_SoC_testbench/dut/p1/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:16:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:16:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:16:17 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Error: Missing or invalid env path
+# Executing ONERROR command at macro ./main_wave.do line 2
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/setting'.
+# Executing ONERROR command at macro ./main_wave.do line 18
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:15 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:17:15 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:15 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:17:15 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:15 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:17:15 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:15 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:17:16 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:16 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:17:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:17:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:17:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:16 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:17:16 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:17:16 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Error: Missing or invalid env path
+# Executing ONERROR command at macro ./main_wave.do line 2
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/setting'.
+# Executing ONERROR command at macro ./main_wave.do line 18
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 5700 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:17:35 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:17:35 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:17:35 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:17:35 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:17:35 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:17:35 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:17:35 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:17:35 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:17:36 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:17:36 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# ** Error: Missing or invalid env path
+# Executing ONERROR command at macro ./main_wave.do line 2
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/setting'.
+# Executing ONERROR command at macro ./main_wave.do line 18
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+add wave -position end  sim:/DE1_SoC_testbench/dut/clk[0]
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:39 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:36:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:39 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:36:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:39 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:36:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:39 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:36:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:39 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:36:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:39 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:36:40 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:40 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:36:40 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:36:40 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:36:40 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:36:40 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:37:51 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# ** Error: ./DE1_SoC.sv(67): near ")": syntax error, unexpected ')'
+# -- Compiling module DE1_SoC_testbench
+# End time: 18:37:51 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:07 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:38:07 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:07 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:38:07 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:07 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:38:07 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:07 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:38:07 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:07 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:38:07 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:07 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:38:07 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:07 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:38:08 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:38:08 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:38:08 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:38:08 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:11 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:12 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:12 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:12 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:12 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:12 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:12 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:39:12 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:39:12 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:39:12 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:30 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:40:30 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:30 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:40:30 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:30 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:40:30 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:30 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:40:30 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:30 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:40:31 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:31 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:40:31 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:31 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:40:31 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:40:31 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:40:31 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:40:31 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+add wave -position 12  sim:/DE1_SoC_testbench/SW
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/main_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:56 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:41:56 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:56 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:41:56 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:56 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:41:56 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:56 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:41:56 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:56 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:41:57 on Feb 21,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:57 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:41:57 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:57 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:41:57 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:41:57 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:41:57 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:41:57 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:42:39 on Feb 21,2017
+# vlog -reportprogress 300 ./tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 18:42:39 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:42:40 on Feb 21,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.bitcompare
+# Loading work.tow_input
+# Loading work.tow_delegator
+# Loading work.tow_score
+# Loading work.tow_count
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(123)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
+# MACRO ./runlab.do PAUSED at line 32
+# End time: 18:43:39 on Feb 21,2017, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0

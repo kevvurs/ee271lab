@@ -36,6 +36,7 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						signal = 4'b0001;
 						v = 0;
 						w = 1;
+						ns = N;
 					end
 			endcase
 		end
@@ -89,6 +90,7 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						signal = 4'b0001;
 						ns = ps;
 						w = 1;
+						ns = N;
 					end
 			endcase
 		end
