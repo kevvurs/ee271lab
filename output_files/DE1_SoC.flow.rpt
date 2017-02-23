@@ -1,6 +1,6 @@
 Flow report for DE1_SoC
-Tue Feb 21 18:14:17 2017
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Full Version
+Wed Feb 22 16:09:15 2017
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
 ---------------------
@@ -38,29 +38,29 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Feb 21 18:14:17 2017       ;
-; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Full Version ;
-; Revision Name                   ; DE1_SoC                                     ;
-; Top-level Entity Name           ; DE1_SoC                                     ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CSEMA5F31C6                                ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 48                                          ;
-; Total pins                      ; 67                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Wed Feb 22 16:09:15 2017      ;
+; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
+; Revision Name                   ; DE1_SoC                                    ;
+; Top-level Entity Name           ; DE1_SoC                                    ;
+; Family                          ; Cyclone V                                  ;
+; Device                          ; 5CSEMA5F31C6                               ;
+; Timing Models                   ; Final                                      ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 45                                         ;
+; Total pins                      ; 67                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/21/2017 18:14:05 ;
+; Start date & time ; 02/22/2017 16:09:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE1_SoC             ;
 +-------------------+---------------------+
@@ -79,9 +79,10 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 109952949375379.148772964510848       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 40093579258773.148780855406656        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)       ; <None>        ; --          ; --             ;
+; ENABLE_OCT_DONE                     ; Off                                   ; On            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
@@ -99,8 +100,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 734 MB              ; 00:00:23                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 623 MB              ; 00:00:02                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,7 +110,7 @@ agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; EE-361PC13       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; WIN-51CNPK09GNO  ; Windows 7 ; 6.1        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

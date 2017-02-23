@@ -34,13 +34,13 @@ SW);
  bitcompare #(.WIDTH(10)) comp (.a({1'b0,SW[8:0]}), .b(q), .out(push));
  
  // Game
- logic cyberAction, playerAction, toggle1, toggle2, w1, w2;
+ logic toggle1, toggle2, w1, w2, playerAction;//cyberAction;
  logic [2:0] game;
  logic [3:0] leds1, leds2, games1, games2;
  
  tow_input p1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(KEY[0]), .out(playerAction));
- tow_input p2 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(~push), .out(cyberAction));
- tow_delegator del (.clk(clk[whichClock]), .reset(reset | w1 | w2), .deviate1(toggle1), .deviate2(toggle2), .player1(playerAction), .player2(cyberAction), .out(game));
+ // tow_input p2 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(~push), .out(cyberAction));
+ tow_delegator del (.clk(clk[whichClock]), .reset(reset | w1 | w2), .deviate1(toggle1), .deviate2(toggle2), .player1(playerAction), .player2(push), .out(game));
  tow_score sc1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .idle(game[2:1]), .increment(game[0]), .vulnerable(toggle1), .pattern(leds1), .win(w1));
  tow_score sc2 (.clk(clk[whichClock]), .reset(reset  | w1 | w2), .idle(~game[2:1]), .increment(game[0]), .vulnerable(toggle2), .pattern(leds2), .win(w2));
  tow_count c1 (.clk(clk[whichClock]), .reset(reset), .in(w1), .display(games1));
@@ -49,11 +49,7 @@ SW);
  seg7 hexCyber (.bcd(games2), .leds(HEX5));
  assign LEDR[5] = (leds1 == leds2);
  assign LEDR[4:1] = leds1;
- assign LEDR[6] = leds2[3];
- assign LEDR[7] = leds2[2];
- assign LEDR[8] = leds2[1];
- assign LEDR[9] = leds2[0];
- //
+ assign {LEDR[6],LEDR[7],LEDR[8],LEDR[9]} = leds2;
 endmodule
 
 // divided_clocks[0] = 25MHz, [1] = 12.5Mhz, ... [23] = 3Hz, [24] = 1.5Hz,[25] = 0.75Hz
@@ -62,10 +58,11 @@ module clock_divider (clock, divided_clocks);
  output logic [31:0] divided_clocks;
 
  initial
- divided_clocks <= 1;
+ divided_clocks <= 0;
 
- always_ff @(posedge clock or negedge clock)
- divided_clocks <= divided_clocks + 1;
+ always_ff @(posedge clock)
+	divided_clocks <= divided_clocks + 1;
+	
 endmodule
 
 module DE1_SoC_testbench();
@@ -82,15 +79,9 @@ module DE1_SoC_testbench();
 		CLOCK_50 <= 0;
 		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
 	end
-	
-	/* Generate clk off of CLOCK_50, whichClock picks rate.
-	 * logic [31:0] clk;
-	 * parameter whichClock = 15;
-	 * clock_divider cdiv (CLOCK_50, clk);
-	 */
 	 
  initial begin
- SW[8:0] <= 9'b001001001; KEY[3:1] = 3'b000;
+ SW[8:0] <= 9'b000000101; KEY[3:1] = 3'b000;
  SW[9] <= 0; KEY[0] <= 1;	@(posedge CLOCK_50);
 				 KEY[0] <= 1;	@(posedge CLOCK_50);
 				 KEY[0] <= 0;	@(posedge CLOCK_50);
@@ -115,6 +106,11 @@ module DE1_SoC_testbench();
 									@(posedge CLOCK_50);
 				KEY[0] <= 0;	@(posedge CLOCK_50);
 				KEY[0] <= 1;	@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
 									@(posedge CLOCK_50);
 									@(posedge CLOCK_50);
 									@(posedge CLOCK_50);

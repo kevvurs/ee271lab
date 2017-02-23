@@ -1,25 +1,21 @@
 onerror {resume}
-quietly virtual function -install /DE1_SoC_testbench -env /DE1_SoC_testbench/#INITIAL#92 { &{/DE1_SoC_testbench/SW[8], /DE1_SoC_testbench/SW[7], /DE1_SoC_testbench/SW[6], /DE1_SoC_testbench/SW[5], /DE1_SoC_testbench/SW[4], /DE1_SoC_testbench/SW[3], /DE1_SoC_testbench/SW[2], /DE1_SoC_testbench/SW[1], /DE1_SoC_testbench/SW[0] }} setting
+quietly virtual function -install /DE1_SoC_testbench -env /DE1_SoC_testbench/#INITIAL#83 { &{/DE1_SoC_testbench/SW[9], /DE1_SoC_testbench/SW[8], /DE1_SoC_testbench/SW[7], /DE1_SoC_testbench/SW[6], /DE1_SoC_testbench/SW[5], /DE1_SoC_testbench/SW[4], /DE1_SoC_testbench/SW[3], /DE1_SoC_testbench/SW[2], /DE1_SoC_testbench/SW[1] }} playingField
+quietly virtual function -install /DE1_SoC_testbench -env /DE1_SoC_testbench/#INITIAL#83 { &{/DE1_SoC_testbench/LEDR[9], /DE1_SoC_testbench/LEDR[8], /DE1_SoC_testbench/LEDR[7], /DE1_SoC_testbench/LEDR[6], /DE1_SoC_testbench/LEDR[5], /DE1_SoC_testbench/LEDR[4], /DE1_SoC_testbench/LEDR[3], /DE1_SoC_testbench/LEDR[2], /DE1_SoC_testbench/LEDR[1] }} playingField001
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /DE1_SoC_testbench/dut/CLOCK_50
 add wave -noupdate /DE1_SoC_testbench/dut/HEX0
-add wave -noupdate /DE1_SoC_testbench/dut/HEX1
-add wave -noupdate /DE1_SoC_testbench/dut/HEX2
-add wave -noupdate /DE1_SoC_testbench/dut/HEX3
-add wave -noupdate /DE1_SoC_testbench/dut/HEX4
 add wave -noupdate /DE1_SoC_testbench/dut/HEX5
-add wave -noupdate /DE1_SoC_testbench/dut/LEDR
 add wave -noupdate /DE1_SoC_testbench/dut/in
 add wave -noupdate /DE1_SoC_testbench/dut/out
-add wave -noupdate -group reset {/DE1_SoC_testbench/dut/SW[9]}
-add wave -noupdate -group reset /DE1_SoC_testbench/dut/pre_reset
-add wave -noupdate -group reset /DE1_SoC_testbench/dut/reset
-add wave -noupdate -radix unsigned -childformat {{{/DE1_SoC_testbench/dut/q[9]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[8]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[7]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[6]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[5]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[4]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[3]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[2]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[1]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[0]} -radix unsigned}} -subitemconfig {{/DE1_SoC_testbench/dut/q[9]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[8]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[7]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[6]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[5]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[4]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[3]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[2]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[1]} {-radix unsigned} {/DE1_SoC_testbench/dut/q[0]} {-radix unsigned}} /DE1_SoC_testbench/dut/q
-add wave -noupdate -radix unsigned /DE1_SoC_testbench/setting
-add wave -noupdate -expand -group userActions -label playerKey {/DE1_SoC_testbench/dut/KEY[0]}
-add wave -noupdate -expand -group userActions -label cyberKey /DE1_SoC_testbench/dut/push
-add wave -noupdate -expand -group gameAction /DE1_SoC_testbench/dut/cyberAction
-add wave -noupdate -expand -group gameAction /DE1_SoC_testbench/dut/playerAction
+add wave -noupdate -expand -group reset {/DE1_SoC_testbench/dut/SW[9]}
+add wave -noupdate -expand -group reset /DE1_SoC_testbench/dut/pre_reset
+add wave -noupdate -expand -group reset /DE1_SoC_testbench/dut/reset
+add wave -noupdate -expand -group reset -radix unsigned /DE1_SoC_testbench/SW
+add wave -noupdate -radix unsigned -childformat {{{/DE1_SoC_testbench/dut/q[9]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[8]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[7]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[6]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[5]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[4]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[3]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[2]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[1]} -radix unsigned} {{/DE1_SoC_testbench/dut/q[0]} -radix unsigned}} -subitemconfig {{/DE1_SoC_testbench/dut/q[9]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[8]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[7]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[6]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[5]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[4]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[3]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[2]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[1]} {-height 18 -radix unsigned} {/DE1_SoC_testbench/dut/q[0]} {-height 18 -radix unsigned}} /DE1_SoC_testbench/dut/q
+add wave -noupdate -expand -group userActions -color Coral -itemcolor Coral -label cyberKey /DE1_SoC_testbench/dut/push
+add wave -noupdate -expand -group userActions -color Coral -itemcolor Coral -label playerKey {/DE1_SoC_testbench/dut/KEY[0]}
+add wave -noupdate -expand -group userActions -color {Medium Violet Red} -itemcolor {Medium Violet Red} -label playerAction /DE1_SoC_testbench/dut/playerAction
+add wave -noupdate -label playingField /DE1_SoC_testbench/playingField001
 add wave -noupdate /DE1_SoC_testbench/dut/toggle1
 add wave -noupdate /DE1_SoC_testbench/dut/toggle2
 add wave -noupdate /DE1_SoC_testbench/dut/w1
@@ -30,16 +26,8 @@ add wave -noupdate /DE1_SoC_testbench/dut/leds2
 add wave -noupdate /DE1_SoC_testbench/dut/games1
 add wave -noupdate /DE1_SoC_testbench/dut/games2
 add wave -noupdate /DE1_SoC_testbench/dut/p1/clk
-add wave -noupdate /DE1_SoC_testbench/dut/p1/reset
-add wave -noupdate /DE1_SoC_testbench/dut/p1/in
-add wave -noupdate /DE1_SoC_testbench/dut/p1/out
-add wave -noupdate /DE1_SoC_testbench/dut/p1/ns
-add wave -noupdate /DE1_SoC_testbench/dut/p1/ps
-add wave -noupdate /DE1_SoC_testbench/dut/p1/in_transient
-add wave -noupdate /DE1_SoC_testbench/dut/p1/in_validated
-add wave -noupdate /DE1_SoC_testbench/dut/p1/signal
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {743 ps} 0}
+WaveRestoreCursors {{Cursor 1} {342 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 331
 configure wave -valuecolwidth 100

@@ -1,7 +1,7 @@
 module lsfr #(parameter WIDTH=10, x1=6, x2=9) (clk, in, out, q);
 	input logic clk, in;
 	output logic out;
-	output logic [WIDTH-1:0] q = 0;
+	output logic [WIDTH-1:0] q = 10'b0101010101;
 	logic v;
 	integer i;
 	
