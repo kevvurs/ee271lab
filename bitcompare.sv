@@ -8,10 +8,10 @@ module bitcompare #(parameter WIDTH=10) (a, b, out);
 		c = (a - b);
 		if (c == 0)
 			greaterThan = 0;
-		else if (c > a)
-			greaterThan = 0;
-		else
+		else if (c < a)
 			greaterThan = 1;
+		else
+			greaterThan = 0;
 	end
 	
 	assign out = greaterThan;

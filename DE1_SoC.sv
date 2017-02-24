@@ -1,4 +1,4 @@
-module DE1_SoC #(parameter whichClock=15) (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR,
+module DE1_SoC #(parameter whichClock=14) (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR,
 SW);
  input logic CLOCK_50; // 50MHz clock.
  output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
@@ -38,7 +38,7 @@ SW);
  logic [2:0] game;
  logic [3:0] leds1, leds2, games1, games2;
  
- tow_input p1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(KEY[0]), .out(playerAction));
+ tow_input p1 (.clk(clk[whichClock]), .reset(reset), .in(KEY[0]), .out(playerAction));
  // tow_input p2 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(~push), .out(cyberAction));
  tow_delegator del (.clk(clk[whichClock]), .reset(reset | w1 | w2), .deviate1(toggle1), .deviate2(toggle2), .player1(playerAction), .player2(push), .out(game));
  tow_score sc1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .idle(game[2:1]), .increment(game[0]), .vulnerable(toggle1), .pattern(leds1), .win(w1));
@@ -58,9 +58,9 @@ module clock_divider (clock, divided_clocks);
  output logic [31:0] divided_clocks;
 
  initial
- divided_clocks <= 0;
+ divided_clocks <= 1;
 
- always_ff @(posedge clock)
+ always_ff @(posedge clock or negedge clock)//
 	divided_clocks <= divided_clocks + 1;
 	
 endmodule
@@ -81,9 +81,11 @@ module DE1_SoC_testbench();
 	end
 	 
  initial begin
- SW[8:0] <= 9'b000000101; KEY[3:1] = 3'b000;
- SW[9] <= 0; KEY[0] <= 1;	@(posedge CLOCK_50);
-				 KEY[0] <= 1;	@(posedge CLOCK_50);
+ SW[8:0] <= 9'b011110110;
+ KEY[3:1] = 3'b000;
+ SW[9] <= 0; KEY[0] <= 0;	@(posedge CLOCK_50);
+ LEDR[9:0] <=10'b0000100000; 
+				 KEY[0] <= 1;	@(posedge CLOCK_50); 
 				 KEY[0] <= 0;	@(posedge CLOCK_50);
 				 KEY[0] <= 1;	@(posedge CLOCK_50);
 				 KEY[0] <= 0;	@(posedge CLOCK_50);
@@ -96,8 +98,8 @@ module DE1_SoC_testbench();
 				 KEY[0] <= 1;	@(posedge CLOCK_50);
 				 KEY[0] <= 0; 	@(posedge CLOCK_50);
 									@(posedge CLOCK_50);
- SW[9] <= 1;					@(posedge CLOCK_50);	
- SW[9] <= 0;					@(posedge CLOCK_50);
+ 					@(posedge CLOCK_50);	
+ 					@(posedge CLOCK_50);
 				KEY[0] <= 0;	@(posedge CLOCK_50);
 				KEY[0] <= 1;	@(posedge CLOCK_50);
 				KEY[0] <= 0;	@(posedge CLOCK_50);
@@ -106,6 +108,26 @@ module DE1_SoC_testbench();
 									@(posedge CLOCK_50);
 				KEY[0] <= 0;	@(posedge CLOCK_50);
 				KEY[0] <= 1;	@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+	SW[9] <= 1;					@(posedge CLOCK_50);
+	SW[9] <= 0;					@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
+									@(posedge CLOCK_50);
 									@(posedge CLOCK_50);
 									@(posedge CLOCK_50);
 									@(posedge CLOCK_50);
