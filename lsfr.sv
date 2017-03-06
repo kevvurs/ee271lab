@@ -1,7 +1,7 @@
-module lsfr #(parameter WIDTH=10, x1=6, x2=9) (clk, in, out, q);
-	input logic clk, in;
+module lsfr #(parameter WIDTH=10, x1=7, x2=5, x3=4, x4=3) (clk, in, reset, out, q);
+	input logic clk, in, reset;
 	output logic out;
-	output logic [WIDTH-1:0] q = 10'b0101010101;
+	output logic [WIDTH-1:0] q = 8'b01011010;
 	logic v;
 	integer i;
 	
@@ -13,21 +13,23 @@ module lsfr #(parameter WIDTH=10, x1=6, x2=9) (clk, in, out, q);
 		endcase
 	
 	always_ff @(posedge clk) begin
-		q[0] <= v;
-		for (i = 0; i < WIDTH-1; i++) begin
-			q[i+1] <= q[i];
+		if (reset) begin	
+			q[0] <= v;
+			for (i = 0; i < WIDTH-1; i++) begin
+				q[i+1] <= q[i];
+			end
 		end
 	end	
 	
-	assign out = q[x1] ^~ q[x2];
+	assign out = q[x1] ^~ q[x2] ^~ q[x3] ^~ q[x4];
 endmodule
 
 module lsfr_testbench();
-	parameter w=10;
-	logic clk, in, out;
+	parameter w=8;
+	logic clk, in, out, reset;
 	logic [w-1:0] q;
 	
-	lsfr #(.WIDTH(w)) dut (.clk, .in, .out, .q);
+	lsfr #(.WIDTH(w)) dut (.clk, .in, .reset, .out, .q);
 	assign in = out;
 	
 	parameter CLOCK_PERIOD=100;
@@ -37,10 +39,16 @@ module lsfr_testbench();
 	end
 	
 	integer i;
-	parameter k = 1024;
+	parameter k = 4;
 	initial begin
 		for (i = 0; i < k; i++) begin
-			@(posedge clk); assert (q != 10'b1111111111);
+			reset <= 0;	@(posedge clk); assert (q != 8'b11111111);
+		end
+		for (i = 0; i < 2; i++) begin
+			reset <= 1;	@(posedge clk); assert (q != 8'b11111111);
+		end
+		for (i = 0; i < k; i++) begin
+			reset <= 0;	@(posedge clk); assert (q != 8'b11111111);
 		end
 		$stop;
 	end

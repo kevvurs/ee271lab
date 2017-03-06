@@ -1,0 +1,9 @@
+module dynamicHex (in, out);
+	input logic [4:0] in;
+	output logic [6:0] out;
+	
+	always_comb
+		case (in)
+			5'b00000: out = 7'b0001000; // A
+			default: out = 7'bX;
+endmodule

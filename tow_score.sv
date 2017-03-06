@@ -4,7 +4,7 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 	input logic [1:0] idle;
 	output logic vulnerable, win;
 	output logic [3:0] pattern;
-	enum { N, A, B, C, D, F } ns, ps;
+	enum { N, A, B, C, D, F } ps, ns;
 	logic v, w;
 	logic [3:0] signal;
 
@@ -37,6 +37,11 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						v = 0;
 						w = 1;
 						ns = N;
+					end
+				default: begin
+						signal = 4'b0000;
+						ns = N;
+						v = 0;
 					end
 			endcase
 		end
@@ -92,6 +97,11 @@ module tow_score (clk, reset, idle, increment, vulnerable, pattern, win);
 						w = 1;
 						ns = N;
 					end
+				default: begin
+					signal = 4'b0000;
+					ns = N;
+					v = 0;
+				end
 			endcase
 		end
 	assign win = w;

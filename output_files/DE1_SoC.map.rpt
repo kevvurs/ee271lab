@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Wed Feb 22 16:09:15 2017
+Mon Mar 06 00:07:59 2017
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -19,14 +19,18 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
  11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: Top-level Entity: |DE1_SoC
- 14. Parameter Settings for User Entity Instance: lsfr:cyber_input
- 15. Parameter Settings for User Entity Instance: bitcompare:comp
- 16. Port Connectivity Checks: "bitcompare:comp"
- 17. Port Connectivity Checks: "clock_divider:cdiv"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
- 21. Analysis & Synthesis Suppressed Messages
+ 14. Parameter Settings for User Entity Instance: lsfr:dut
+ 15. Parameter Settings for User Entity Instance: safeHex:eachHex[0].displayUnit
+ 16. Parameter Settings for User Entity Instance: safeHex:eachHex[1].displayUnit
+ 17. Parameter Settings for User Entity Instance: safeHex:eachHex[2].displayUnit
+ 18. Parameter Settings for User Entity Instance: safeHex:eachHex[3].displayUnit
+ 19. Parameter Settings for User Entity Instance: safeMarquee:hexd
+ 20. Port Connectivity Checks: "safeMarquee:hexd"
+ 21. Port Connectivity Checks: "clock_divider:cdiv"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,13 +57,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Feb 22 16:09:15 2017      ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 06 00:07:58 2017      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 45                                         ;
+; Total registers                 ; 316                                        ;
 ; Total pins                      ; 67                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
@@ -185,89 +189,107 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
 ; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/DE1_SoC.sv       ;         ;
 ; seg7.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/seg7.sv          ;         ;
-; tow_delegator.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/tow_delegator.sv ;         ;
-; tow_input.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/tow_input.sv     ;         ;
-; tow_score.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/tow_score.sv     ;         ;
 ; lsfr.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/lsfr.sv          ;         ;
-; bitcompare.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/bitcompare.sv    ;         ;
-; tow_count.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/tow_count.sv     ;         ;
+; scrollHex.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/scrollHex.sv     ;         ;
+; keyHandle.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/keyHandle.sv     ;         ;
+; decoder2_4.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/decoder2_4.sv    ;         ;
+; numHex.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/numHex.sv        ;         ;
+; safeHex.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/safeHex.sv       ;         ;
+; segEncoder7_4.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/segEncoder7_4.sv ;         ;
+; evalSafe.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/evalSafe.sv      ;         ;
+; evalEncoder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/evalEncoder.sv   ;         ;
+; safeMarquee.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/safeMarquee.sv   ;         ;
+; stutter16.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hpadmin/workspace/ee271lab/stutter16.sv     ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                         ;
-+---------------------------------------------+---------------------------------------+
-; Resource                                    ; Usage                                 ;
-+---------------------------------------------+---------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 94                                    ;
-;                                             ;                                       ;
-; Combinational ALUT usage for logic          ; 144                                   ;
-;     -- 7 input functions                    ; 0                                     ;
-;     -- 6 input functions                    ; 43                                    ;
-;     -- 5 input functions                    ; 32                                    ;
-;     -- 4 input functions                    ; 3                                     ;
-;     -- <=3 input functions                  ; 66                                    ;
-;                                             ;                                       ;
-; Dedicated logic registers                   ; 45                                    ;
-;                                             ;                                       ;
-; I/O pins                                    ; 67                                    ;
-; Total DSP Blocks                            ; 0                                     ;
-; Maximum fan-out node                        ; clock_divider:cdiv|divided_clocks[15] ;
-; Maximum fan-out                             ; 30                                    ;
-; Total fan-out                               ; 755                                   ;
-; Average fan-out                             ; 2.34                                  ;
-+---------------------------------------------+---------------------------------------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                        ;
++---------------------------------------------+--------------------------------------+
+; Resource                                    ; Usage                                ;
++---------------------------------------------+--------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 216                                  ;
+;                                             ;                                      ;
+; Combinational ALUT usage for logic          ; 332                                  ;
+;     -- 7 input functions                    ; 0                                    ;
+;     -- 6 input functions                    ; 34                                   ;
+;     -- 5 input functions                    ; 157                                  ;
+;     -- 4 input functions                    ; 30                                   ;
+;     -- <=3 input functions                  ; 111                                  ;
+;                                             ;                                      ;
+; Dedicated logic registers                   ; 316                                  ;
+;                                             ;                                      ;
+; I/O pins                                    ; 67                                   ;
+; Total DSP Blocks                            ; 0                                    ;
+; Maximum fan-out node                        ; clock_divider:cdiv|divided_clocks[8] ;
+; Maximum fan-out                             ; 308                                  ;
+; Total fan-out                               ; 2667                                 ;
+; Average fan-out                             ; 3.41                                 ;
++---------------------------------------------+--------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                               ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
-; |DE1_SoC                   ; 144 (3)           ; 45 (2)       ; 0                 ; 0          ; 67   ; 0            ; |DE1_SoC                    ; work         ;
-;    |bitcompare:comp|       ; 26 (26)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|bitcompare:comp    ; work         ;
-;    |clock_divider:cdiv|    ; 16 (16)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:cdiv ; work         ;
-;    |lsfr:cyber_input|      ; 10 (10)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|lsfr:cyber_input   ; work         ;
-;    |seg7:hexCyber|         ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|seg7:hexCyber      ; work         ;
-;    |seg7:hexPlayer|        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|seg7:hexPlayer     ; work         ;
-;    |tow_count:c1|          ; 5 (5)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_count:c1       ; work         ;
-;    |tow_count:c2|          ; 5 (5)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_count:c2       ; work         ;
-;    |tow_delegator:del|     ; 5 (5)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_delegator:del  ; work         ;
-;    |tow_input:p1|          ; 2 (2)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_input:p1       ; work         ;
-;    |tow_score:sc1|         ; 29 (29)           ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_score:sc1      ; work         ;
-;    |tow_score:sc2|         ; 29 (29)           ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|tow_score:sc2      ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
++-------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
+; |DE1_SoC                                  ; 332 (21)          ; 316 (17)     ; 0                 ; 0          ; 67   ; 0            ; |DE1_SoC                                      ; work         ;
+;    |clock_divider:cdiv|                   ; 9 (9)             ; 9 (9)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:cdiv                   ; work         ;
+;    |evalSafe:checker|                     ; 28 (28)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|evalSafe:checker                     ; work         ;
+;    |keyHandle:LeftScroll|                 ; 1 (1)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|keyHandle:LeftScroll                 ; work         ;
+;    |keyHandle:RightScroll|                ; 1 (1)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|keyHandle:RightScroll                ; work         ;
+;    |keyHandle:subKey|                     ; 1 (1)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|keyHandle:subKey                     ; work         ;
+;    |lsfr:dut|                             ; 7 (7)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|lsfr:dut                             ; work         ;
+;    |safeHex:eachHex[0].displayUnit|       ; 6 (6)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|safeHex:eachHex[0].displayUnit       ; work         ;
+;    |safeHex:eachHex[1].displayUnit|       ; 6 (6)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|safeHex:eachHex[1].displayUnit       ; work         ;
+;    |safeHex:eachHex[2].displayUnit|       ; 6 (6)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|safeHex:eachHex[2].displayUnit       ; work         ;
+;    |safeHex:eachHex[3].displayUnit|       ; 6 (6)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|safeHex:eachHex[3].displayUnit       ; work         ;
+;    |safeMarquee:hexd|                     ; 230 (209)         ; 251 (235)    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|safeMarquee:hexd                     ; work         ;
+;       |stutter16:st|                      ; 21 (21)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|safeMarquee:hexd|stutter16:st        ; work         ;
+;    |scrollHex:scrl|                       ; 2 (2)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|scrollHex:scrl                       ; work         ;
+;    |segEncoder7_4:eachVal[0].encoderUnit| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|segEncoder7_4:eachVal[0].encoderUnit ; work         ;
+;    |segEncoder7_4:eachVal[1].encoderUnit| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|segEncoder7_4:eachVal[1].encoderUnit ; work         ;
+;    |segEncoder7_4:eachVal[2].encoderUnit| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|segEncoder7_4:eachVal[2].encoderUnit ; work         ;
+;    |segEncoder7_4:eachVal[3].encoderUnit| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|segEncoder7_4:eachVal[3].encoderUnit ; work         ;
++-------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                 ;
-+-------------------------------------------+----------------------------------------+
-; Register name                             ; Reason for Removal                     ;
-+-------------------------------------------+----------------------------------------+
-; tow_delegator:del|ps[2..31]               ; Stuck at GND due to stuck port data_in ;
-; tow_input:p1|ps[1..31]                    ; Stuck at GND due to stuck port data_in ;
-; tow_count:c2|ps[3..30]                    ; Merged with tow_count:c2|ps[31]        ;
-; tow_count:c1|ps[3..30]                    ; Merged with tow_count:c1|ps[31]        ;
-; tow_score:sc1|ps[3..9,11..31]             ; Merged with tow_score:sc1|ps[10]       ;
-; tow_score:sc2|ps[3..9,11..31]             ; Merged with tow_score:sc2|ps[10]       ;
-; tow_count:c2|ps[31]                       ; Stuck at GND due to stuck port data_in ;
-; tow_count:c1|ps[31]                       ; Stuck at GND due to stuck port data_in ;
-; tow_score:sc2|ps[10]                      ; Stuck at GND due to stuck port data_in ;
-; tow_score:sc1|ps[10]                      ; Stuck at GND due to stuck port data_in ;
-; clock_divider:cdiv|divided_clocks[16..31] ; Lost fanout                            ;
-; Total Number of Removed Registers = 193   ;                                        ;
-+-------------------------------------------+----------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++------------------------------------------+--------------------------------------------------+
+; Register name                            ; Reason for Removal                               ;
++------------------------------------------+--------------------------------------------------+
+; keyHandle:subKey|ps[1..31]               ; Stuck at GND due to stuck port data_in           ;
+; keyHandle:RightScroll|ps[1..31]          ; Stuck at GND due to stuck port data_in           ;
+; keyHandle:LeftScroll|ps[1..31]           ; Stuck at GND due to stuck port data_in           ;
+; totalCorrect[3]                          ; Merged with totalMisplaced[3]                    ;
+; scrollHex:scrl|ps[2..25,27..31]          ; Merged with scrollHex:scrl|ps[26]                ;
+; safeHex:eachHex[3].displayUnit|ps[3]     ; Merged with safeHex:eachHex[3].displayUnit|ps[0] ;
+; safeHex:eachHex[2].displayUnit|ps[3]     ; Merged with safeHex:eachHex[2].displayUnit|ps[0] ;
+; safeHex:eachHex[1].displayUnit|ps[3]     ; Merged with safeHex:eachHex[1].displayUnit|ps[0] ;
+; safeHex:eachHex[0].displayUnit|ps[3]     ; Merged with safeHex:eachHex[0].displayUnit|ps[0] ;
+; totalMisplaced[3]                        ; Stuck at GND due to stuck port data_in           ;
+; safeHex:eachHex[3].displayUnit|ps[1]     ; Stuck at GND due to stuck port data_in           ;
+; safeHex:eachHex[2].displayUnit|ps[1]     ; Stuck at GND due to stuck port data_in           ;
+; safeHex:eachHex[1].displayUnit|ps[1]     ; Stuck at GND due to stuck port data_in           ;
+; safeHex:eachHex[0].displayUnit|ps[1]     ; Stuck at GND due to stuck port data_in           ;
+; scrollHex:scrl|ps[26]                    ; Stuck at GND due to stuck port data_in           ;
+; clock_divider:cdiv|divided_clocks[9..31] ; Lost fanout                                      ;
+; Total Number of Removed Registers = 156  ;                                                  ;
++------------------------------------------+--------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                      ;
-+-------------------------+---------------------------+--------------------------------------------+
-; Register name           ; Reason for Removal        ; Registers Removed due to This Register     ;
-+-------------------------+---------------------------+--------------------------------------------+
-; tow_delegator:del|ps[2] ; Stuck at GND              ; tow_score:sc2|ps[10], tow_score:sc1|ps[10] ;
-;                         ; due to stuck port data_in ;                                            ;
-+-------------------------+---------------------------+--------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                           ;
++-----------------------------+---------------------------+-----------------------------------------------------------------------------+
+; Register name               ; Reason for Removal        ; Registers Removed due to This Register                                      ;
++-----------------------------+---------------------------+-----------------------------------------------------------------------------+
+; keyHandle:RightScroll|ps[1] ; Stuck at GND              ; safeHex:eachHex[3].displayUnit|ps[1], safeHex:eachHex[2].displayUnit|ps[1], ;
+;                             ; due to stuck port data_in ; safeHex:eachHex[1].displayUnit|ps[1], scrollHex:scrl|ps[26]                 ;
+; keyHandle:subKey|ps[1]      ; Stuck at GND              ; totalMisplaced[3]                                                           ;
+;                             ; due to stuck port data_in ;                                                                             ;
++-----------------------------+---------------------------+-----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -275,12 +297,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 45    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 316   ;
+; Number of registers using Synchronous Clear  ; 135   ;
+; Number of registers using Synchronous Load   ; 133   ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 249   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -290,27 +312,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; lsfr:cyber_input|q[8]                  ; 2       ;
-; lsfr:cyber_input|q[4]                  ; 2       ;
-; lsfr:cyber_input|q[0]                  ; 2       ;
-; lsfr:cyber_input|q[2]                  ; 2       ;
-; lsfr:cyber_input|q[6]                  ; 3       ;
-; clock_divider:cdiv|divided_clocks[0]   ; 2       ;
-; Total number of inverted registers = 6 ;         ;
+; lsfr:dut|q[1]                          ; 5       ;
+; lsfr:dut|q[3]                          ; 6       ;
+; lsfr:dut|q[4]                          ; 6       ;
+; lsfr:dut|q[6]                          ; 5       ;
+; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC|tow_score:sc1|ps[2]      ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC|tow_score:sc2|ps[0]      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|tow_delegator:del|signal ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|tow_score:sc1|pattern[3] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|tow_score:sc2|pattern[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|stutter16:st|ps[12]              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC|totalCorrect[2]                                   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[0][0]                    ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[0][3]                    ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC|attempts[0][1]                                    ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |DE1_SoC|attempts[1][2]                                    ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[28][2]                   ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[28][5]                   ;
+; 8:1                ; 68 bits   ; 340 LEs       ; 136 LEs              ; 204 LEs                ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[22][6]                   ;
+; 8:1                ; 28 bits   ; 140 LEs       ; 56 LEs               ; 84 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[10][3]                   ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[7][1]                    ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 0 LEs                ; 160 LEs                ; Yes        ; |DE1_SoC|safeMarquee:hexd|j[21]                            ;
+; 8:1                ; 65 bits   ; 325 LEs       ; 0 LEs                ; 325 LEs                ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[18][6]                   ;
+; 14:1               ; 6 bits    ; 54 LEs        ; 36 LEs               ; 18 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[12][3]                   ;
+; 14:1               ; 6 bits    ; 54 LEs        ; 36 LEs               ; 18 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[11][6]                   ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 10 LEs               ; 8 LEs                  ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[24][4]                   ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 10 LEs               ; 8 LEs                  ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[23][4]                   ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[24][5]                   ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |DE1_SoC|safeMarquee:hexd|display[23][5]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|safeHex:eachHex[3].displayUnit|numHex:unit|out[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|scrollHex:scrl|out[0]                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -318,50 +354,97 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+------------------------------------------------+
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
-; whichClock     ; 15    ; Signed Integer                                 ;
+; whichClock     ; 8     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lsfr:dut ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; WIDTH          ; 8     ; Signed Integer               ;
+; x1             ; 7     ; Signed Integer               ;
+; x2             ; 5     ; Signed Integer               ;
+; x3             ; 4     ; Signed Integer               ;
+; x4             ; 3     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: safeHex:eachHex[0].displayUnit ;
++----------------+---------+--------------------------------------------------+
+; Parameter Name ; Value   ; Type                                             ;
++----------------+---------+--------------------------------------------------+
+; flash          ; 1111111 ; Unsigned Binary                                  ;
+; zero           ; 1000000 ; Unsigned Binary                                  ;
++----------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: safeHex:eachHex[1].displayUnit ;
++----------------+---------+--------------------------------------------------+
+; Parameter Name ; Value   ; Type                                             ;
++----------------+---------+--------------------------------------------------+
+; flash          ; 1111111 ; Unsigned Binary                                  ;
+; zero           ; 1000000 ; Unsigned Binary                                  ;
++----------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: safeHex:eachHex[2].displayUnit ;
++----------------+---------+--------------------------------------------------+
+; Parameter Name ; Value   ; Type                                             ;
++----------------+---------+--------------------------------------------------+
+; flash          ; 1111111 ; Unsigned Binary                                  ;
+; zero           ; 1000000 ; Unsigned Binary                                  ;
++----------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: safeHex:eachHex[3].displayUnit ;
++----------------+---------+--------------------------------------------------+
+; Parameter Name ; Value   ; Type                                             ;
++----------------+---------+--------------------------------------------------+
+; flash          ; 1111111 ; Unsigned Binary                                  ;
+; zero           ; 1000000 ; Unsigned Binary                                  ;
++----------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lsfr:cyber_input ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; WIDTH          ; 10    ; Signed Integer                       ;
-; x1             ; 6     ; Signed Integer                       ;
-; x2             ; 9     ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
+; Parameter Settings for User Entity Instance: safeMarquee:hexd ;
++----------------+---------+------------------------------------+
+; Parameter Name ; Value   ; Type                               ;
++----------------+---------+------------------------------------+
+; space          ; 1111111 ; Unsigned Binary                    ;
++----------------+---------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: bitcompare:comp ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 10    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "safeMarquee:hexd"                                                                              ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; display[28..13] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; display[6..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------+
-; Port Connectivity Checks: "bitcompare:comp" ;
-+------+-------+----------+-------------------+
-; Port ; Type  ; Severity ; Details           ;
-+------+-------+----------+-------------------+
-; a[9] ; Input ; Info     ; Stuck at GND      ;
-+------+-------+----------+-------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clock_divider:cdiv"                                                                                   ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; divided_clocks[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; divided_clocks[14..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:cdiv"                                                                                  ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                  ; Type   ; Severity ; Details                                                                             ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; divided_clocks[31..9] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; divided_clocks[7..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -369,27 +452,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 45                          ;
-;     plain             ; 45                          ;
-; arriav_lcell_comb     ; 146                         ;
-;     arith             ; 15                          ;
-;         1 data inputs ; 14                          ;
+; arriav_ff             ; 316                         ;
+;     ENA               ; 84                          ;
+;     ENA SCLR          ; 32                          ;
+;     ENA SCLR SLD      ; 65                          ;
+;     ENA SLD           ; 68                          ;
+;     SCLR              ; 38                          ;
+;     plain             ; 29                          ;
+; arriav_lcell_comb     ; 333                         ;
+;     arith             ; 56                          ;
+;         1 data inputs ; 55                          ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 121                         ;
-;         0 data inputs ; 2                           ;
+;     normal            ; 277                         ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 32                          ;
-;         6 data inputs ; 43                          ;
-;     shared            ; 10                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 9                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 25                          ;
+;         4 data inputs ; 30                          ;
+;         5 data inputs ; 157                         ;
+;         6 data inputs ; 34                          ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.40                        ;
-; Average LUT depth     ; 4.60                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 2.56                        ;
 +-----------------------+-----------------------------+
 
 
@@ -398,7 +483,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -408,7 +493,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Wed Feb 22 16:09:13 2017
+    Info: Processing started: Mon Mar 06 00:07:55 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 2 entities, in source file mux2_1.sv
@@ -465,29 +550,70 @@ Info (12021): Found 2 design units, including 2 entities, in source file bitcomp
 Info (12021): Found 2 design units, including 2 entities, in source file tow_count.sv
     Info (12023): Found entity 1: tow_count
     Info (12023): Found entity 2: tow_count_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file dynamichex.sv
+    Info (12023): Found entity 1: dynamicHex
+Info (12021): Found 1 design units, including 1 entities, in source file bufferhex.sv
+    Info (12023): Found entity 1: bufferHex
+Info (12021): Found 1 design units, including 1 entities, in source file alphahex.sv
+    Info (12023): Found entity 1: alphaHex
+Info (12021): Found 2 design units, including 2 entities, in source file scrollhex.sv
+    Info (12023): Found entity 1: scrollHex
+    Info (12023): Found entity 2: scrollHex_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file keyhandle.sv
+    Info (12023): Found entity 1: keyHandle
+    Info (12023): Found entity 2: keyHandle_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file decoder2_4.sv
+    Info (12023): Found entity 1: decoder2_4
+    Info (12023): Found entity 2: decoder2_4_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file numhex.sv
+    Info (12023): Found entity 1: numHex
+    Info (12023): Found entity 2: numHex_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file safehex.sv
+    Info (12023): Found entity 1: safeHex
+    Info (12023): Found entity 2: safeHex_testbench
+Info (12021): Found 2 design units, including 2 entities, in source file segencoder7_4.sv
+    Info (12023): Found entity 1: segEncoder7_4
+    Info (12023): Found entity 2: segEncoder7_4_testbench
+Info (12021): Found 0 design units, including 0 entities, in source file safeeval.sv
+Info (12021): Found 1 design units, including 1 entities, in source file evalsafe.sv
+    Info (12023): Found entity 1: evalSafe
+Info (12021): Found 1 design units, including 1 entities, in source file evalencoder.sv
+    Info (12023): Found entity 1: evalEncoder
+Info (12021): Found 1 design units, including 1 entities, in source file safemarquee.sv
+    Info (12023): Found entity 1: safeMarquee
+Info (12021): Found 2 design units, including 2 entities, in source file stutter16.sv
+    Info (12023): Found entity 1: stutter16
+    Info (12023): Found entity 2: stutter_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file counttries.sv
+    Info (12023): Found entity 1: countTries
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
 Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:cdiv"
-Info (12128): Elaborating entity "lsfr" for hierarchy "lsfr:cyber_input"
-Info (12128): Elaborating entity "bitcompare" for hierarchy "bitcompare:comp"
-Info (12128): Elaborating entity "tow_input" for hierarchy "tow_input:p1"
-Info (12128): Elaborating entity "tow_delegator" for hierarchy "tow_delegator:del"
-Info (12128): Elaborating entity "tow_score" for hierarchy "tow_score:sc1"
-Info (12128): Elaborating entity "tow_count" for hierarchy "tow_count:c1"
-Info (12128): Elaborating entity "seg7" for hierarchy "seg7:hexPlayer"
+Info (12128): Elaborating entity "lsfr" for hierarchy "lsfr:dut"
+Info (12128): Elaborating entity "keyHandle" for hierarchy "keyHandle:LeftScroll"
+Info (12128): Elaborating entity "scrollHex" for hierarchy "scrollHex:scrl"
+Info (12128): Elaborating entity "decoder2_4" for hierarchy "decoder2_4:dec"
+Info (12128): Elaborating entity "safeHex" for hierarchy "safeHex:eachHex[0].displayUnit"
+Info (12128): Elaborating entity "numHex" for hierarchy "safeHex:eachHex[0].displayUnit|numHex:unit"
+Info (12128): Elaborating entity "segEncoder7_4" for hierarchy "segEncoder7_4:eachVal[0].encoderUnit"
+Info (12128): Elaborating entity "evalSafe" for hierarchy "evalSafe:checker"
+Info (12128): Elaborating entity "evalEncoder" for hierarchy "evalEncoder:countCorrect"
+Info (12128): Elaborating entity "safeMarquee" for hierarchy "safeMarquee:hexd"
+Info (12128): Elaborating entity "stutter16" for hierarchy "safeMarquee:hexd|stutter16:st"
+Info (12128): Elaborating entity "seg7" for hierarchy "safeMarquee:hexd|seg7:h1"
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 16 registers lost all their fanouts during netlist optimizations.
+Info (17049): 23 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/hpadmin/workspace/ee271lab/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 215 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 491 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 148 logic cells
+    Info (21061): Implemented 424 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 623 megabytes
-    Info: Processing ended: Wed Feb 22 16:09:15 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 612 megabytes
+    Info: Processing ended: Mon Mar 06 00:07:59 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+

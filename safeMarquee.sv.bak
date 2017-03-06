@@ -1,0 +1,8 @@
+module safeMarquee (clk, reset, display, safeDigits, nCorrect);
+	input logic clk, reset;
+	input logic [3:0] nCorrect;
+	input logic [3:0][6:0] safeDigits;
+	output logic [18:0][6:0] display;
+	
+	
+endmodule

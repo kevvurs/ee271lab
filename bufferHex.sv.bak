@@ -1,0 +1,10 @@
+module bufferHex #(parameter WIDTH=5) (clk, reset, in, ex, out);
+	logic [4:0][6:0] buffer;
+	integer i;
+	
+	always_ff @(posedge clk)
+		if (reset) begin
+			for (i = 0; i <5; i++)
+				buffer[i] <= 7'b1111111;
+		end
+endmodule

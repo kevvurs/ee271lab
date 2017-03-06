@@ -1,55 +1,102 @@
-module DE1_SoC #(parameter whichClock=15) (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR,
+module DE1_SoC #(parameter whichClock=8) (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR,
 SW);
  input logic CLOCK_50; // 50MHz clock.
  output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
  output logic [9:0] LEDR;
- input logic [3:0] KEY; // True when not pressed, False when pressed
+ input logic [3:0] KEY;
  input logic [9:0] SW;
-
- assign HEX1 = 7'b1111111;
- assign HEX2 = 7'b1111111;
- assign HEX3 = 7'b1111111;
- assign HEX4 = 7'b1111111;
  
- // Generate clk off of CLOCK_50, whichClock picks rate.
  logic [31:0] clk;
  clock_divider cdiv (CLOCK_50, clk);
  
  //Reset
  logic pre_reset, reset;
- 
  always_ff @(posedge clk[whichClock])
 			pre_reset <= SW[9];
  always_ff @(posedge clk[whichClock])
 			reset <= pre_reset;
+
+ logic feedIn, feedOut;
+ logic [7:0] safeCode;
+ lsfr #(.WIDTH(8)) dut (.clk(clk[whichClock]), .in(feedIn), .reset(reset), .out(feedOut), .q(safeCode));
+ assign feedIn = feedOut;
  
- // LSFR
- logic in, out;
- logic [9:0] q;
- lsfr #(.WIDTH(10)) cyber_input (.clk(clk[whichClock]), .in(in), .out(out), .q(q));
- assign in = out;
+ logic goLeft, goRight, submit, lose;
+ keyHandle LeftScroll (.clk(clk[whichClock]), .reset(reset), .in(KEY[2]), .out(goLeft));
+ keyHandle RightScroll (.clk(clk[whichClock]), .reset(reset), .in(KEY[1]), .out(goRight));
+ keyHandle subKey (.clk(clk[whichClock]), .reset(reset), .in(KEY[3]), .out(submit));
+
+ logic [1:0][3:0] attempts; 
+ always_ff @(posedge clk[whichClock])
+	if (reset) begin
+		lose <= 0;
+		attempts[0] <= 4'b0000;
+		attempts[1] <= 4'b0000;
+	end
+	else begin
+		if (submit) begin
+			if (attempts[0] == 4'b1001) begin
+				if (attempts[1] == 4'b1001) lose <= 1;
+				else begin
+					attempts[1] <= attempts[1] + 4'b0001;
+					attempts[0] <= 4'b0000;
+				end
+			end
+			else attempts[0] <= (attempts[0] + 4'b0001);
+		end
+	end
  
- // Comparator
- logic push;
- bitcompare #(.WIDTH(10)) comp (.a({1'b0,SW[8:0]}), .b(q), .out(push));
+ logic [1:0] sel;
+ scrollHex scrl (.clk(clk[whichClock]), .reset(reset), .inLeft(goLeft), .inRight(goRight), .out(sel));
  
- // Game
- logic toggle1, toggle2, w1, w2, playerAction;//cyberAction;
- logic [2:0] game;
- logic [3:0] leds1, leds2, games1, games2;
+ logic [3:0] enables;
+ decoder2_4 dec (.in(sel), .out(enables));
  
- tow_input p1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(KEY[0]), .out(playerAction));
- // tow_input p2 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .in(~push), .out(cyberAction));
- tow_delegator del (.clk(clk[whichClock]), .reset(reset | w1 | w2), .deviate1(toggle1), .deviate2(toggle2), .player1(playerAction), .player2(push), .out(game));
- tow_score sc1 (.clk(clk[whichClock]), .reset(reset | w1 | w2), .idle(game[2:1]), .increment(game[0]), .vulnerable(toggle1), .pattern(leds1), .win(w1));
- tow_score sc2 (.clk(clk[whichClock]), .reset(reset  | w1 | w2), .idle(~game[2:1]), .increment(game[0]), .vulnerable(toggle2), .pattern(leds2), .win(w2));
- tow_count c1 (.clk(clk[whichClock]), .reset(reset), .in(w1), .display(games1));
- tow_count c2 (.clk(clk[whichClock]), .reset(reset), .in(w2), .display(games2));
- seg7 hexPlayer (.bcd(games1), .leds(HEX0));
- seg7 hexCyber (.bcd(games2), .leds(HEX5));
- assign LEDR[5] = (leds1 == leds2);
- assign LEDR[4:1] = leds1;
- assign {LEDR[6],LEDR[7],LEDR[8],LEDR[9]} = leds2;
+ logic [3:0][6:0] displayBus;
+ genvar i;
+ generate
+	for(i = 0; i < 4; i++) begin : eachHex
+		safeHex displayUnit (.clk(clk[whichClock]), .reset(reset), .enable(enables[i]), .ctrl(SW[1:0]), .hex(displayBus[i]));
+	end
+ endgenerate
+ 
+ logic [3:0][1:0] guessNums;
+ logic [7:0] guess;
+ genvar j;
+ generate
+	for(j = 0; j < 4; j++) begin : eachVal
+		segEncoder7_4 encoderUnit (.hex(displayBus[j]), .val(guessNums[j]));
+	end
+ endgenerate
+ assign guess = {guessNums[0], guessNums[1], guessNums[2], guessNums[3]};
+ 
+ logic [3:0] cflag, mflag, cc, mc, totalCorrect, totalMisplaced;
+ evalSafe checker (.a(guess), .b(safeCode), .c(cflag), .m(mflag));
+ evalEncoder countCorrect (.data(cflag), .count(cc));
+ evalEncoder countMisp (.data(mflag), .count(mc));
+ 
+ 
+ always_ff @(posedge clk[whichClock]) begin
+		if (reset) begin
+			totalCorrect <= 4'b0000;
+			totalMisplaced <= 4'b0000;
+		end
+		if (submit) begin
+			totalCorrect <= cc;
+			totalMisplaced <= mc;
+		end
+	end
+ 
+ logic [28:0][6:0] display;
+ safeMarquee hexd (.clk(clk[whichClock]), .reset(reset), .display(display), .tries(attempts), 
+ .safeDigits(displayBus), .nCorrect(totalCorrect), .nMisplaced(totalMisplaced), .lose(lose));
+ 
+ assign HEX0 = display[7];
+ assign HEX1 = display[8];
+ assign HEX2 = display[9];
+ assign HEX3 = display[10];
+ assign HEX4 = display[11];
+ assign HEX5 = display[12];
 endmodule
 
 // divided_clocks[0] = 25MHz, [1] = 12.5Mhz, ... [23] = 3Hz, [24] = 1.5Hz,[25] = 0.75Hz
@@ -72,50 +119,19 @@ module DE1_SoC_testbench();
  logic [3:0] KEY;
  logic [9:0] SW;
  
- DE1_SoC #(.whichClock(0)) dut (.CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
+ DE1_SoC #(.whichClock(8)) dut (.CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
  
  parameter CLOCK_PERIOD=100;
 	initial begin
 		CLOCK_50 <= 0;
 		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
 	end
-	 
+ 
+ integer i;
  initial begin
- SW[8:0] <= 9'b000000101; KEY[3:1] = 3'b000;
- SW[9] <= 0; KEY[0] <= 1;	@(posedge CLOCK_50);
-				 KEY[0] <= 1;	@(posedge CLOCK_50);
-				 KEY[0] <= 0;	@(posedge CLOCK_50);
-				 KEY[0] <= 1;	@(posedge CLOCK_50);
-				 KEY[0] <= 0;	@(posedge CLOCK_50);
-				 KEY[0] <= 1;	@(posedge CLOCK_50);
-				 KEY[0] <= 0;	@(posedge CLOCK_50);
-				 KEY[0] <= 1;	@(posedge CLOCK_50);
-			  	 KEY[0] <= 0;	@(posedge CLOCK_50);
-				 KEY[0] <= 1;	@(posedge CLOCK_50);
-				 KEY[0] <= 0;	@(posedge CLOCK_50);
-				 KEY[0] <= 1;	@(posedge CLOCK_50);
-				 KEY[0] <= 0; 	@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
- SW[9] <= 1;					@(posedge CLOCK_50);	
- SW[9] <= 0;					@(posedge CLOCK_50);
-				KEY[0] <= 0;	@(posedge CLOCK_50);
-				KEY[0] <= 1;	@(posedge CLOCK_50);
-				KEY[0] <= 0;	@(posedge CLOCK_50);
-				KEY[0] <= 1;	@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-				KEY[0] <= 0;	@(posedge CLOCK_50);
-				KEY[0] <= 1;	@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-									@(posedge CLOCK_50);
-		$stop; // End the simulation.
+	for (i = 0; i < 240; i++) begin
+		@(posedge CLOCK_50); 
+ 	end
+	$stop;
 	end
 endmodule

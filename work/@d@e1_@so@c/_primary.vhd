@@ -2,7 +2,8 @@ library verilog;
 use verilog.vl_types.all;
 entity DE1_SoC is
     generic(
-        whichClock      : integer := 15
+        whichClock      : integer := 0;
+        WIDTH           : integer := 144
     );
     port(
         CLOCK_50        : in     vl_logic;
@@ -18,4 +19,5 @@ entity DE1_SoC is
     );
     attribute mti_svvh_generic_type : integer;
     attribute mti_svvh_generic_type of whichClock : constant is 1;
+    attribute mti_svvh_generic_type of WIDTH : constant is 1;
 end DE1_SoC;

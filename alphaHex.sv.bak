@@ -1,0 +1,19 @@
+module alphaHex (in, out)
+	always_comb
+		case (in)
+			5'b00000: out = 7'b0001000; // A
+			5'b00001: out = 7'b0000111; // b
+			5'b00010: out = 7'b1000110; // C
+			5'b00011: out = 7'b0110000; // d
+			5'b00100: out = 7'b0000110; // E
+			5'b00101: out = 7'b0001110; // F
+			5'b00110: out = 7'b0010000; // g
+			5'b00111: out = 7'b0001100; // h
+			5'b01000: out = 7'b1110000; // I
+			5'b01001: out = 7'b1110001; // J
+			5'b01010: out = 7'b0001111; // k?
+			default: out = 7'bX;
+		endcase
+		
+	assign out = out;
+endmodule

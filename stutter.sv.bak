@@ -1,0 +1,12 @@
+module stutter #(parameter WIDTH=4, parameter MAX=4'b1111) (clk, reset, cy);
+	input logic clk, reset;
+	output logic cy;
+	logic [WIDTH-1:0] ns, ps;
+
+	always_ff @(posedge clk)
+		if (ps == MAX) cy <= 1;
+		else begin
+			cy <= 0;
+			ns <= ps+1;
+		end
+endmodule

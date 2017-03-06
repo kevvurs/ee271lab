@@ -61,6 +61,10 @@ module tow_delegator (clk, reset, deviate1, deviate2, player1, player2, out);
 					signal = 3'b100;
 					ns = ps;
 				end
+			default: begin
+					signal = 3'b100;
+					ns = ps;
+				end
 		endcase
 	
 	assign out = signal;

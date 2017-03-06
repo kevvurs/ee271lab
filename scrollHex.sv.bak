@@ -1,0 +1,33 @@
+module scrollHex #(parameter WIDTH=5) (clk, reset, ex, left, right, buffer, display);
+	input logic clk, reset, ex, left, right;
+	input logic [WIDTH-1:0][6:0] buffer;
+	output logic [4:0][6:0] display;
+	integer x, y;
+	
+	always_comb
+		if (right) begin
+			if (x > 0) begin
+				x--;
+				y--;
+			end
+			else begin
+				x=0;
+				y=0;
+			end
+		if (left) begin
+			if (y < WIDTH - 1) begin
+				x++;
+				y++;
+			end
+			else begin
+				x=WIDH - 5;
+				y=WIDTH - 1;
+			end
+	
+	always_ff @(posedge clk)
+		if (reset) begin
+			x<=0;
+			y<=4;
+		end
+			
+endmodule

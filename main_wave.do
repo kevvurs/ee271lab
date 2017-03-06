@@ -26,8 +26,20 @@ add wave -noupdate /DE1_SoC_testbench/dut/leds2
 add wave -noupdate /DE1_SoC_testbench/dut/games1
 add wave -noupdate /DE1_SoC_testbench/dut/games2
 add wave -noupdate /DE1_SoC_testbench/dut/p1/clk
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/clk
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/reset
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/increment
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/idle
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/vulnerable
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/win
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/pattern
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/ps
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/ns
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/v
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/w
+add wave -noupdate /DE1_SoC_testbench/dut/sc2/signal
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {342 ps} 0}
+WaveRestoreCursors {{Cursor 1} {485 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 331
 configure wave -valuecolwidth 100

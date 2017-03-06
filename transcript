@@ -1,5 +1,5 @@
 # Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-do runlab.do
+do runlabd2_4.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
@@ -10,66 +10,36 @@ do runlab.do
 # Top level modules:
 # 	DE1_SoC_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
 # 
 # Top level modules:
-# 	tow_count_testbench
+# 	keyHandle
+# 	keyHandle_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module seg7
 # 
 # Top level modules:
 # 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# vsim -lib work -voptargs=\"+acc\" -t 1ps decoder2_4_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 123
-# MACRO ./runlab.do PAUSED at line 32
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
-do runlab.do
+# Loading work.decoder2_4_testbench
+# Loading work.decoder2_4
+# ** Error: Cannot open macro file: decoder2_4_wave.do
+# Error in macro ./runlabd2_4.do line 20
+# Cannot open macro file: decoder2_4_wave.do
+#     while executing
+# "do decoder2_4_wave.do"
+add wave -position end  sim:/decoder2_4_testbench/dut/in
+add wave -position end  sim:/decoder2_4_testbench/dut/out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/decoder2_4_wave.do
+do runlabd2_4.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
@@ -80,78 +50,39 @@ do runlab.do
 # Top level modules:
 # 	DE1_SoC_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
 # 
 # Top level modules:
-# 	tow_count_testbench
+# 	keyHandle
+# 	keyHandle_testbench
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module seg7
 # 
 # Top level modules:
 # 	seg7
+# vsim -lib work -voptargs=\"+acc\" -t 1ps decoder2_4_testbench 
+# Loading sv_std.std
+# Loading work.decoder2_4_testbench
+# Loading work.decoder2_4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab_lsfr.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module lsfr
 # -- Compiling module lsfr_testbench
 # 
 # Top level modules:
 # 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
-# Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
-# ** Error: Missing or invalid env path
-# Executing ONERROR command at macro ./main_wave.do line 2
-# ** Error: Missing or invalid env path
-# Executing ONERROR command at macro ./main_wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/setting'.
-# Executing ONERROR command at macro ./main_wave.do line 14
-# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/playingField'.
-# Executing ONERROR command at macro ./main_wave.do line 19
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# MACRO ./runlab.do PAUSED at line 32
-add wave -position 5  sim:/DE1_SoC_testbench/SW
-add wave -position 18  sim:/DE1_SoC_testbench/LEDR
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module DE1_SoC
 # -- Compiling module clock_divider
@@ -159,136 +90,16 @@ do runlab.do
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
+# Loading work.lsfr_testbench
 # Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# MACRO ./runlab.do PAUSED at line 32
-add wave -position 13  sim:/DE1_SoC_testbench/SW
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
-# Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# MACRO ./runlab.do PAUSED at line 32
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
+# Break in Module lsfr_testbench at ./lsfr.sv line 38
+# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 38
+# MACRO ./runlab_lsfr.do PAUSED at line 26
 do runlab_lsfr.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
@@ -338,2039 +149,60 @@ do runlab_lsfr.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Error: Assertion error.
-#    Time: 950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 1950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 2950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 3950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 4950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 5950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 6950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 7950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 8950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 9950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 10950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 11950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 12950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 13950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 14950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 15950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 16950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 17950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 18950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 19950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 20950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 21950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 22950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 23950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 24950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 25950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 26950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 27950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 28950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 29950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 30950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 31950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 32950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 33950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 34950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 35950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 36950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 37950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 38950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 39950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 40950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 41950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 42950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 43950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 44950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 45950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 46950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 47950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 48950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 49950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 50950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 51950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 52950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 53950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 54950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 55950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 56950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 57950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 58950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 59950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 60950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 61950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 62950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 63950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 64950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 65950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 66950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 67950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 68950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 69950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 70950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 71950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 72950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 73950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 74950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 75950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 76950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 77950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 78950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 79950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 80950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 81950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 82950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 83950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 84950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 85950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 86950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 87950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 88950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 89950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 90950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 91950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 92950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 93950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 94950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 95950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 96950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 97950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 98950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 99950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 100950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101450 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101550 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101650 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101750 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101850 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 101950 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 102050 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 102150 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 102250 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# ** Error: Assertion error.
-#    Time: 102350 ps  Scope: lsfr_testbench File: ./lsfr.sv Line: 38
-# Break in Module lsfr_testbench at ./lsfr.sv line 40
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 40
+# Break in Module lsfr_testbench at ./lsfr.sv line 45
+# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 45
 # MACRO ./runlab_lsfr.do PAUSED at line 26
+do runlab_lsfr.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module lsfr
+# ** Error: ./lsfr.sv(16): (vlog-2730) Undefined variable: 'reset'.
+# 
+# -- Compiling module lsfr_testbench
+# ** Error: ./lsfr.sv(45): (vlog-2730) Undefined variable: 'reset'.
+# 
+# ** Error: ./lsfr.sv(48): (vlog-2730) Undefined variable: 'reset'.
+# 
+# ** Error: ./lsfr.sv(51): (vlog-2730) Undefined variable: 'reset'.
+# 
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_lsfr.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./lsfr.sv""
+do runlab_lsfr.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module lsfr
+# ** Error: ./lsfr.sv(16): (vlog-2730) Undefined variable: 'reset'.
+# 
+# ** Error: ./lsfr.sv(25): (vlog-2730) Undefined variable: 'reset'.
+# 
+# ** Error: ./lsfr.sv(1): Identifier must be declared with a port mode: reset.
+# -- Compiling module lsfr_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_lsfr.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./lsfr.sv""
+do runlab_lsfr.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module lsfr
+# ** Error: ./lsfr.sv(16): (vlog-2730) Undefined variable: 'reset'.
+# 
+# ** Error: ./lsfr.sv(25): (vlog-2730) Undefined variable: 'reset'.
+# 
+# ** Error: ./lsfr.sv(1): Identifier must be declared with a port mode: reset.
+# -- Compiling module lsfr_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_lsfr.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./lsfr.sv""
 do runlab_lsfr.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
@@ -2394,665 +226,421 @@ do runlab_lsfr.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 44
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 44
+# Break in Module lsfr_testbench at ./lsfr.sv line 53
+# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 53
 # MACRO ./runlab_lsfr.do PAUSED at line 26
-do runlab.do
+do runlab_numhex.do
+# Cannot open macro file: runlab_numhex.do
+do runlab_humhex.txt
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	numHex_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 124
-# MACRO ./runlab.do PAUSED at line 32
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/clk
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/reset
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/increment
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/idle
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/vulnerable
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/win
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/pattern
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/ps
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/ns
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/v
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/w
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc1/signal
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
-do runlab.do
+# Loading work.numHex_testbench
+# Loading work.numHex
+# ** Error: Cannot open macro file: numHex_wave.do
+# Error in macro ./runlab_humhex.txt line 18
+# Cannot open macro file: numHex_wave.do
+#     while executing
+# "do numHex_wave.do"
+do runlab_humhex.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	numHex_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
-# ** Error: Missing or invalid env path
-# Executing ONERROR command at macro ./main_wave.do line 2
-# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/cyberAction'.
-# Executing ONERROR command at macro ./main_wave.do line 16
-# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/playingField'.
-# Executing ONERROR command at macro ./main_wave.do line 18
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-add wave -position 5  sim:/DE1_SoC_testbench/SW
-add wave -position 5  sim:/DE1_SoC_testbench/LEDR
-add wave -position 6  sim:/DE1_SoC_testbench/playingField
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/clk
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/reset
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/increment
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/idle
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/vulnerable
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/win
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/pattern
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/ps
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/ns
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/v
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/w
-add wave -position end  sim:/DE1_SoC_testbench/dut/sc2/signal
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
-do runlab.do
+# Loading work.numHex_testbench
+# Loading work.numHex
+# ** Error: Cannot open macro file: numHex_wave.do
+# Error in macro ./runlab_humhex.do line 18
+# Cannot open macro file: numHex_wave.do
+#     while executing
+# "do numHex_wave.do"
+add wave -position end  sim:/numHex_testbench/dut/in
+add wave -position end  sim:/numHex_testbench/dut/out
+add wave -position end  sim:/numHex_testbench/dut/pattern
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/numHex_wave.do
+do runlab_humhex.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	numHex_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
+# Loading work.numHex_testbench
+# Loading work.numHex
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-do runlab.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/numHex_wave.do
+do runlab_humhex.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	numHex_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
+# Loading work.numHex_testbench
+# Loading work.numHex
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
-do runlab.do
+do runlab_eval.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-do runlab.do
+# Loading work.safeEval_testbench
+# Loading work.safeEval
+# ** Error: Cannot open macro file: safeEval_wave.do
+# Error in macro ./runlab_eval.do line 18
+# Cannot open macro file: safeEval_wave.do
+#     while executing
+# "do safeEval_wave.do"
+add wave -position end  sim:/safeEval_testbench/dut/actual
+add wave -position end  sim:/safeEval_testbench/dut/expected
+add wave -position end  sim:/safeEval_testbench/dut/correct
+add wave -position end  sim:/safeEval_testbench/dut/misplaced
+add wave -position end  sim:/safeEval_testbench/dut/i
+add wave -position end  sim:/safeEval_testbench/dut/j
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/safeEval_wave.do
+do runlab_eval.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
+# Loading work.safeEval_testbench
+# Loading work.safeEval
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-do runlab.do
+do runlab_eval.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
+# Loading work.safeEval_testbench
+# Loading work.safeEval
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-do runlab.do
+do runlab_eval.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
-# 
-# Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
+# Loading work.safeEval_testbench
+# Loading work.safeEval
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-do runlab.do
+add wave -position end  sim:/safeEval_testbench/dut/enable
+add wave -position end  sim:/safeEval_testbench/dut/clk
+add wave -position end  sim:/safeEval_testbench/dut/reset
+add wave -position end  sim:/safeEval_testbench/dut/actual
+add wave -position end  sim:/safeEval_testbench/dut/expected
+add wave -position end  sim:/safeEval_testbench/dut/correct
+add wave -position end  sim:/safeEval_testbench/dut/misplaced
+add wave -position end  sim:/safeEval_testbench/dut/i
+add wave -position end  sim:/safeEval_testbench/dut/j
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/safeEval_wave.do
+do runlab_eval.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# -- Compiling module safeEval
+# ** Error: ./safeEval.sv(8): (vlog-2730) Undefined variable: 'run'.
 # 
-# Top level modules:
-# 	DE1_SoC_testbench
+# ** Error: ./safeEval.sv(23): (vlog-2730) Undefined variable: 'go'.
+# 
+# ** Error: ./safeEval.sv(1): Identifier must be declared with a port mode: go.
+# -- Compiling module safeEval_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_eval.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./safeEval.sv""
+do runlab_eval.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_count
-# -- Compiling module tow_count_testbench
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
 # 
 # Top level modules:
-# 	tow_count_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module bitcompare
-# -- Compiling module bitcompare_testbench
-# 
-# Top level modules:
-# 	bitcompare_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_score
-# -- Compiling module tow_score_testbench
-# 
-# Top level modules:
-# 	tow_score_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_delegator
-# -- Compiling module tow_delegator_testbench
-# 
-# Top level modules:
-# 	tow_delegator_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module tow_input
-# -- Compiling module tow_input_testbench
-# 
-# Top level modules:
-# 	tow_input_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps DE1_SoC_testbench 
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
 # Loading sv_std.std
-# Loading work.DE1_SoC_testbench
-# Loading work.DE1_SoC
-# Loading work.clock_divider
-# Loading work.lsfr
-# Loading work.bitcompare
-# Loading work.tow_input
-# Loading work.tow_delegator
-# Loading work.tow_score
-# Loading work.tow_count
-# Loading work.seg7
+# Loading work.safeEval_testbench
+# Loading work.safeEval
+# ** Error: (vish-4014) No objects found matching '/safeEval_testbench/dut/enable'.
+# Executing ONERROR command at macro ./safeEval_wave.do line 3
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 119
-# MACRO ./runlab.do PAUSED at line 32
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/main_wave.do
+add wave -position end  sim:/safeEval_testbench/dut/clk
+add wave -position end  sim:/safeEval_testbench/dut/reset
+add wave -position end  sim:/safeEval_testbench/dut/go
+add wave -position end  sim:/safeEval_testbench/dut/actual
+add wave -position end  sim:/safeEval_testbench/dut/expected
+add wave -position end  sim:/safeEval_testbench/dut/correct
+add wave -position end  sim:/safeEval_testbench/dut/misplaced
+add wave -position end  sim:/safeEval_testbench/dut/i
+add wave -position end  sim:/safeEval_testbench/dut/j
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/safeEval_wave.do
+do runlab_eval.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
+# 
+# Top level modules:
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
+# Loading sv_std.std
+# Loading work.safeEval_testbench
+# Loading work.safeEval
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module safeEval_testbench at ./safeEval.sv line 46
+# Simulation Breakpoint: Break in Module safeEval_testbench at ./safeEval.sv line 46
+# MACRO ./runlab_eval.do PAUSED at line 26
+do runlab_eval.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
+# 
+# Top level modules:
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
+# Loading sv_std.std
+# Loading work.safeEval_testbench
+# Loading work.safeEval
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module safeEval_testbench at ./safeEval.sv line 44
+# Simulation Breakpoint: Break in Module safeEval_testbench at ./safeEval.sv line 44
+# MACRO ./runlab_eval.do PAUSED at line 26
+do runlab_eval.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module safeEval
+# -- Compiling module safeEval_testbench
+# 
+# Top level modules:
+# 	safeEval_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
+# Loading sv_std.std
+# Loading work.safeEval_testbench
+# Loading work.safeEval
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module safeEval_testbench at ./safeEval.sv line 47
+# Simulation Breakpoint: Break in Module safeEval_testbench at ./safeEval.sv line 47
+# MACRO ./runlab_eval.do PAUSED at line 26
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# -- Compiling module stutter_testbench
+# 
+# Top level modules:
+# 	stutter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# Loading sv_std.std
+# Loading work.stutter_testbench
+# Loading work.stutter
+# ** Error: Cannot open macro file: stutter_wave.do
+# Error in macro ./runlab_stutter.do line 18
+# Cannot open macro file: stutter_wave.do
+#     while executing
+# "do stutter_wave.do"
+add wave -position end  sim:/stutter_testbench/dut/clk
+add wave -position end  sim:/stutter_testbench/dut/reset
+add wave -position end  sim:/stutter_testbench/dut/cy
+add wave -position end  sim:/stutter_testbench/dut/ns
+add wave -position end  sim:/stutter_testbench/dut/ps
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/stutter_wave.do
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# -- Compiling module stutter_testbench
+# 
+# Top level modules:
+# 	stutter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# Loading sv_std.std
+# Loading work.stutter_testbench
+# Loading work.stutter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module stutter_testbench at ./stutter.sv line 38
+# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 38
+# MACRO ./runlab_stutter.do PAUSED at line 26
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# -- Compiling module stutter_testbench
+# 
+# Top level modules:
+# 	stutter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# Loading sv_std.std
+# Loading work.stutter_testbench
+# Loading work.stutter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module stutter_testbench at ./stutter.sv line 38
+# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 38
+# MACRO ./runlab_stutter.do PAUSED at line 26
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
+# 
+# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
+# -- Compiling module stutter_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_stutter.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./stutter.sv""
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
+# 
+# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
+# -- Compiling module stutter_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_stutter.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./stutter.sv""
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
+# 
+# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
+# -- Compiling module stutter_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_stutter.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./stutter.sv""
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
+# 
+# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
+# -- Compiling module stutter_testbench
+# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_stutter.do line 7
+# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./stutter.sv""
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# -- Compiling module stutter_testbench
+# 
+# Top level modules:
+# 	stutter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# Loading sv_std.std
+# Loading work.stutter_testbench
+# Loading work.stutter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module stutter_testbench at ./stutter.sv line 38
+# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 38
+# MACRO ./runlab_stutter.do PAUSED at line 26
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module stutter
+# -- Compiling module stutter_testbench
+# 
+# Top level modules:
+# 	stutter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# Loading sv_std.std
+# Loading work.stutter_testbench
+# Loading work.stutter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module stutter_testbench at ./stutter.sv line 41
+# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 41
+# MACRO ./runlab_stutter.do PAUSED at line 26

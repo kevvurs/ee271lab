@@ -1,0 +1,16 @@
+module safeEval (expected, actual, correct, misplaced);
+	input logic [7:0] actual, expected;
+	output logic [1:0] correct, misplaced;
+	integer i, j;
+	
+	always_comb
+		for (i = 0; i < 8; i+=2) begin
+			for (j = 0; j < 8; j+=2) begin
+				if (actual[i+1:i] == expected[j+1:j]) begin
+					if (j == i) correct++;
+					else misplaced++;
+				end
+			end
+		end
+	
+endmodule

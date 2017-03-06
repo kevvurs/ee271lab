@@ -983,4 +983,19 @@ set_global_assignment -name SYSTEMVERILOG_FILE tow_score.sv
 set_global_assignment -name SYSTEMVERILOG_FILE lsfr.sv
 set_global_assignment -name SYSTEMVERILOG_FILE bitcompare.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tow_count.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dynamicHex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE bufferHex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE alphaHex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE scrollHex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE keyHandle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decoder2_4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE numHex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE safeHex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE segEncoder7_4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE safeEval.sv
+set_global_assignment -name SYSTEMVERILOG_FILE evalSafe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE evalEncoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE safeMarquee.sv
+set_global_assignment -name SYSTEMVERILOG_FILE stutter16.sv
+set_global_assignment -name SYSTEMVERILOG_FILE countTries.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
