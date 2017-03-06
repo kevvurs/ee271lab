@@ -20,7 +20,7 @@ module stutter16 (clk, reset, cy);
 			ps <= ns;
 endmodule
 
-module stutter_testbench();
+module stutter16_testbench();
 	logic clk, reset;
 	logic cy;
 	

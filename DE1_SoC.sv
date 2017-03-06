@@ -56,7 +56,7 @@ SW);
  genvar i;
  generate
 	for(i = 0; i < 4; i++) begin : eachHex
-		safeHex displayUnit (.clk(clk[whichClock]), .reset(reset), .enable(enables[i]), .ctrl(SW[1:0]), .hex(displayBus[i]));
+		safeHex displayUnit (.clk(clk[whichClock]), .reset(reset), .enable(enables[i]), .ctrl(SW[1:0]), .hex(displayBus[i]), .interx(goRight | goLeft | submit));
 	end
  endgenerate
  
@@ -71,7 +71,7 @@ SW);
  assign guess = {guessNums[0], guessNums[1], guessNums[2], guessNums[3]};
  
  logic [3:0] cflag, mflag, cc, mc, totalCorrect, totalMisplaced;
- evalSafe checker (.a(guess), .b(safeCode), .c(cflag), .m(mflag));
+ evalSafe checkr (.a(guess), .b(safeCode), .c(cflag), .m(mflag));
  evalEncoder countCorrect (.data(cflag), .count(cc));
  evalEncoder countMisp (.data(mflag), .count(mc));
  
@@ -105,9 +105,9 @@ module clock_divider (clock, divided_clocks);
  output logic [31:0] divided_clocks;
 
  initial
- divided_clocks <= 0;
+ divided_clocks <= 1;
 
- always_ff @(posedge clock)
+ always_ff @(posedge clock or negedge clock)
 	divided_clocks <= divided_clocks + 1;
 	
 endmodule
@@ -119,7 +119,7 @@ module DE1_SoC_testbench();
  logic [3:0] KEY;
  logic [9:0] SW;
  
- DE1_SoC #(.whichClock(8)) dut (.CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
+ DE1_SoC #(.whichClock(0)) dut (.CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
  
  parameter CLOCK_PERIOD=100;
 	initial begin
@@ -129,9 +129,28 @@ module DE1_SoC_testbench();
  
  integer i;
  initial begin
-	for (i = 0; i < 240; i++) begin
-		@(posedge CLOCK_50); 
+	SW[9:0] <= 10'b0000000000; KEY <= 4'b1111; LEDR[9:0] <= 10'b0000000000;
+	SW[9] <= 1; SW[0] <= 0; SW[1] <= 0; 
+	@(posedge CLOCK_50); @(posedge CLOCK_50); @(posedge CLOCK_50); // entropy
+	@(posedge CLOCK_50); SW[9] <= 0;
+	for (i = 0; i < 16; i++) begin
+		@(posedge CLOCK_50); // Idle
  	end
+	SW[0] <= 0; SW[1] <= 1; @(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	KEY[1] <= 1; @(posedge CLOCK_50); KEY[1] <= 0;
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	SW[0] <= 1; @(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
+	@(posedge CLOCK_50);
 	$stop;
 	end
 endmodule

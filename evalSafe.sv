@@ -44,3 +44,18 @@ module evalSafe (a, b, c, m);
 			
 
 endmodule
+
+module evalSafe_testbench();
+	logic [7:0] a, b;
+	logic [3:0] c, m;
+	
+	evalSafe dut (.a, .b, .c, .m);
+	
+	integer i;
+	initial begin
+		b[7:0] = 8'b00000100; // code:0010
+		for(i = 0; i < 255; i++) begin
+			a[7:0] = i; #10; // guess
+		end
+	end
+endmodule

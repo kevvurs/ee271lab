@@ -5,19 +5,24 @@ vlib work
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
 vlog "./DE1_SoC.sv"
+vlog "./lsfr.sv"
 vlog "./keyHandle.sv"
+vlog "./scrollHex.sv"
 vlog "./decoder2_4.sv"
-vlog "./seg7.sv"
+vlog "./safeHex.sv"
+vlog "./evalSafe.sv"
+vlog "./evalEncoder.sv"
+vlog "./safeMarquee.sv"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
-vsim -voptargs="+acc" -t 1ps -lib work decoder2_4_testbench
+vsim -voptargs="+acc" -t 1ps -lib work DE1_SoC_testbench
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do decoder2_4_wave.do
+do eight_wave.do
 
 # Set the window types
 view wave

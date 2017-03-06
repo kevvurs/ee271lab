@@ -1,16 +1,29 @@
-module safeHex (clk, reset, enable, ctrl, hex);
-	input logic clk, reset, enable;
+module safeHex (clk, reset, enable, ctrl, hex, interx);
+	input logic clk, reset, enable, interx;
 	input logic [1:0] ctrl;
 	output logic [6:0] hex;
 	logic [6:0] pattern;
 	logic [6:0] symbol;
 	logic [6:0] ps, ns;
+	logic cy;
 	parameter flash = 7'b1111111, zero = 7'b1000000;
 
 	numHex unit (.in(ctrl), .out(symbol));
+	stutter16 st (.clk(clk), .reset(reset), .cy(cy));
 	
 	always_comb
-		if (enable) ns = symbol;
+		if (enable) begin
+			ns = symbol;
+			if (interx) begin
+				ns = symbol;
+			end
+			else begin
+				if (cy) begin
+					if (ps == symbol) ns = flash;
+					else ns = symbol;
+				end
+			end
+		end
 		else ns = ps;
 		
 	
@@ -24,11 +37,12 @@ module safeHex (clk, reset, enable, ctrl, hex);
 endmodule
 
 module safeHex_testbench();
-	logic clk, reset, enable;
+	logic clk, reset, enable, interx;
 	logic [1:0] ctrl;
 	logic [6:0] hex;
+	integer i;
 	
-	safeHex dut (.clk, .reset, .enable, .ctrl, .hex);
+	safeHex dut (.clk, .reset, .enable, .ctrl, .hex, .interx);
 	
 	parameter CLOCK_PERIOD=100;
 	initial begin
@@ -37,19 +51,20 @@ module safeHex_testbench();
 	end
 
 	initial begin
-		reset <= 0;	enable <= 0;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 0;	enable <= 0;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 1;	enable <= 0;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 0;	enable <= 0;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 0;	enable <= 0;	ctrl <= 2'b11;	@(posedge clk);
-		reset <= 0;	enable <= 0;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 0;	enable <= 1;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 0;	enable <= 1;	ctrl <= 2'b10;	@(posedge clk);
-		reset <= 0;	enable <= 1;	ctrl <= 2'b01;	@(posedge clk);
-		reset <= 0;	enable <= 1;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 1;	enable <= 0;	ctrl <= 2'b10;	@(posedge clk);
-		reset <= 0;	enable <= 0;	ctrl <= 2'b00;	@(posedge clk);
-		reset <= 0;	enable <= 0;	ctrl <= 2'b00;	@(posedge clk);
+		reset <= 1;	enable <= 1;	ctrl <= 2'b00;	interx <= 0;	@(posedge clk);
+		reset <= 0;	
+		for (i = 0; i < 7; i++) begin
+			@(posedge clk); // hold
+		end
+		ctrl <= 2'b10; 
+		for (i = 0; i < 6; i++) begin
+			@(posedge clk); // Change num
+		end
+		interx <= 1; @(posedge clk); // Interrupt flicker
+		@(posedge clk);
+		@(posedge clk);
+		interx <= 0; @(posedge clk);
+		// reset <= 0;	enable <= 0;	ctrl <= 2'b00;	interx <= 0;	@(posedge clk);
 		$stop;
 	end
 endmodule

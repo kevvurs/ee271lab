@@ -1,646 +1,1879 @@
-# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
-do runlabd2_4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/airport.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:35:55 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/airport.sv 
+# -- Compiling module airport
+# -- Compiling module airport_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# 	airport_testbench
+# End time: 13:35:55 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/alphaHex.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:00 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/alphaHex.sv 
+# -- Compiling module alphaHex
+# 
+# Top level modules:
+# 	alphaHex
+# End time: 13:36:00 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/bitcompare.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:02 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/bitcompare.sv 
+# -- Compiling module bitcompare
+# -- Compiling module bitcompare_testbench
+# 
+# Top level modules:
+# 	bitcompare_testbench
+# End time: 13:36:02 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/bufferHex.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:03 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/bufferHex.sv 
+# -- Compiling module bufferHex
+# 
+# Top level modules:
+# 	bufferHex
+# End time: 13:36:03 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/countTries.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:04 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/countTries.sv 
+# -- Compiling module countTries
+# 
+# Top level modules:
+# 	countTries
+# End time: 13:36:04 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/DE1_SoC.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:05 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# ** Error: C:/Users/caravk/ee271lab/DE1_SoC.sv(74): near "checker": syntax error, unexpected checker, expecting IDENTIFIER or TYPE_IDENTIFIER
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# End time: 13:36:05 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/decoder2_4.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:05 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 13:36:06 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/digit_scan.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:06 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/digit_scan.sv 
+# -- Compiling module digit_scan
+# -- Compiling module digit_scan_testbench
+# 
+# Top level modules:
+# 	digit_scan_testbench
+# End time: 13:36:06 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/digitDisplay.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:07 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/digitDisplay.sv 
+# -- Compiling module digitDisplay
+# -- Compiling module digitDisplay_testbench
+# 
+# Top level modules:
+# 	digitDisplay_testbench
+# End time: 13:36:07 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/discounted.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:08 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/discounted.sv 
+# -- Compiling module discounted
+# -- Compiling module discounted_testbench
+# 
+# Top level modules:
+# 	discounted_testbench
+# End time: 13:36:08 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/dynamicHex.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:09 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/dynamicHex.sv 
+# -- Compiling module dynamicHex
+# 
+# Top level modules:
+# 	dynamicHex
+# End time: 13:36:09 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/evalEncoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:10 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 13:36:10 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/evalSafe.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:11 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/evalSafe.sv 
+# -- Compiling module evalSafe
+# 
+# Top level modules:
+# 	evalSafe
+# End time: 13:36:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/keyHandle.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:12 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/keyHandle.sv 
 # -- Compiling module keyHandle
 # -- Compiling module keyHandle_testbench
 # 
 # Top level modules:
 # 	keyHandle
 # 	keyHandle_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module decoder2_4
-# -- Compiling module decoder2_4_testbench
+# End time: 13:36:12 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/lsfr.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:13 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
 # 
 # Top level modules:
-# 	decoder2_4_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# 	lsfr_testbench
+# End time: 13:36:13 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/misplace.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:14 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/misplace.sv 
+# -- Compiling module evalSafe
+# 
+# Top level modules:
+# 	evalSafe
+# End time: 13:36:14 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/mux2_1.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:14 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/mux2_1.sv 
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_testbench
+# 
+# Top level modules:
+# 	mux2_1_testbench
+# End time: 13:36:15 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/mux4_1.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:15 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/mux4_1.sv 
+# -- Compiling module mux4_1
+# -- Compiling module mux4_1_testbench
+# 
+# Top level modules:
+# 	mux4_1_testbench
+# End time: 13:36:15 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/numHex.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:16 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/numHex.sv 
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
+# 
+# Top level modules:
+# 	numHex_testbench
+# End time: 13:36:16 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/register.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:17 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/register.sv 
+# -- Compiling module register
+# -- Compiling module register_testbench
+# 
+# Top level modules:
+# 	register_testbench
+# End time: 13:36:17 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/safeEval.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:18 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/safeEval.sv 
+# End time: 13:36:18 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/safeHex.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:19 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 13:36:19 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/safeMarquee.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:20 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 13:36:20 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/scrollHex.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:20 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 13:36:21 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/seg7.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:21 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/seg7.sv 
 # -- Compiling module seg7
 # 
 # Top level modules:
 # 	seg7
-# vsim -lib work -voptargs=\"+acc\" -t 1ps decoder2_4_testbench 
-# Loading sv_std.std
-# Loading work.decoder2_4_testbench
-# Loading work.decoder2_4
-# ** Error: Cannot open macro file: decoder2_4_wave.do
-# Error in macro ./runlabd2_4.do line 20
-# Cannot open macro file: decoder2_4_wave.do
-#     while executing
-# "do decoder2_4_wave.do"
-add wave -position end  sim:/decoder2_4_testbench/dut/in
-add wave -position end  sim:/decoder2_4_testbench/dut/out
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/decoder2_4_wave.do
-do runlabd2_4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
+# End time: 13:36:21 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/segEncoder7_4.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:23 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/segEncoder7_4.sv 
+# -- Compiling module segEncoder7_4
+# -- Compiling module segEncoder7_4_testbench
 # 
 # Top level modules:
-# 	DE1_SoC_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module keyHandle
-# -- Compiling module keyHandle_testbench
+# 	segEncoder7_4_testbench
+# End time: 13:36:23 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/simple.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:23 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/simple.sv 
+# -- Compiling module simple
+# -- Compiling module simple_testbench
 # 
 # Top level modules:
-# 	keyHandle
-# 	keyHandle_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module decoder2_4
-# -- Compiling module decoder2_4_testbench
+# 	simple_testbench
+# End time: 13:36:23 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/stolen.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:24 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/stolen.sv 
+# -- Compiling module stolen
+# -- Compiling module stolen_testbench
 # 
 # Top level modules:
-# 	decoder2_4_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module seg7
+# 	stolen_testbench
+# End time: 13:36:24 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/storeDisplay.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:25 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/storeDisplay.sv 
+# -- Compiling module storeDisplay
+# -- Compiling module storeDisplay_testbench
 # 
 # Top level modules:
-# 	seg7
-# vsim -lib work -voptargs=\"+acc\" -t 1ps decoder2_4_testbench 
-# Loading sv_std.std
-# Loading work.decoder2_4_testbench
-# Loading work.decoder2_4
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do runlab_lsfr.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
+# 	storeDisplay_testbench
+# End time: 13:36:25 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/stutter.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:26 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/stutter.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter_testbench
 # 
 # Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 38
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 38
-# MACRO ./runlab_lsfr.do PAUSED at line 26
-do runlab_lsfr.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 45
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 45
-# MACRO ./runlab_lsfr.do PAUSED at line 26
-do runlab_lsfr.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 45
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 45
-# MACRO ./runlab_lsfr.do PAUSED at line 26
-do runlab_lsfr.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# ** Error: ./lsfr.sv(16): (vlog-2730) Undefined variable: 'reset'.
-# 
-# -- Compiling module lsfr_testbench
-# ** Error: ./lsfr.sv(45): (vlog-2730) Undefined variable: 'reset'.
-# 
-# ** Error: ./lsfr.sv(48): (vlog-2730) Undefined variable: 'reset'.
-# 
-# ** Error: ./lsfr.sv(51): (vlog-2730) Undefined variable: 'reset'.
-# 
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_lsfr.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./lsfr.sv""
-do runlab_lsfr.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# ** Error: ./lsfr.sv(16): (vlog-2730) Undefined variable: 'reset'.
-# 
-# ** Error: ./lsfr.sv(25): (vlog-2730) Undefined variable: 'reset'.
-# 
-# ** Error: ./lsfr.sv(1): Identifier must be declared with a port mode: reset.
-# -- Compiling module lsfr_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_lsfr.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./lsfr.sv""
-do runlab_lsfr.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# ** Error: ./lsfr.sv(16): (vlog-2730) Undefined variable: 'reset'.
-# 
-# ** Error: ./lsfr.sv(25): (vlog-2730) Undefined variable: 'reset'.
-# 
-# ** Error: ./lsfr.sv(1): Identifier must be declared with a port mode: reset.
-# -- Compiling module lsfr_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_lsfr.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./lsfr.sv""
-do runlab_lsfr.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module lsfr
-# -- Compiling module lsfr_testbench
-# 
-# Top level modules:
-# 	lsfr_testbench
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module DE1_SoC
-# -- Compiling module clock_divider
-# -- Compiling module DE1_SoC_testbench
-# 
-# Top level modules:
-# 	DE1_SoC_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps lsfr_testbench 
-# Loading sv_std.std
-# Loading work.lsfr_testbench
-# Loading work.lsfr
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module lsfr_testbench at ./lsfr.sv line 53
-# Simulation Breakpoint: Break in Module lsfr_testbench at ./lsfr.sv line 53
-# MACRO ./runlab_lsfr.do PAUSED at line 26
-do runlab_numhex.do
-# Cannot open macro file: runlab_numhex.do
-do runlab_humhex.txt
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module numHex
-# -- Compiling module numHex_testbench
-# 
-# Top level modules:
-# 	numHex_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
-# Loading sv_std.std
-# Loading work.numHex_testbench
-# Loading work.numHex
-# ** Error: Cannot open macro file: numHex_wave.do
-# Error in macro ./runlab_humhex.txt line 18
-# Cannot open macro file: numHex_wave.do
-#     while executing
-# "do numHex_wave.do"
-do runlab_humhex.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module numHex
-# -- Compiling module numHex_testbench
-# 
-# Top level modules:
-# 	numHex_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
-# Loading sv_std.std
-# Loading work.numHex_testbench
-# Loading work.numHex
-# ** Error: Cannot open macro file: numHex_wave.do
-# Error in macro ./runlab_humhex.do line 18
-# Cannot open macro file: numHex_wave.do
-#     while executing
-# "do numHex_wave.do"
-add wave -position end  sim:/numHex_testbench/dut/in
-add wave -position end  sim:/numHex_testbench/dut/out
-add wave -position end  sim:/numHex_testbench/dut/pattern
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/numHex_wave.do
-do runlab_humhex.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module numHex
-# -- Compiling module numHex_testbench
-# 
-# Top level modules:
-# 	numHex_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
-# Loading sv_std.std
-# Loading work.numHex_testbench
-# Loading work.numHex
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/numHex_wave.do
-do runlab_humhex.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module numHex
-# -- Compiling module numHex_testbench
-# 
-# Top level modules:
-# 	numHex_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps numHex_testbench 
-# Loading sv_std.std
-# Loading work.numHex_testbench
-# Loading work.numHex
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# ** Error: Cannot open macro file: safeEval_wave.do
-# Error in macro ./runlab_eval.do line 18
-# Cannot open macro file: safeEval_wave.do
-#     while executing
-# "do safeEval_wave.do"
-add wave -position end  sim:/safeEval_testbench/dut/actual
-add wave -position end  sim:/safeEval_testbench/dut/expected
-add wave -position end  sim:/safeEval_testbench/dut/correct
-add wave -position end  sim:/safeEval_testbench/dut/misplaced
-add wave -position end  sim:/safeEval_testbench/dut/i
-add wave -position end  sim:/safeEval_testbench/dut/j
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/safeEval_wave.do
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-add wave -position end  sim:/safeEval_testbench/dut/enable
-add wave -position end  sim:/safeEval_testbench/dut/clk
-add wave -position end  sim:/safeEval_testbench/dut/reset
-add wave -position end  sim:/safeEval_testbench/dut/actual
-add wave -position end  sim:/safeEval_testbench/dut/expected
-add wave -position end  sim:/safeEval_testbench/dut/correct
-add wave -position end  sim:/safeEval_testbench/dut/misplaced
-add wave -position end  sim:/safeEval_testbench/dut/i
-add wave -position end  sim:/safeEval_testbench/dut/j
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/safeEval_wave.do
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# ** Error: ./safeEval.sv(8): (vlog-2730) Undefined variable: 'run'.
-# 
-# ** Error: ./safeEval.sv(23): (vlog-2730) Undefined variable: 'go'.
-# 
-# ** Error: ./safeEval.sv(1): Identifier must be declared with a port mode: go.
-# -- Compiling module safeEval_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_eval.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./safeEval.sv""
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# ** Error: (vish-4014) No objects found matching '/safeEval_testbench/dut/enable'.
-# Executing ONERROR command at macro ./safeEval_wave.do line 3
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-add wave -position end  sim:/safeEval_testbench/dut/clk
-add wave -position end  sim:/safeEval_testbench/dut/reset
-add wave -position end  sim:/safeEval_testbench/dut/go
-add wave -position end  sim:/safeEval_testbench/dut/actual
-add wave -position end  sim:/safeEval_testbench/dut/expected
-add wave -position end  sim:/safeEval_testbench/dut/correct
-add wave -position end  sim:/safeEval_testbench/dut/misplaced
-add wave -position end  sim:/safeEval_testbench/dut/i
-add wave -position end  sim:/safeEval_testbench/dut/j
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/safeEval_wave.do
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module safeEval_testbench at ./safeEval.sv line 46
-# Simulation Breakpoint: Break in Module safeEval_testbench at ./safeEval.sv line 46
-# MACRO ./runlab_eval.do PAUSED at line 26
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module safeEval_testbench at ./safeEval.sv line 44
-# Simulation Breakpoint: Break in Module safeEval_testbench at ./safeEval.sv line 44
-# MACRO ./runlab_eval.do PAUSED at line 26
-do runlab_eval.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module safeEval
-# -- Compiling module safeEval_testbench
-# 
-# Top level modules:
-# 	safeEval_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps safeEval_testbench 
-# Loading sv_std.std
-# Loading work.safeEval_testbench
-# Loading work.safeEval
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module safeEval_testbench at ./safeEval.sv line 47
-# Simulation Breakpoint: Break in Module safeEval_testbench at ./safeEval.sv line 47
-# MACRO ./runlab_eval.do PAUSED at line 26
-do runlab_stutter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
+# 	stutter16
+# 	stutter_testbench
+# End time: 13:36:26 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/stutter16.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:27 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/stutter16.sv 
+# -- Compiling module stutter16
 # -- Compiling module stutter_testbench
 # 
 # Top level modules:
 # 	stutter_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# End time: 13:36:27 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_count.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:28 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_count.sv 
+# -- Compiling module tow_count
+# -- Compiling module tow_count_testbench
+# 
+# Top level modules:
+# 	tow_count_testbench
+# End time: 13:36:28 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_delegator.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:28 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_delegator.sv 
+# -- Compiling module tow_delegator
+# -- Compiling module tow_delegator_testbench
+# 
+# Top level modules:
+# 	tow_delegator_testbench
+# End time: 13:36:28 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_input.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:30 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 13:36:30 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_input.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:35 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_input.sv 
+# -- Compiling module tow_input
+# -- Compiling module tow_input_testbench
+# 
+# Top level modules:
+# 	tow_input_testbench
+# End time: 13:36:35 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_score.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:36 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 13:36:36 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_score.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:36:40 on Mar 06,2017
+# vlog -reportprogress 300 -work work C:/Users/caravk/ee271lab/tow_score.sv 
+# -- Compiling module tow_score
+# -- Compiling module tow_score_testbench
+# 
+# Top level modules:
+# 	tow_score_testbench
+# End time: 13:36:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do runlab_safehex.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:18:06 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# ** Error: ./safeHex.sv(16): (vlog-2730) Undefined variable: 'interx'.
+# 
+# ** Error: ./safeHex.sv(1): (vlog-2730) Undefined variable: 'interx'.
+# 
+# ** Error: ./safeHex.sv(1): Identifier must be declared with a port mode: interx.
+# -- Compiling module safeHex_testbench
+# End time: 14:18:06 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_safehex.do line 7
+# C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./safeHex.sv""
+do runlab_safehex.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:18:26 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 14:18:26 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:18:26 on Mar 06,2017
+# vlog -reportprogress 300 ./numHex.sv 
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
+# 
+# Top level modules:
+# 	numHex_testbench
+# End time: 14:18:26 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:18:26 on Mar 06,2017
+# vlog -reportprogress 300 ./stutter16.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter16_testbench
+# 
+# Top level modules:
+# 	stutter16_testbench
+# End time: 14:18:26 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui 
+# Start time: 14:18:26 on Mar 06,2017
 # Loading sv_std.std
-# Loading work.stutter_testbench
-# Loading work.stutter
-# ** Error: Cannot open macro file: stutter_wave.do
+# Loading work.safeHex_testbench
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.stutter16
+# ** Error: Cannot open macro file: safeHex_wave.do
+# Error in macro ./runlab_safehex.do line 20
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+add wave -position end sim:/safeHex_testbench/dut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/safeHex_wave.do
+do runlab_safehex.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:19:52 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 14:19:53 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:19:53 on Mar 06,2017
+# vlog -reportprogress 300 ./numHex.sv 
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
+# 
+# Top level modules:
+# 	numHex_testbench
+# End time: 14:19:53 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:19:53 on Mar 06,2017
+# vlog -reportprogress 300 ./stutter16.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter16_testbench
+# 
+# Top level modules:
+# 	stutter16_testbench
+# End time: 14:19:53 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:19:53 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.safeHex_testbench
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.stutter16
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./safeHex.sv(65)
+#    Time: 1250 ps  Iteration: 1  Instance: /safeHex_testbench
+# Break in Module safeHex_testbench at ./safeHex.sv line 65
+# Simulation Breakpoint: Break in Module safeHex_testbench at ./safeHex.sv line 65
+# MACRO ./runlab_safehex.do PAUSED at line 28
+do runlab_safehex.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:24:39 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 14:24:39 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:24:39 on Mar 06,2017
+# vlog -reportprogress 300 ./numHex.sv 
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
+# 
+# Top level modules:
+# 	numHex_testbench
+# End time: 14:24:39 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:24:39 on Mar 06,2017
+# vlog -reportprogress 300 ./stutter16.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter16_testbench
+# 
+# Top level modules:
+# 	stutter16_testbench
+# End time: 14:24:39 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:24:39 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.safeHex_testbench
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.stutter16
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./safeHex.sv(67)
+#    Time: 1750 ps  Iteration: 1  Instance: /safeHex_testbench
+# Break in Module safeHex_testbench at ./safeHex.sv line 67
+# Simulation Breakpoint: Break in Module safeHex_testbench at ./safeHex.sv line 67
+# MACRO ./runlab_safehex.do PAUSED at line 28
+do runlab_safehex.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:30:28 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 14:30:28 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:30:28 on Mar 06,2017
+# vlog -reportprogress 300 ./numHex.sv 
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
+# 
+# Top level modules:
+# 	numHex_testbench
+# End time: 14:30:28 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:30:28 on Mar 06,2017
+# vlog -reportprogress 300 ./stutter16.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter16_testbench
+# 
+# Top level modules:
+# 	stutter16_testbench
+# End time: 14:30:28 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:30:28 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.safeHex_testbench
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.stutter16
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./safeHex.sv(68)
+#    Time: 1750 ps  Iteration: 1  Instance: /safeHex_testbench
+# Break in Module safeHex_testbench at ./safeHex.sv line 68
+# Simulation Breakpoint: Break in Module safeHex_testbench at ./safeHex.sv line 68
+# MACRO ./runlab_safehex.do PAUSED at line 28
+do runlab_stutter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:30:55 on Mar 06,2017
+# vlog -reportprogress 300 ./stutter16.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter16_testbench
+# 
+# Top level modules:
+# 	stutter16_testbench
+# End time: 14:30:55 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:30:55 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.stutter16_testbench
+# Loading work.stutter16
+# ** Error: Cannot open macro file: stutter16_wave.do
 # Error in macro ./runlab_stutter.do line 18
-# Cannot open macro file: stutter_wave.do
+# invalid command name "vsim_increment_error_count"
 #     while executing
-# "do stutter_wave.do"
-add wave -position end  sim:/stutter_testbench/dut/clk
-add wave -position end  sim:/stutter_testbench/dut/reset
-add wave -position end  sim:/stutter_testbench/dut/cy
-add wave -position end  sim:/stutter_testbench/dut/ns
-add wave -position end  sim:/stutter_testbench/dut/ps
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/hpadmin/workspace/ee271lab/stutter_wave.do
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+add wave -position end sim:/stutter16_testbench/dut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/stutter16_wave.do
 do runlab_stutter.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# -- Compiling module stutter_testbench
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:31:22 on Mar 06,2017
+# vlog -reportprogress 300 ./stutter16.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter16_testbench
 # 
 # Top level modules:
-# 	stutter_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# 	stutter16_testbench
+# End time: 14:31:22 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:31:22 on Mar 06,2017
 # Loading sv_std.std
-# Loading work.stutter_testbench
-# Loading work.stutter
+# Loading work.stutter16_testbench
+# Loading work.stutter16
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module stutter_testbench at ./stutter.sv line 38
-# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 38
+# ** Note: $stop    : ./stutter16.sv(41)
+#    Time: 20050 ps  Iteration: 1  Instance: /stutter16_testbench
+# Break in Module stutter16_testbench at ./stutter16.sv line 41
+# Simulation Breakpoint: Break in Module stutter16_testbench at ./stutter16.sv line 41
 # MACRO ./runlab_stutter.do PAUSED at line 26
-do runlab_stutter.do
+do runlab_safehex.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# -- Compiling module stutter_testbench
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:33:04 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
 # 
 # Top level modules:
-# 	stutter_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# 	safeHex_testbench
+# End time: 14:33:04 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:33:04 on Mar 06,2017
+# vlog -reportprogress 300 ./numHex.sv 
+# -- Compiling module numHex
+# -- Compiling module numHex_testbench
+# 
+# Top level modules:
+# 	numHex_testbench
+# End time: 14:33:05 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:33:05 on Mar 06,2017
+# vlog -reportprogress 300 ./stutter16.sv 
+# -- Compiling module stutter16
+# -- Compiling module stutter16_testbench
+# 
+# Top level modules:
+# 	stutter16_testbench
+# End time: 14:33:05 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:33:05 on Mar 06,2017
 # Loading sv_std.std
-# Loading work.stutter_testbench
-# Loading work.stutter
+# Loading work.safeHex_testbench
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.stutter16
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module stutter_testbench at ./stutter.sv line 38
-# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 38
-# MACRO ./runlab_stutter.do PAUSED at line 26
-do runlab_stutter.do
+# ** Note: $stop    : ./safeHex.sv(68)
+#    Time: 1750 ps  Iteration: 1  Instance: /safeHex_testbench
+# Break in Module safeHex_testbench at ./safeHex.sv line 68
+# Simulation Breakpoint: Break in Module safeHex_testbench at ./safeHex.sv line 68
+# MACRO ./runlab_safehex.do PAUSED at line 28
+do runlab_evalsafe.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
-# 
-# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
-# -- Compiling module stutter_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_stutter.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./stutter.sv""
-do runlab_stutter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
-# 
-# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
-# -- Compiling module stutter_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_stutter.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./stutter.sv""
-do runlab_stutter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
-# 
-# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
-# -- Compiling module stutter_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_stutter.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./stutter.sv""
-do runlab_stutter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# ** Error: ./stutter.sv(4): (vlog-2730) Undefined variable: 'width'.
-# 
-# ** Error: ./stutter.sv(5): 'width' already declared in this scope.
-# -- Compiling module stutter_testbench
-# ** Error: C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_stutter.do line 7
-# C:/altera/14.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./stutter.sv""
-do runlab_stutter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# -- Compiling module stutter_testbench
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:37:49 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
 # 
 # Top level modules:
-# 	stutter_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# 	evalSafe_testbench
+# End time: 14:37:49 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:37:49 on Mar 06,2017
 # Loading sv_std.std
-# Loading work.stutter_testbench
-# Loading work.stutter
+# Loading work.evalSafe_testbench
+# Loading work.evalSafe
+# ** Error: Cannot open macro file: evalSafe_wave.do
+# Error in macro ./runlab_evalsafe.do line 17
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+add wave -position end sim:/evalSafe_testbench/dut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/evalSafe_wave.do
+do runlab_evalsafe.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:38:23 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 14:38:23 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:38:24 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.evalSafe_testbench
+# Loading work.evalSafe
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module stutter_testbench at ./stutter.sv line 38
-# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 38
-# MACRO ./runlab_stutter.do PAUSED at line 26
-do runlab_stutter.do
+do runlab_scroll.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
-# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
-# -- Compiling module stutter
-# -- Compiling module stutter_testbench
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:52:21 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
 # 
 # Top level modules:
-# 	stutter_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps stutter_testbench 
+# 	scrollHex_testbench
+# End time: 14:52:21 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:52:22 on Mar 06,2017
 # Loading sv_std.std
-# Loading work.stutter_testbench
-# Loading work.stutter
+# Loading work.scrollHex_testbench
+# Loading work.scrollHex
+# ** Error: Cannot open macro file: scrollHex_wave.do
+# Error in macro ./runlab_scroll.do line 17
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+add wave -position end sim:/scrollHex_testbench/dut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/scrollHex_wave.do
+do runlab_scroll.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:52:46 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 14:52:46 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:52:46 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.scrollHex_testbench
+# Loading work.scrollHex
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module stutter_testbench at ./stutter.sv line 41
-# Simulation Breakpoint: Break in Module stutter_testbench at ./stutter.sv line 41
-# MACRO ./runlab_stutter.do PAUSED at line 26
+# ** Note: $stop    : ./scrollHex.sv(100)
+#    Time: 1950 ps  Iteration: 1  Instance: /scrollHex_testbench
+# Break in Module scrollHex_testbench at ./scrollHex.sv line 100
+# Simulation Breakpoint: Break in Module scrollHex_testbench at ./scrollHex.sv line 100
+# MACRO ./runlab_scroll.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:02:11 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# ** Error: ./DE1_SoC.sv(74): near "checker": syntax error, unexpected checker, expecting IDENTIFIER or TYPE_IDENTIFIER
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# ** Error: ./DE1_SoC.sv(133): (vlog-2730) Undefined variable: 'clk'.
+# 
+# End time: 15:02:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:02:59 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# ** Error: ./DE1_SoC.sv(74): near "checker": syntax error, unexpected checker, expecting IDENTIFIER or TYPE_IDENTIFIER
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# End time: 15:02:59 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:57 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:03:57 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:57 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:58 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:58 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:58 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:58 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:58 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:58 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:03:58 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:03:58 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:03:59 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# ** Error: Cannot open macro file: eight_wave.do
+# Error in macro ./runlab.do line 25
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+add wave -position end sim:/DE1_SoC_testbench/dut/*
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachVal[3]/*}
+# (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/eachVal[3]/*'.
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachVal[3]/*}
+# (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/eachVal[3]/*'.
+add wave -position 0 {sim:/DE1_SoC_testbench/dut/eachVal[3]/*}
+# (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/eachVal[3]/*'.
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachVal[3]/*}
+# (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/eachVal[3]/*'.
+add wave -position 0 {sim:/DE1_SoC_testbench/dut/eachVal[3]/*}
+# (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/eachVal[3]/*'.
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachVal[3]/encoderUnit/*}
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachVal[2]/encoderUnit/*}
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachVal[1]/encoderUnit/*}
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachVal[0]/encoderUnit/*}
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachHex[3]/displayUnit/*}
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachHex[2]/displayUnit/*}
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachHex[1]/*}
+# (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/eachHex[1]/*'.
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachHex[1]/*}
+# (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/eachHex[1]/*'.
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachHex[1]/displayUnit/*}
+add wave -position end {sim:/DE1_SoC_testbench/dut/eachHex[0]/displayUnit/*}
+add wave -position end sim:/DE1_SoC_testbench/dut/cdiv/*
+add wave -position end sim:/DE1_SoC_testbench/dut/dut/*
+add wave -position end sim:/DE1_SoC_testbench/dut/LeftScroll/*
+add wave -position end sim:/DE1_SoC_testbench/dut/RightScroll/*
+add wave -position end sim:/DE1_SoC_testbench/dut/subKey/*
+add wave -position end sim:/DE1_SoC_testbench/dut/scrl/*
+add wave -position end sim:/DE1_SoC_testbench/dut/dec/*
+add wave -position end sim:/DE1_SoC_testbench/dut/checkr/*
+add wave -position end sim:/DE1_SoC_testbench/dut/countCorrect/*
+add wave -position end sim:/DE1_SoC_testbench/dut/countMisp/*
+add wave -position end sim:/DE1_SoC_testbench/dut/hexd/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/eight_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:40 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:20:41 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:20:41 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:20:42 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:21 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:22:21 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:21 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:22:21 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:21 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:22:21 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:21 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:22:21 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:21 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:22:21 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:22 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:22:22 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:22 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:22:22 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:22 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:22:22 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:22:22 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:22:22 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:22:22 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:09 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:23:09 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:09 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:23:09 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:09 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:23:09 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:09 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:23:09 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:09 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:23:09 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:10 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:23:10 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:10 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:23:10 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:10 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:23:10 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:23:10 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:23:10 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:23:10 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(152)
+#    Time: 3150 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 152
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 152
+# MACRO ./runlab.do PAUSED at line 33
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:26:54 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:26:54 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:26:54 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:26:54 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:26:54 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:26:54 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:26:54 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:54 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:26:55 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:26:55 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:26:55 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:26:55 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(153)
+#    Time: 3450 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 153
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 153
+# MACRO ./runlab.do PAUSED at line 33
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:29:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:29:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:29:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:29:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:29:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:29:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:29:11 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:11 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:29:12 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:29:12 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:29:12 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:29:12 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(154)
+#    Time: 3450 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 154
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 154
+# MACRO ./runlab.do PAUSED at line 33
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:39 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:32:39 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:39 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:32:39 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:40 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:32:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:40 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:32:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:40 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:32:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:40 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:32:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:40 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:32:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:40 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:32:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:32:40 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:32:40 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:32:41 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(154)
+#    Time: 3450 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 154
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 154
+# MACRO ./runlab.do PAUSED at line 33
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:35 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# ** Error: ./DE1_SoC.sv(133): near "SW": syntax error, unexpected IDENTIFIER, expecting ';'
+# End time: 15:33:35 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:39 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# ** Error: ./DE1_SoC.sv(133): near "SW": syntax error, unexpected IDENTIFIER, expecting ';'
+# End time: 15:33:39 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# invalid command name "vsim_increment_error_count"
+#     while executing
+# "::tcl_unknown vsim_increment_error_count"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::tcl_unknown $args"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module clock_divider
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 15:33:56 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./lsfr.sv 
+# -- Compiling module lsfr
+# -- Compiling module lsfr_testbench
+# 
+# Top level modules:
+# 	lsfr_testbench
+# End time: 15:33:56 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./keyHandle.sv 
+# -- Compiling module keyHandle
+# -- Compiling module keyHandle_testbench
+# 
+# Top level modules:
+# 	keyHandle
+# 	keyHandle_testbench
+# End time: 15:33:56 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./scrollHex.sv 
+# -- Compiling module scrollHex
+# -- Compiling module scrollHex_testbench
+# 
+# Top level modules:
+# 	scrollHex_testbench
+# End time: 15:33:56 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./decoder2_4.sv 
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_testbench
+# 
+# Top level modules:
+# 	decoder2_4_testbench
+# End time: 15:33:56 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./safeHex.sv 
+# -- Compiling module safeHex
+# -- Compiling module safeHex_testbench
+# 
+# Top level modules:
+# 	safeHex_testbench
+# End time: 15:33:56 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./evalSafe.sv 
+# -- Compiling module evalSafe
+# -- Compiling module evalSafe_testbench
+# 
+# Top level modules:
+# 	evalSafe_testbench
+# End time: 15:33:56 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:56 on Mar 06,2017
+# vlog -reportprogress 300 ./evalEncoder.sv 
+# -- Compiling module evalEncoder
+# 
+# Top level modules:
+# 	evalEncoder
+# End time: 15:33:57 on Mar 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:33:57 on Mar 06,2017
+# vlog -reportprogress 300 ./safeMarquee.sv 
+# -- Compiling module safeMarquee
+# 
+# Top level modules:
+# 	safeMarquee
+# End time: 15:33:57 on Mar 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 15:33:57 on Mar 06,2017
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.lsfr
+# Loading work.keyHandle
+# Loading work.scrollHex
+# Loading work.decoder2_4
+# Loading work.evalSafe
+# Loading work.evalEncoder
+# Loading work.safeMarquee
+# Loading work.stutter16
+# Loading work.seg7
+# Loading work.safeHex
+# Loading work.numHex
+# Loading work.segEncoder7_4
+# ** Warning: (vsim-3839) ./DE1_SoC.sv(132): Variable '/DE1_SoC_testbench/LEDR', driven via a port connection, is multiply driven. See ./DE1_SoC.sv(122).
+# 
+#         Region: /DE1_SoC_testbench
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(154)
+#    Time: 3450 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 154
+# Simulation Breakpoint: Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 154
+# MACRO ./runlab.do PAUSED at line 33
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/caravk/ee271lab/eight_wave.do
+# End time: 15:52:57 on Mar 06,2017, Elapsed time: 0:19:00
+# Errors: 0, Warnings: 1
