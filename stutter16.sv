@@ -1,21 +1,21 @@
-module stutter16 (clk, reset, cy);
+module stutter16 #(parameter WIDTH=16, HIGH=16'b1111111111111111, LOW=16'b0000000000000000, STEP=16'b0000000000000001) (clk, reset, cy);
 	input logic clk, reset;
 	output logic cy;
-	logic [15:0] ns, ps;
+	logic [WIDTH-1:0] ns, ps;
 	
 	always_comb
-		if (ps == 16'b1111111111111111) begin
+		if (ps == HIGH) begin
 			cy = 1;
-			ns = 16'b0000000000000000;
+			ns = LOW;
 		end
 		else begin
 			cy = 0;
-			ns = (ps + 16'b000000000001);
+			ns = (ps + STEP);
 		end
 		
 	always_ff @(posedge clk)
 		if (reset)
-			ps <= 16'b0000000000000000;
+			ps <= LOW;
 		else
 			ps <= ns;
 endmodule

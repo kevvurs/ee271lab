@@ -105,9 +105,9 @@ module clock_divider (clock, divided_clocks);
  output logic [31:0] divided_clocks;
 
  initial
- divided_clocks <= 1;
+ divided_clocks <= 0;
 
- always_ff @(posedge clock or negedge clock)
+ always_ff @(posedge clock)
 	divided_clocks <= divided_clocks + 1;
 	
 endmodule

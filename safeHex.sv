@@ -9,22 +9,21 @@ module safeHex (clk, reset, enable, ctrl, hex, interx);
 	parameter flash = 7'b1111111, zero = 7'b1000000;
 
 	numHex unit (.in(ctrl), .out(symbol));
-	stutter16 st (.clk(clk), .reset(reset), .cy(cy));
+	stutter16 #(.WIDTH(12), .HIGH(12'b111111111111), .LOW(12'b000000000000), .STEP(12'b000000000001)) st (.clk(clk), .reset(reset), .cy(cy));
 	
-	always_comb
+	always_comb begin
+		ns = ps;
 		if (enable) begin
-			ns = symbol;
-			if (interx) begin
-				ns = symbol;
-			end
-			else begin
-				if (cy) begin
-					if (ps == symbol) ns = flash;
-					else ns = symbol;
-				end
+			if (cy) begin
+				if (ps == symbol) ns = flash;
+				else ns = symbol;
 			end
 		end
-		else ns = ps;
+		if (interx & ps == flash) begin
+			ns = symbol;
+		end
+	end
+		
 		
 	
 	assign hex = ns;
